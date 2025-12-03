@@ -40,6 +40,7 @@
 //Numbers
 var num1=14;
 var num2=3.5;
+var num3="24";
 
 console.log(Number.isInteger(num1));
 console.log(Number.isInteger(num2));
@@ -69,3 +70,8 @@ console.log(Math.random());
 console.log(Math.floor(Math.random()*10)+1); //Random number between 1 to 10
 console.log(Math.floor(Math.random()*100)+1); //Random number between 1 to 100
 console.log(Math.floor(Math.random()*50)+1); //Random number between 1 to 50
+
+
+console.log(num1 === num2);
+console.log(num1.isInteger);
+console.log(Number(num3));
