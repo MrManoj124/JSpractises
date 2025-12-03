@@ -17,4 +17,6 @@ console.log(myVariable.charAt(5));
 console.log(myVariable.indexOf("L"));
 console.log(myVariable.lastIndexOf("a"));
 
+console.log(myVariable.lastIndexOf("a"));
+
 
