@@ -56,3 +56,4 @@ console.log(num2.toPrecision(2));
 console.log(num2.toPrecision(3));
 
 console.log(Math.round(num2));
+console.log(Math.ceil(num2));
