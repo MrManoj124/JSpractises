@@ -6,4 +6,13 @@
 myVariable="Arithmatical Logics";
 console.log(myVariable.length);
 
+//String Methods
+console.log(myVariable.toUpperCase());
+console.log(myVariable.toLowerCase());
+console.log(myVariable.slice(0,5));
+console.log(myVariable.replace("Logics","Operations"));     
+console.log(myVariable.concat(" in Javascript"));
+
+
+
 
