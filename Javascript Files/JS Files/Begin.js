@@ -62,3 +62,10 @@ console.log(Math.trunc(num2));
 
 console.log(Math.pow(num1,2));
 console.log(Math.sqrt(num1));
+console.log(Math.abs(-num2));
+console.log(Math.min(3,7,1,4,9,2));
+console.log(Math.max(3,7,1,4,9,2));
+console.log(Math.random());
+console.log(Math.floor(Math.random()*10)+1); //Random number between 1 to 10
+console.log(Math.floor(Math.random()*100)+1); //Random number between 1 to 100
+console.log(Math.floor(Math.random()*50)+1); //Random number between 1 to 50
