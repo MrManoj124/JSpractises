@@ -20,4 +20,7 @@ console.log(myVariable.lastIndexOf("a"));
 console.log(myVariable.lastIndexOf("a"));
 console.log(myVariable.split(" "));
 
+console.log(myVariable.startsWith("Ari"));
+console.log(myVariable.endsWith("ics"));
+
 
