@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>randomnumber game</title>
+    </head>
+    <body>
+            <h1>Choose the number</h1>
+            <input id="choosenumber">
+            <button onclick="check()">check</button>
+            <p id="result">Your are right/wrong</p>
+            <p id="score">score:10</p>
+            <script>
+                //selectng input box,paragraph 
+                var choosenumber=document.getElementById ("choosenumber")
+                var result=document.getElementById("result")
+                var randomnumber=Math.floor(Math.random()*10)+1
+                var score=document.getElementById("score")
+                var tscore=10
+                function check(){
+                    var enterednumber=choosenumber.value
+                    if(randomnumber==enterednumber)
+                    {
+                        console.log("right")
+                        result.textContent="right"
+                        alert("You Won...")
+                    }
+                    else{
+                        tscore=tscore-1
+                        score.textContent="score:"+ tscore
+                        result.textContent="wrong"
+                    }
+                }
+            </script>
+    </body> 
+</html>

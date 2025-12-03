@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS with CSS</title>
+        <h2>JS and CSS</h2>
+        <style>
+            div{
+                background-color: black;
+                width:100px;
+                height: 100px;
+                transition: 2s;
+            }
+            .widthmax{
+                width: 800px;
+            }
+            p{
+                color:black;
+                height: 150px;
+                width: 100px;
+                transition: 2s;
+            }
+            p.widthmax{
+                width:500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+         <button onclick="change()">change</button>
+         <p id="subtitle">This is an intro for a website</p>
+         <button onclick="changecolor()">Change color</button>
+        <script>
+            //select box
+            var box=document.getElementById("box")
+            function change()
+            {
+                box.setAttribute("class", "widthmax")
+            }
+            var subtitle=document.getElementById("subtitle")
+            function changecolor()
+            {
+                
+                subtitle.style.backgroundColor="red"  
+            }
+        </script>
+    </body>
+</html>
