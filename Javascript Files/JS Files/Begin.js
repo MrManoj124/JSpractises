@@ -57,3 +57,5 @@ console.log(num2.toPrecision(3));
 
 console.log(Math.round(num2));
 console.log(Math.ceil(num2));
+console.log(Math.floor(num2));
+console.log(Math.trunc(num2));
