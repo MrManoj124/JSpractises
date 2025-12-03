@@ -22,5 +22,18 @@ console.log(myVariable.split(" "));
 
 console.log(myVariable.startsWith("Ari"));
 console.log(myVariable.endsWith("ics"));
+console.log(myVariable.endsWith("Lo"));
+console.log(myVariable.includes("mat"));
+
+myinfo="  Manorooban  ";
+console.log(myinfo.trim());   
+console.log(myinfo.repeat(3));
+console.log(myinfo.trim().repeat(2));
+console.log(myinfo.trim().length);
+console.log(myinfo.length);
+console.log(myinfo.trim().toUpperCase());
+
+console.log(`Hello ${myinfo.trim().toUpperCase()}, Welcome to Javascript Beginner Course`);
+console.log('Hello ' + myinfo.toUpperCase() + ', Welcome to Javascript Beginner Course');
 
 
