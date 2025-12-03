@@ -37,3 +37,8 @@ console.log(`Hello ${myinfo.trim().toUpperCase()}, Welcome to Javascript Beginne
 console.log('Hello ' + myinfo.toUpperCase() + ', Welcome to Javascript Beginner Course');
 
 
+//Numbers
+var num1=14;
+var num2=3.5;
+
+console.log(Number.isInteger(num1));
