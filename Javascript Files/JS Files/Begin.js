@@ -3,7 +3,7 @@
 //console.log(typeof(14));
 
 // //Strings
-// myVariable="Arithmatical Logics";
+// const myVariable="Arithmatical Logics";
 // console.log(myVariable.length);
 
 // //String Methods
@@ -54,3 +54,5 @@ console.log(num2.toFixed(1));
 console.log(num2.toFixed(3));
 console.log(num2.toPrecision(2));
 console.log(num2.toPrecision(3));
+
+console.log(Math.round(num2));
