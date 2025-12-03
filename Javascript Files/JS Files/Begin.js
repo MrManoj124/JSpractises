@@ -1,0 +1,1 @@
+console.log("Hey Mr. Manorooban, Welcome to Javascript Beginner Course");
