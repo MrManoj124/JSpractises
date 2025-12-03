@@ -13,6 +13,8 @@ console.log(myVariable.slice(0,5));
 console.log(myVariable.replace("Logics","Operations"));     
 console.log(myVariable.concat(" in Javascript"));
 
-
+console.log(myVariable.charAt(5));
+console.log(myVariable.indexOf("L"));
+console.log(myVariable.lastIndexOf("a"));
 
 
