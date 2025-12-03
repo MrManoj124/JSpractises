@@ -18,5 +18,6 @@ console.log(myVariable.indexOf("L"));
 console.log(myVariable.lastIndexOf("a"));
 
 console.log(myVariable.lastIndexOf("a"));
+console.log(myVariable.split(" "));
 
 
