@@ -61,3 +61,4 @@ console.log(Math.floor(num2));
 console.log(Math.trunc(num2));
 
 console.log(Math.pow(num1,2));
+console.log(Math.sqrt(num1));
