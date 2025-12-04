@@ -86,3 +86,7 @@ console.log(Math.random(auth.length));
 
 //Math.PI; // 3.141592653589793
 console.log(Math.PI);
+console.log(Math.trunc(Math.PI));
+console.log(Math.round(Math.PI));
+console.log(Math.ceil(Math.PI));
+console.log(Math.floor(Math.PI));
