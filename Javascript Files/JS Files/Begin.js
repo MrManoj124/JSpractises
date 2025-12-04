@@ -96,4 +96,5 @@ console.log(Math.floor(Math.random()*auth.length));
 
 
 console.log("HeyManorooban".charAt(Math.random()*13));
+console.log(auth.charAt(Math.floor(Math.random()*auth.length)));
 
