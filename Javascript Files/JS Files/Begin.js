@@ -82,3 +82,7 @@ console.log(auth.length);
 console.log(auth);
 console.log(auth.includes("need"));
 console.log(Math.random(auth.length));
+
+
+//Math.PI; // 3.141592653589793
+console.log(Math.PI);
