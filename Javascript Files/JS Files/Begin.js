@@ -90,3 +90,4 @@ console.log(Math.trunc(Math.PI));
 console.log(Math.round(Math.PI));
 console.log(Math.ceil(Math.PI));
 console.log(Math.floor(Math.PI));
+console.log(Math.floor(4.258));
