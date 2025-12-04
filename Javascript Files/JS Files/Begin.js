@@ -75,3 +75,10 @@ console.log(Math.floor(Math.random()*50)+1); //Random number between 1 to 50
 console.log(num1 === num2);
 console.log(num1.isInteger);
 console.log(Number(num3));
+
+
+const auth="We definitely need to learn Javascript";
+console.log(auth.length);
+console.log(auth);
+console.log(auth.includes("need"));
+console.log(Math.random(auth.length));
