@@ -70,3 +70,8 @@ let CGPA = 3;
 let propability = (CGPA === 3) ? "Eligible for Honest Degree" : "Not eligible for Honest Degree";
 console.log(propability);
 // Output: Eligible for Honest Degree
+
+let number = 7;
+let type = (number % 2 === 0) ? "Even Number" : "Odd Number";
+console.log(type);
+// Output: Odd Number
