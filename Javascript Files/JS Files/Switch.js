@@ -1,28 +1,59 @@
-let Today="Monday";
+// let Today="Monday";
 
-switch (Today) {
-    case "Monday":
-        console.log("Today is Monday");
+// switch (Today) {
+//     case "Monday":
+//         console.log("Today is Monday");
+//         break;
+//     case "Tuesday":
+//         console.log("Today is Tuesday");
+//         break;
+//     case "Wednesday":
+//         console.log("Today is Wednesday");
+//         break;
+//     case "Thursday":
+//         console.log("Today is Thursday");
+//         break;
+//     case "Friday":
+//         console.log("Today is Friday");
+//         break;
+//     case "Saturday":
+//         console.log("Today is Saturday");
+//         break;
+//     case "Sunday":
+//         console.log("Today is Sunday");
+//         break;
+//     default:
+//         console.log("Invalid day");
+//         break;
+// }
+
+
+let operation = "add";
+let num1 = 10;
+let num2 = 5;
+let result;
+switch (operation) {
+    case "add":
+        result = num1 + num2;
+        console.log(`Addition: ${result}`);
         break;
-    case "Tuesday":
-        console.log("Today is Tuesday");
+    case "subtract":
+        result = num1 - num2;
+        console.log(`Subtraction: ${result}`);
         break;
-    case "Wednesday":
-        console.log("Today is Wednesday");
+    case "multiply":
+        result = num1 * num2;
+        console.log(`Multiplication: ${result}`);
         break;
-    case "Thursday":
-        console.log("Today is Thursday");
+    case "divide":
+        result = num1 / num2;
+        console.log(`Division: ${result}`);
         break;
-    case "Friday":
-        console.log("Today is Friday");
-        break;
-    case "Saturday":
-        console.log("Today is Saturday");
-        break;
-    case "Sunday":
-        console.log("Today is Sunday");
+        case "modulus":
+        result = num1 % num2;
+        console.log(`Modulus: ${result}`);
         break;
     default:
-        console.log("Invalid day");
+        console.log("Invalid operation");
         break;
 }
