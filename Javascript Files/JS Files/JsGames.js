@@ -32,4 +32,4 @@ if (playGame){
 else{
     alert("Ok, Come back Again.");
 }
-}
+
