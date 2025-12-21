@@ -2,7 +2,7 @@
 //let Message = confirm("Ok === True\n Cancel === false");
 
 let Message = prompt("Enter Your Name: ");
-if(Message.length)
+if(Message)
 {
     console.log(Message ?? "Didn't enter the value");
 }
