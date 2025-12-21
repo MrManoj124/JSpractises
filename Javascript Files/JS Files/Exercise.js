@@ -9,4 +9,5 @@ if(Message)
 else {
     console.log("You Didn't enter your name");
 }
+console.log(Message.length);
  
