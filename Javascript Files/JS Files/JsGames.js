@@ -75,21 +75,22 @@
 // }
 
 
-//Continue / Quit Loop Game
+// //Continue / Quit Loop Game
 
-let play = true;
+// let play = true;
 
-while (play) {
-  let number = Math.floor(Math.random() * 5) + 1;
-  let guess = prompt("Guess a number between 1 and 5");
+// while (play) {
+//   let number = Math.floor(Math.random() * 5) + 1;
+//   let guess = prompt("Guess a number between 1 and 5");
 
-  if (Number(guess) === number) {
-    alert("Correct!");
-  } else {
-    alert("Wrong! Number was " + number);
-  }
+//   if (Number(guess) === number) {
+//     alert("Correct!");
+//   } else {
+//     alert("Wrong! Number was " + number);
+//   }
 
-  play = confirm("Do you want to play again?");
-}
+//   play = confirm("Do you want to play again?");
+// }
 
-alert("Thanks for playing!");
+// alert("Thanks for playing!");
+
