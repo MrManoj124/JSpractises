@@ -97,3 +97,20 @@
 
 
 //Dice Rolling Game
+alert("Welcome to Dice Rolling Game !");
+
+let userRoll = Math.floor(Math.random() * 6) +1;
+let computerRoll = Math.floor(Math.random() *6)+1;
+
+alert("You rolled :" + userRoll);
+alert("Computer rolled : " + computerRoll);
+
+if(userRoll > computerRoll){
+    alert("You Win the Game");
+}
+else if(userRoll < computerRoll){
+    alert("Computer Wins!");
+}
+else{
+    alert("It's a Draw!")
+}
