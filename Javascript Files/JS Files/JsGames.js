@@ -61,15 +61,35 @@
 
 
 
-//Secret Door Game 
-alert("Enter Secret Door Game ");
+// //Secret Door Game 
+// alert("Enter Secret Door Game ");
 
-let door = Math.floor(Math.random() * 3) +1;
-let choice = prompt("Choose a door : 1, 2 or 3");
+// let door = Math.floor(Math.random() * 3) +1;
+// let choice = prompt("Choose a door : 1, 2 or 3");
 
-if(Number(choice) === door){
-    alert("You found the treasure!");
+// if(Number(choice) === door){
+//     alert("You found the treasure!");
+// }
+// else{
+//     alert("Wrong door! Treasure was behind door "+door);
+// }
+
+
+//Continue / Quit Loop Game
+
+let play = true;
+
+while (play) {
+  let number = Math.floor(Math.random() * 5) + 1;
+  let guess = prompt("Guess a number between 1 and 5");
+
+  if (Number(guess) === number) {
+    alert("Correct!");
+  } else {
+    alert("Wrong! Number was " + number);
+  }
+
+  play = confirm("Do you want to play again?");
 }
-else{
-    alert("Wrong door! Treasure was behind door "+door);
-}
+
+alert("Thanks for playing!");
