@@ -62,3 +62,14 @@
 
 
 //Secret Door Game 
+alert("Enter Secret Door Game ");
+
+let door = Math.floor(Math.random() * 3) +1;
+let choice = prompt("Choose a door : 1, 2 or 3");
+
+if(Number(choice) === door){
+    alert("You found the treasure!");
+}
+else{
+    alert("Wrong door! Treasure was behind door "+door);
+}
