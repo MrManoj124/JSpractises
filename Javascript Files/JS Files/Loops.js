@@ -38,21 +38,26 @@
 //  alert("Your number is : " + number);
 
 
-//Start the Locker Cracker Game
-alert("Lock Cracker Game..!");
+// //Start the Locker Cracker Game
+// alert("Lock Cracker Game..!");
 
-let code = Math.floor(Math.random() * 900) +100;
+// let code = Math.floor(Math.random() * 900) +100;
 
-for(let attempts = 1; attempts <= 5; attempts++){
-    let guess = prompt("Attempt : " + attempts + "Enter a 3 digit Code : ");
+// for(let attempts = 1; attempts <= 5; attempts++){
+//     let guess = prompt("Attempt : " + attempts + "Enter a 3 digit Code : ");
 
-    if(Number(guess) === code ){
-        alert("Lock Opened..!");
-        break;
-    }
+//     if(Number(guess) === code ){
+//         alert("Lock Opened..!");
+//         break;
+//     }
 
-    let hint = guess < code ? "Too Low" : " Too High";
-    alert(hint);
-}
+//     let hint = guess < code ? "Too Low" : " Too High";
+//     alert(hint);
+// }
 
-alert("The correct code was : " + code );
+// alert("The correct code was : " + code );
+
+
+//Enemy Ai Prediction Game 
+
+alert("Enemy AI prediction Game : ");
