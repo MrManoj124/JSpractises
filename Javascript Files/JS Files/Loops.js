@@ -23,4 +23,17 @@
 // }
 
 //Start the Mind Reader game code
+alert("Think of a number between 1 and 31. \n I will guess it");
+
+let number= 0;
+ for (let i=0; i<5; i++){
+    let power = Math.pow(2, i);
+    let answer = confirm("Is your number in this set?\n" + power + "-" + (power * 2 - 1));
+
+    if (answer){
+        number += power;
+    }
+ }
+
+ alert("Your number is : " + number);
 
