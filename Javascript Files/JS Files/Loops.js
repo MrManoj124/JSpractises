@@ -16,8 +16,11 @@
 // while(i<50)
 
 
-//For Loops
-let name="Manorooban";
-for(let i=1; i<=name.length; i++){
-    console.log(name.charAt(i));
-}
+// //For Loops
+// let name="Manorooban";
+// for(let i=1; i<=name.length; i++){
+//     console.log(name.charAt(i));
+// }
+
+//Start the Mind Reader game code
+
