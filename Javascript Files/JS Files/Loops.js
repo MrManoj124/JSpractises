@@ -15,6 +15,9 @@
 // }
 // while(i<50)
 
-for(i=1; i<=10; i++){
-    console.log(i);
+
+//For Loops
+let name="Manorooban";
+for(let i=1; i<=name.length; i++){
+    console.log(name.charAt(i));
 }
