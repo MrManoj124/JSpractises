@@ -61,3 +61,18 @@
 //Enemy Ai Prediction Game 
 
 alert("Enemy AI prediction Game : ");
+ let Score = 0;
+
+ for (let round = 1; round <= 5; round++){
+    let enemyMove = Math.floor(Math.random() * 3);
+    let userMove = prompt("Round" + round + "\nChoose : 0 = Attack, 1 = Defined, 2 = Run");
+
+    if(Number(userMove) === enemyMove){
+        alert("Enemy predicated your move...!");
+    }else{
+        alert("You outsmarted the enemy !");
+        score++;
+    }
+ }
+
+ alert("Final Score : " + score);
