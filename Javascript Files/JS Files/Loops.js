@@ -22,18 +22,37 @@
 //     console.log(name.charAt(i));
 // }
 
-//Start the Mind Reader game code
-alert("Think of a number between 1 and 31. \n I will guess it");
+// //Start the Mind Reader game code
+// alert("Think of a number between 1 and 31. \n I will guess it");
 
-let number= 0;
- for (let i=0; i<5; i++){
-    let power = Math.pow(2, i);
-    let answer = confirm("Is your number in this set?\n" + power + "-" + (power * 2 - 1));
+// let number= 0;
+//  for (let i=0; i<5; i++){
+//     let power = Math.pow(2, i);
+//     let answer = confirm("Is your number in this set?\n" + power + "-" + (power * 2 - 1));
 
-    if (answer){
-        number += power;
+//     if (answer){
+//         number += power;
+//     }
+//  }
+
+//  alert("Your number is : " + number);
+
+
+//Start the Locker Cracker Game
+alert("Lock Cracker Game..!");
+
+let code = Math.floor(Math.random() * 900) +100;
+
+for(let attempts = 1; attempts <= 5; attempts++){
+    let guess = prompt("Attempt : " + attempts + "Enter a 3 digit Code : ");
+
+    if(Number(guess) === code ){
+        alert("Lock Opened..!");
+        break;
     }
- }
 
- alert("Your number is : " + number);
+    let hint = guess < code ? "Too Low" : " Too High";
+    alert(hint);
+}
 
+alert("The correct code was : " +
