@@ -55,4 +55,4 @@ for(let attempts = 1; attempts <= 5; attempts++){
     alert(hint);
 }
 
-alert("The correct code was : " +
+alert("The correct code was : " + code );
