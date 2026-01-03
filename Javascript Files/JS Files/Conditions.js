@@ -33,3 +33,11 @@ else {
 // Output: Grade: B
 
 
+
+//Conditional Operators
+let rain = true;
+console.log(rain?"Go with Car" : "Go With Bike");
+
+
+
+
