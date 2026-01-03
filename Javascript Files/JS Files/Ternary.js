@@ -31,5 +31,16 @@ alert ("Total correct answers : " + correct);
 //Simple pass fail system
 let marks = prompt ("Enter the marks (0 - 100)");
 
-let result = (marks >= 50) ? "Pass" : "Fail";
-alert("Result is : "+ result);
+let resultss = (marks >= 50) ? "Pass" : "Fail";
+alert("Result is : "+ results);
+
+
+//attend some complex logics
+let a = Math.floor(Math.random() * 10);
+let b = Math.floor(Math.random() * 10);
+
+alert(
+  a === b ? "Equal" :
+  a > b   ? "A is Greater" :
+            "B is Greater"
+);
