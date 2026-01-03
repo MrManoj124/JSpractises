@@ -44,3 +44,15 @@ alert(
   a > b   ? "A is Greater" :
             "B is Greater"
 );
+
+
+//simple health machine
+let health = Math.floor(Math.random() * 120);
+
+let state =
+  health > 70 ? "POWER MODE" :
+  health > 30 ? "NORMAL MODE" :
+                "CRITICAL MODE";
+
+alert("Health: " + health + "\nState: " + state);
+
