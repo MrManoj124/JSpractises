@@ -26,3 +26,10 @@ for (let i = 1; i<=3; i++){
 }
 
 alert ("Total correct answers : " + correct);
+
+
+//Simple pass fail system
+let marks = prompt ("Enter the marks (0 - 100)");
+
+let result = (marks >= 50) ? "Pass" : "Fail";
+alert("Result is : "+ result);
