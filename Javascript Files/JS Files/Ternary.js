@@ -8,3 +8,21 @@ let answer = prompt("What do you think 12 + 14 ? ");
 let result = (Number(answer) === 26) ? "Correct Answer !" : "Wrong Answer !";
 
 alert(result);
+
+//RealTime Feedback game
+let correc=0;
+
+for (let i = 1; i<=3; i++){
+    let a = Math.floor(Math.random() * 10);
+    let b = Math.floor(Math.random() * 10);
+
+    let answer = prompt("Q" + i + " : ", + a + " x " + b + " = ?");
+
+    let message = (Number(answer) === a * b) ? "Correct !" : "Wrong one ! Answer was" + (a * b);
+
+    alert(message);
+
+    correct += (Number(ans) === a*b) ? 1 : 0;
+}
+
+alert ("Total correct answers : " + correct);
