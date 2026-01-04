@@ -117,16 +117,28 @@
 
 
 
-let password;
+// let password;
 
-for (let attempts = 1; attempts <= 3; attempts++) {
-  password = prompt("Enter password (Attempt " + attempts + ")");
+// for (let attempts = 1; attempts <= 3; attempts++) {
+//   password = prompt("Enter password (Attempt " + attempts + ")");
 
-  if (password === "admin123") {
-    alert("Access granted");
-    break;
+//   if (password === "admin123") {
+//     alert("Access granted");
+//     break;
+//   } else {
+//     alert("Wrong password");
+//   }
+// }
+
+
+//Form updation
+function validateForm() {
+  let username = document.getElementById("user").value;
+
+  if (username === "") {
+    alert("Username cannot be empty");
   } else {
-    alert("Wrong password");
+    alert("Welcome " + username);
   }
 }
 
