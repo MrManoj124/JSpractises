@@ -131,16 +131,38 @@
 // }
 
 
-//Form updation
-function validateForm() {
-  let username = document.getElementById("user").value;
+// //Form updation
+// function validateForm() {
+//   let username = document.getElementById("user").value;
 
-  if (username === "") {
-    alert("Username cannot be empty");
+//   if (username === "") {
+//     alert("Username cannot be empty");
+//   } else {
+//     alert("Welcome " + username);
+//   }
+// }
+
+
+
+//Login Function
+let attempts = 3;
+
+function login() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if (user === "admin" && pass === "1234") {
+    alert("Login successful");
   } else {
-    alert("Welcome " + username);
+    attempts--;
+    alert("Wrong credentials. Attempts left: " + attempts);
+
+    if (attempts === 0) {
+      alert("Account locked");
+    }
   }
 }
+
 
 
 
