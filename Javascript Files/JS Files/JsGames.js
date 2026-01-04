@@ -96,22 +96,39 @@
 
 
 
-//Dice Rolling Game
-alert("Welcome to Dice Rolling Game !");
+// //Dice Rolling Game
+// alert("Welcome to Dice Rolling Game !");
 
-let userRoll = Math.floor(Math.random() * 6) +1;
-let computerRoll = Math.floor(Math.random() *6)+1;
+// let userRoll = Math.floor(Math.random() * 6) +1;
+// let computerRoll = Math.floor(Math.random() *6)+1;
 
-alert("You rolled :" + userRoll);
-alert("Computer rolled : " + computerRoll);
+// alert("You rolled :" + userRoll);
+// alert("Computer rolled : " + computerRoll);
 
-if(userRoll > computerRoll){
-    alert("You Win the Game");
+// if(userRoll > computerRoll){
+//     alert("You Win the Game");
+// }
+// else if(userRoll < computerRoll){
+//     alert("Computer Wins!");
+// }
+// else{
+//     alert("It's a Draw!")
+// }
+
+
+
+let password;
+
+for (let attempts = 1; attempts <= 3; attempts++) {
+  password = prompt("Enter password (Attempt " + attempts + ")");
+
+  if (password === "admin123") {
+    alert("Access granted");
+    break;
+  } else {
+    alert("Wrong password");
+  }
 }
-else if(userRoll < computerRoll){
-    alert("Computer Wins!");
-}
-else{
-    alert("It's a Draw!")
-}
+
+
 
