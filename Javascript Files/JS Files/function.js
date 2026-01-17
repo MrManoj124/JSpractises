@@ -10,3 +10,9 @@ function operations(num1,num2){
 }
 
 console.log(operations(10,20));
+
+
+function emailvalidation(email){
+    return "manoj@gmail.com";
+}
+console.log(emailvalidation());
