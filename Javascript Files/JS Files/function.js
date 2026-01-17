@@ -8,4 +8,5 @@ function operations(num1,num2){
         return num1+num2;
     }
 }
-console.log(operations(10));
+
+console.log(operations(10,20));
