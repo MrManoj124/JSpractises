@@ -279,3 +279,18 @@ let displayData = async function () {
     let data = await fetchDataAsyncAwait();
     alert(data);
 }
+
+//displayData();
+
+//Function variable with try/catch
+let riskyOperation = function () {
+    throw new Error("Something went wrong!");
+};
+
+try {
+    riskyOperation();
+} catch (error) {
+    alert("Caught an error: " + error.message);
+}   
+
+
