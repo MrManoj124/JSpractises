@@ -247,3 +247,9 @@ function getRandomNumber() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
+function checkGuess(guess, secret){
+    return guess === secret ? "Correct!" : "Wrong!";
+}
+
+
+
