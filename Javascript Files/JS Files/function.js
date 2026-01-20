@@ -376,3 +376,18 @@ alert("Ceil of 4.2: " + ceilValue(4.2));
 alert("Ceil of -3.8: " + ceilValue(-3.8));
 
 
+//Function variable with Math.round
+let roundValue = function (num) {
+    return Math.round(num);
+};  
+alert("Round of 4.5: " + roundValue(4.5));
+alert("Round of 4.4: " + roundValue(4.4));
+
+//Function variable with Math.trunc
+let truncValue = function (num) {
+    return Math.trunc(num);
+};
+alert("Trunc of 4.9: " + truncValue(4.9));
+alert("Trunc of -3.7: " + truncValue(-3.7));
+
+
