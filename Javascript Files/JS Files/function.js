@@ -218,15 +218,15 @@ let delayedMessage = function () {
 };  
 setTimeout(delayedMessage, 2000);
 
-// //Function variable with setInterval
-// let count = 0;
-// let intervalId = setInterval(function () {
-//   count++;
-//   alert("Count: " + count);
-//     if (count >= 5) {
-//         clearInterval(intervalId);
-//     }
-// }, 1000);
+//Function variable with setInterval
+let count = 0;
+let intervalId = setInterval(function () {
+  count++;
+  alert("Count: " + count);
+    if (count >= 5) {
+        clearInterval(intervalId);
+    }
+}, 1000);
 
 // //Function variable with Promise
 // let fetchDataPromise = function () {
