@@ -100,3 +100,9 @@ let subtraction = (a,b) =>{
 }
 console.log("Subtraction: "+ subtraction(20, 8));
 
+
+//Arrow function without parameters
+let greetUser = () => alert("Welcome User!");
+
+greetUser();
+
