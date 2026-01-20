@@ -117,3 +117,6 @@ greetUser();
 let showMessage = function(){
     alert("Button Clicked!");
 }
+
+//Later usage
+//<button onclick="showMessage()">Click</button>
