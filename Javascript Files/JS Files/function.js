@@ -143,3 +143,10 @@ function greetUser(name = "Guest"){
 }
 console.log(greetUser("Manoj"));
 console.log(greetUser());
+
+//Function with Rest Parameters
+function sumAll(...numbers){
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log("Sum: "+ sumAll(1, 2, 3, 4, 5));
+console.log("Sum: "+ sumAll(10, 20, 30));
