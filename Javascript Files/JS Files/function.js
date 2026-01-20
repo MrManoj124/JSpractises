@@ -309,3 +309,9 @@ function askQuestion(question, correctAnswer) {
   return answer === correctAnswer ? 1 : 0;
 }
 
+let score = 0;
+
+score += askQuestion("2 + 2 ?", "4");
+score += askQuestion("Capital of Sri Lanka?", "Colombo");
+
+alert("Final Score: " + score);
