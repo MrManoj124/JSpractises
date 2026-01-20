@@ -256,3 +256,13 @@ let userGuess = Number(prompt("Guess a number (1–5)"));
 
 alert(checkGuess(userGuess, secret));
 
+
+//Function variable with async
+let fetchDataAsync = async function () {
+    return "Async Data";
+};
+
+fetchDataAsync().then(function (data) {
+    alert(data);
+});
+
