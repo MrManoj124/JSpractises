@@ -32,3 +32,10 @@ let data = {email: 'krisha@gmail.com', name:'krisha'};
 let email = findValue(data, "@");
 
 console.log(email);
+
+//Greet function
+let greet = function () {
+  alert("Hello, welcome to JavaScript!");
+};
+
+greet();
