@@ -39,3 +39,11 @@ let greet = function () {
 };
 
 greet();
+
+//Addition function
+let add = function (a, b) {
+  return a + b;
+};
+
+alert(add(8, 12));
+
