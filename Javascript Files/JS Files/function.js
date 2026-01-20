@@ -228,17 +228,17 @@ let intervalId = setInterval(function () {
     }
 }, 1000);
 
-// //Function variable with Promise
-// let fetchDataPromise = function () {
-//   return new Promise(function (resolve, reject) {
-//     setTimeout(function () {
-//         let data = "Fetched Data";
-//         resolve(data);
-//     }, 2000);
-//     });
-// };
+//Function variable with Promise
+let fetchDataPromise = function () {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        let data = "Fetched Data";
+        resolve(data);
+    }, 2000);
+    });
+};
 
-// fetchDataPromise().then(function (data) {
-//   alert(data);
-// });
+fetchDataPromise().then(function (data) {
+  alert(data);
+});
 
