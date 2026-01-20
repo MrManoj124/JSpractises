@@ -111,3 +111,9 @@ greetUser();
 (function(){
     alert("This is an IIFE!");
 })();
+
+
+//Funtion Variable as Event Logic
+let showMessage = function(){
+    alert("Button Clicked!");
+}
