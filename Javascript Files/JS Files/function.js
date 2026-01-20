@@ -47,3 +47,11 @@ let add = function (a, b) {
 
 alert(add(8, 12));
 
+
+sayHello();
+function sayHello(){
+    alert("Hello Manorooban...!");
+}
+
+
+
