@@ -404,4 +404,11 @@ let expValue = function (num) {
 alert("Exp of 1: " + expValue(1));
 alert("Exp of 2: " + expValue(2));
 
+//Function variable with Math.sin
+let sinValue = function (angle) {
+    return Math.sin(angle);
+};
+alert("Sin of π/2: " + sinValue(Math.PI / 2));
+alert("Sin of 0: " + sinValue(0));
+
 
