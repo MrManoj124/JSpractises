@@ -69,3 +69,11 @@ alert("checkAnswer: "+ checkAnswer(12, 12));
 alert("checkAnswer: "+ checkAnswer(14, 24));
 
 
+//Function varialble inside Another function
+function game(){
+    let result = function(){
+        alert("Game Over");
+    };
+    result();
+}
+game();
