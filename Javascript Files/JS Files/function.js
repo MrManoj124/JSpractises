@@ -361,4 +361,11 @@ let calculateAbs = function (num) {
 alert("Abs of -10: " + calculateAbs(-10));
 alert("Abs of 5: " + calculateAbs(5));
 
+//Function variable with Math.floor
+let floorValue = function (num) {
+    return Math.floor(num);
+};
+alert("Floor of 4.7: " + floorValue(4.7));
+alert("Floor of -3.2: " + floorValue(-3.2));
 
+//
