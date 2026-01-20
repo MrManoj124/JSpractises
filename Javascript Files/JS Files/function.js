@@ -332,4 +332,11 @@ let findMin = function (...numbers) {
 alert("Min: " + findMin(10, 5, 20, 15));
 alert("Min: " + findMin(-10, -5, -20, -15));
 
+//Function variable with Math.random
+let getRandomInt = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+alert("Random Int (1-10): " + getRandomInt(1, 10));
+alert("Random Int (50-100): " + getRandomInt(50, 100));
+
 
