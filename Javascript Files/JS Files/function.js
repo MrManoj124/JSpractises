@@ -77,3 +77,11 @@ function game(){
     result();
 }
 game();
+
+//Function variable with confirm() 
+let IsAllowed = function(){
+    return confirm("Are you allowed to access this site?");
+};
+
+alert(isAllowed() ? "Access granted" : "Access denied");
+
