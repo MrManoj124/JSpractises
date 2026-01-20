@@ -251,5 +251,8 @@ function checkGuess(guess, secret){
     return guess === secret ? "Correct!" : "Wrong!";
 }
 
+let secret = getRandomNumber();
+let userGuess = Number(prompt("Guess a number (1–5)"));
 
+alert(checkGuess(userGuess, secret));
 
