@@ -266,3 +266,16 @@ fetchDataAsync().then(function (data) {
     alert(data);
 });
 
+
+//Function variable with async/await
+let fetchDataAsyncAwait = async function () {
+    return new Promise(function (resolve) { 
+        setTimeout(function () {
+            resolve("Async/Await Data");
+        }, 2000);
+    });
+}
+let displayData = async function () {
+    let data = await fetchDataAsyncAwait();
+    alert(data);
+}
