@@ -212,11 +212,11 @@ actions[0]();
 actions[1]();
 actions[2]();
 
-// //Function variable with setTimeout
-// let delayedMessage = function () {
-//   alert("This message is shown after 2 seconds.");
-// };  
-// setTimeout(delayedMessage, 2000);
+//Function variable with setTimeout
+let delayedMessage = function () {
+  alert("This message is shown after 2 seconds.");
+};  
+setTimeout(delayedMessage, 2000);
 
 // //Function variable with setInterval
 // let count = 0;
