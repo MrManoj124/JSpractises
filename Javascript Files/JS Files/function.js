@@ -368,4 +368,11 @@ let floorValue = function (num) {
 alert("Floor of 4.7: " + floorValue(4.7));
 alert("Floor of -3.2: " + floorValue(-3.2));
 
-//
+//Function variable with Math.ceil
+let ceilValue = function (num) {
+    return Math.ceil(num);
+};  
+alert("Ceil of 4.2: " + ceilValue(4.2));
+alert("Ceil of -3.8: " + ceilValue(-3.8));
+
+
