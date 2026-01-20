@@ -106,3 +106,8 @@ let greetUser = () => alert("Welcome User!");
 
 greetUser();
 
+
+//Immediately Invoked Function Expression (IIFE)
+(function(){
+    alert("This is an IIFE!");
+})();
