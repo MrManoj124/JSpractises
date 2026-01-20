@@ -150,3 +150,18 @@ function sumAll(...numbers){
 }
 console.log("Sum: "+ sumAll(1, 2, 3, 4, 5));
 console.log("Sum: "+ sumAll(10, 20, 30));
+
+
+//Function with Callback
+function fetchData(callback){
+    let data = "Sample Data";
+    callback(data);
+}
+
+fetchData(function(data){
+    console.log("Fetched Data: " + data);
+});
+fetchData((data) => {
+    console.log("Fetched Data with Arrow Function: " + data);
+});
+
