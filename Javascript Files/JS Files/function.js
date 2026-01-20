@@ -190,3 +190,15 @@ console.log("Array Subtract: "+ operationsArray[1](10, 5));
 console.log("Array Multiply: "+ operationsArray[2](10, 5));
 console.log("Array Divide: "+ operationsArray[3](10, 5));
 
+
+//Function variable Stored in Object
+let player = {
+  name: "Hero",
+  attack: function () {
+    alert("Player attacks!");
+  }
+};
+
+player.attack();
+alert("Player Name: " + player.name);
+
