@@ -354,4 +354,11 @@ let calculatePower = function (base, exponent) {
 alert("2^3: " + calculatePower(2, 3));
 alert("5^4: " + calculatePower(5, 4));
 
+//Function variable with Math.abs
+let calculateAbs = function (num) {
+    return Math.abs(num);
+};
+alert("Abs of -10: " + calculateAbs(-10));
+alert("Abs of 5: " + calculateAbs(5));
+
 
