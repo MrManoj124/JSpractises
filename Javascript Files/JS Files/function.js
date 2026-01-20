@@ -315,3 +315,14 @@ score += askQuestion("2 + 2 ?", "4");
 score += askQuestion("Capital of Sri Lanka?", "Colombo");
 
 alert("Final Score: " + score);
+
+
+//Function variable with Math.max
+let findMax = function (...numbers) {
+    return Math.max(...numbers);
+};
+alert("Max: " + findMax(10, 5, 20, 15));
+alert("Max: " + findMax(-10, -5, -20, -15));    
+
+
+
