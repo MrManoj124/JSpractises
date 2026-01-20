@@ -94,3 +94,9 @@ alert("Multiply: "+ multiply(4, 5));
 let square = x => x * x;
 
 alert("Square: "+ square(6));
+
+let subtraction = (a,b) =>{
+    return a - b;
+}
+console.log("Subtraction: "+ subtraction(20, 8));
+
