@@ -390,4 +390,11 @@ let truncValue = function (num) {
 alert("Trunc of 4.9: " + truncValue(4.9));
 alert("Trunc of -3.7: " + truncValue(-3.7));
 
+//Function variable with Math.log
+let logValue = function (num) {
+    return Math.log(num);
+};
+alert("Log of 10: " + logValue(10));
+alert("Log of 2.718: " + logValue(2.718));
+
 
