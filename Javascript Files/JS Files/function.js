@@ -54,4 +54,10 @@ function sayHello(){
 }
 
 
+//sayHi(); // ❌ Error
+
+let sayHi = function () {
+  alert("Hi");
+};
+
 
