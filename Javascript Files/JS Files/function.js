@@ -294,3 +294,12 @@ try {
 }   
 
 
+//Function variable with typeof
+let checkType = function (value) {
+    return typeof value;
+};
+alert("Type of 42: " + checkType(42));
+alert("Type of 'Hello': " + checkType("Hello"));
+alert("Type of true: " + checkType(true));
+
+
