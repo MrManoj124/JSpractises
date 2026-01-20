@@ -397,4 +397,11 @@ let logValue = function (num) {
 alert("Log of 10: " + logValue(10));
 alert("Log of 2.718: " + logValue(2.718));
 
+//Function variable with Math.exp
+let expValue = function (num) {
+    return Math.exp(num);
+};
+alert("Exp of 1: " + expValue(1));
+alert("Exp of 2: " + expValue(2));
+
 
