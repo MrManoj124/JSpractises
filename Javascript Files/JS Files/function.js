@@ -90,7 +90,7 @@ let multiply = (x, y) => x * y;
 
 alert("Multiply: "+ multiply(4, 5));
 
-// //Arrow function with single parameter
-// let square = x => x * x;
+//Arrow function with single parameter
+let square = x => x * x;
 
-// alert("Square: "+ square(6));
+alert("Square: "+ square(6));
