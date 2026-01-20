@@ -347,3 +347,11 @@ alert("Sqrt of 16: " + calculateSqrt(16));
 alert("Sqrt of 25: " + calculateSqrt(25));
 
 
+//Function variable with Math.pow
+let calculatePower = function (base, exponent) {
+    return Math.pow(base, exponent);
+};
+alert("2^3: " + calculatePower(2, 3));
+alert("5^4: " + calculatePower(5, 4));
+
+
