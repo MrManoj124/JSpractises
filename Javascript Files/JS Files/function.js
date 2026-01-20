@@ -61,3 +61,11 @@ let sayHi = function () {
 };
 
 
+let checkAnswer = function (user, correct){
+    return user === correct ? "true" : "false";
+}
+
+alert("checkAnswer: "+ checkAnswer(12, 12));
+alert("checkAnswer: "+ checkAnswer(14, 24));
+
+
