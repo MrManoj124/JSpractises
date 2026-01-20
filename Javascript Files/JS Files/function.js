@@ -325,4 +325,11 @@ alert("Max: " + findMax(10, 5, 20, 15));
 alert("Max: " + findMax(-10, -5, -20, -15));    
 
 
+//Function variable with Math.min
+let findMin = function (...numbers) {
+    return Math.min(...numbers);
+};
+alert("Min: " + findMin(10, 5, 20, 15));
+alert("Min: " + findMin(-10, -5, -20, -15));
+
 
