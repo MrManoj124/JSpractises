@@ -120,3 +120,18 @@ let showMessage = function(){
 
 //Later usage
 //<button onclick="showMessage()">Click</button>
+
+
+//Recursive Function
+function factorial(n){
+    if(n <= 1){
+        return 1;
+    }
+    else{
+        return n * factorial(n - 1);
+    }   
+}
+
+console.log("Factorial of 5: "+ factorial(5));
+console.log("Factorial of 7: "+ factorial(7));
+console.log("Factorial of 10: "+ factorial(10));
