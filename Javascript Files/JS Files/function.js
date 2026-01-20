@@ -202,3 +202,43 @@ let player = {
 player.attack();
 alert("Player Name: " + player.name);
 
+//Function variable Stored in Array
+let actions = [
+  function () { alert("Jump!"); },
+  function () { alert("Run!"); },
+  function () { alert("Shoot!"); }
+];
+actions[0]();
+actions[1]();
+actions[2]();
+
+// //Function variable with setTimeout
+// let delayedMessage = function () {
+//   alert("This message is shown after 2 seconds.");
+// };  
+// setTimeout(delayedMessage, 2000);
+
+// //Function variable with setInterval
+// let count = 0;
+// let intervalId = setInterval(function () {
+//   count++;
+//   alert("Count: " + count);
+//     if (count >= 5) {
+//         clearInterval(intervalId);
+//     }
+// }, 1000);
+
+// //Function variable with Promise
+// let fetchDataPromise = function () {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         let data = "Fetched Data";
+//         resolve(data);
+//     }, 2000);
+//     });
+// };
+
+// fetchDataPromise().then(function (data) {
+//   alert(data);
+// });
+
