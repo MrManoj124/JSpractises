@@ -85,3 +85,12 @@ let IsAllowed = function(){
 
 alert(isAllowed() ? "Access granted" : "Access denied");
 
+//Arrow function
+let multiply = (x, y) => x * y;
+
+alert("Multiply: "+ multiply(4, 5));
+
+// //Arrow function with single parameter
+// let square = x => x * x;
+
+// alert("Square: "+ square(6));
