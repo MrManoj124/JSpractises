@@ -339,4 +339,11 @@ let getRandomInt = function (min, max) {
 alert("Random Int (1-10): " + getRandomInt(1, 10));
 alert("Random Int (50-100): " + getRandomInt(50, 100));
 
+//Function variable with Math.sqrt
+let calculateSqrt = function (num) {
+    return Math.sqrt(num);
+};
+alert("Sqrt of 16: " + calculateSqrt(16));
+alert("Sqrt of 25: " + calculateSqrt(25));
+
 
