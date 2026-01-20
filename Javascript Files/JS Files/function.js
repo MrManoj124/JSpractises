@@ -303,3 +303,9 @@ alert("Type of 'Hello': " + checkType("Hello"));
 alert("Type of true: " + checkType(true));
 
 
+//Quiz Game Using Functions
+function askQuestion(question, correctAnswer) {
+  let answer = prompt(question);
+  return answer === correctAnswer ? 1 : 0;
+}
+
