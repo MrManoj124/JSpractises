@@ -165,3 +165,28 @@ fetchData((data) => {
     console.log("Fetched Data with Arrow Function: " + data);
 });
 
+
+//Function variable Stored in Object
+let calculator = {
+    add: function(a, b){
+        return a + b;  
+    },
+    subtract: function(a, b){
+        return a - b;
+    }
+};
+console.log("Calculator Add: "+ calculator.add(15, 10));
+console.log("Calculator Subtract: "+ calculator.subtract(25, 5));
+
+// //Function variable Stored in Array
+// let operationsArray = [
+//     function(a, b){ return a + b; },    
+//     function(a, b){ return a - b; },    
+//     function(a, b){ return a * b; },    
+//     function(a, b){ return a / b; }    
+// ];
+// console.log("Array Add: "+ operationsArray[0](10, 5));
+// console.log("Array Subtract: "+ operationsArray[1](10, 5));
+// console.log("Array Multiply: "+ operationsArray[2](10, 5));
+// console.log("Array Divide: "+ operationsArray[3](10, 5));
+
