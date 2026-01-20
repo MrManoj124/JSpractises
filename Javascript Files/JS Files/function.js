@@ -135,3 +135,11 @@ function factorial(n){
 console.log("Factorial of 5: "+ factorial(5));
 console.log("Factorial of 7: "+ factorial(7));
 console.log("Factorial of 10: "+ factorial(10));
+
+
+//Function with Default Parameters
+function greetUser(name = "Guest"){
+    return "Hello, " + name + "!";
+}
+console.log(greetUser("Manoj"));
+console.log(greetUser());
