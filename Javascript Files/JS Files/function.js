@@ -441,3 +441,13 @@ do {
 
 
 //Simple Callback Example
+function greet(callback) {
+  alert("Hello");
+  callback();
+}
+
+function bye() {
+  alert("Goodbye");
+}
+
+greet(bye);
