@@ -427,3 +427,4 @@ alert("Health left: " + health);
 function showMenu(){
     return prompt("1. Play\n2. Exit")''
 }
+
