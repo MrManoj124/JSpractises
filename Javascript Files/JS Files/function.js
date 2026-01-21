@@ -428,3 +428,13 @@ function showMenu(){
     return prompt("1. Play\n2. Exit")''
 }
 
+let choice;
+
+do {
+  choice = showMenu();
+
+  if (choice === "1") {
+    alert("Game Started");
+  }
+
+} while (choice !== "2");
