@@ -417,3 +417,8 @@ function damagePlayer(health){
     let damage = Math.floor(Math.random() * 30);
     return health - damage;
 }
+
+let health = 100;
+
+health = damagePlayer(health);
+alert("Health left: " + health);
