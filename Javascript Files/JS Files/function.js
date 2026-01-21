@@ -422,3 +422,8 @@ let health = 100;
 
 health = damagePlayer(health);
 alert("Health left: " + health);
+
+//Menu - Driven Game (Functions  + Loop)
+function showMenu(){
+    return prompt("1. Play\n2. Exit")''
+}
