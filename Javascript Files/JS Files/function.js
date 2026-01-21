@@ -412,3 +412,8 @@ alert("Sin of π/2: " + sinValue(Math.PI / 2));
 alert("Sin of 0: " + sinValue(0));
 
 
+//Life System Game
+function damagePlayer(health){
+    let damage = Math.floor(Math.random() * 30);
+    return health - damage;
+}
