@@ -480,3 +480,8 @@ playgame(
 button.addEventListener("Click", function(){
     alert("Clicked");
 });
+
+//Arrow Function Callback Example
+button.addEventListener("Click", () => {
+    alert("Clicked with Arrow Function");
+});
