@@ -485,3 +485,8 @@ button.addEventListener("Click", function(){
 button.addEventListener("Click", () => {
     alert("Clicked with Arrow Function");
 });
+
+//Callback with setTimeout
+setTimeout(function(){
+    alert("This message is shown after 3 seconds (Callback)");
+}, 3000);
