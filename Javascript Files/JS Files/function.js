@@ -451,3 +451,6 @@ function bye() {
 }
 
 greet(bye);
+
+
+//Callback in Game Logic 
