@@ -454,3 +454,7 @@ greet(bye);
 
 
 //Callback in Game Logic 
+function playgame(onWin, onLose){
+    let win = Math.random() > 0.5;
+    win ? onWin() : onLose();
+}
