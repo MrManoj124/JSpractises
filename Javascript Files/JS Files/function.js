@@ -83,7 +83,7 @@ let IsAllowed = function(){
     return confirm("Are you allowed to access this site?");
 };
 
-alert(isAllowed() ? "Access granted" : "Access denied");
+alert(IsAllowed() ? "Access granted" : "Access denied");
 
 //Arrow function
 let multiply = (x, y) => x * y;
@@ -138,12 +138,11 @@ console.log("Factorial of 10: "+ factorial(10));
 
 
 //Function with Default Parameters
-function greetUser(name = "Guest"){
+function greetUsers(name = "Guest"){
     return "Hello, " + name + "!";
 }
-console.log(greetUser("Manoj"));
-console.log(greetUser());
-
+console.log(greetUsers("Manoj"));
+console.log(greetUsers());
 //Function with Rest Parameters
 function sumAll(...numbers){
     return numbers.reduce((total, num) => total + num, 0);
@@ -441,7 +440,7 @@ do {
 
 
 //Simple Callback Example
-function greet(callback) {
+function greeted(callback) {
   alert("Hello");
   callback();
 }
@@ -450,7 +449,7 @@ function bye() {
   alert("Goodbye");
 }
 
-greet(bye);
+greeted(bye);
 
 
 //Callback in Game Logic 
