@@ -462,3 +462,7 @@ function playgame(onWin, onLose){
 function winGame(){
     alert("You Win!");
 }
+
+function loseGame(){
+    alert("You Lose !")
+}
