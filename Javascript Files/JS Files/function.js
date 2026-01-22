@@ -466,3 +466,5 @@ function winGame(){
 function loseGame(){
     alert("You Lose !")
 }
+
+playgame(winGame, loseGame);
