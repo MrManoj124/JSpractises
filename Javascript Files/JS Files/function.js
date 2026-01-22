@@ -425,7 +425,7 @@ alert("Health left: " + health);
 
 //Menu - Driven Game (Functions  + Loop)
 function showMenu(){
-    return prompt("1. Play\n2. Exit")''
+    return prompt("1. Play\n2. Exit");
 }
 
 let choice;
@@ -472,5 +472,11 @@ playgame(winGame, loseGame);
 //callback with Arrow Function
 playgame(
     () => alert("You Win with Arrow Function!"),
-    () => alert("You Lose with Arrow Function!"
+    () => alert("You Lose with Arrow Function!")
 );
+
+
+//Real-World callback example
+button.addEventListener("Click", function(){
+    alert("Clicked");
+});
