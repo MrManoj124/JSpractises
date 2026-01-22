@@ -496,3 +496,13 @@ setTimeout(() => {
     alert("This message is shown after 3 seconds (Arrow Function Callback)");
 }, 3000);
 
+//Callback with Array Methods
+let numbers = [1,2,3,4,5];
+let doubled = numbers.map(function(num){
+    return num * 2;
+});
+console.log("Doubled: "+ doubled);
+let tripled = numbers.map(num => num * 3);
+console.log("Tripled: "+ tripled);
+
+
