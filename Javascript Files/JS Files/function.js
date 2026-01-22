@@ -468,3 +468,9 @@ function loseGame(){
 }
 
 playgame(winGame, loseGame);
+
+//callback with Arrow Function
+playgame(
+    () => alert("You Win with Arrow Function!"),
+    () => alert("You Lose with Arrow Function!"
+);
