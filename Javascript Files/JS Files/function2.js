@@ -12,3 +12,8 @@ let doubled = numbers.map(function(num){
 console.log("Doubled Numbers: ", doubled);
 
 
+//Using Arrow Function
+let numbers2 = [1,2,3,4,5];
+let doubled2 = numbers2.map(num => num * 2);
+console.log("Doubled Numbers (Arrow Function): ", doubled2);
+
