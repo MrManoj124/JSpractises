@@ -63,3 +63,14 @@ function missionFailed(){
 }
 
 startMission(missionSuccess, missionFailed);
+
+
+//this Inside an Object (Most Important)
+let player = {
+    name: "Manorooban",
+    health: 100,
+    showHealth: function(){
+        console.log(this.name + "'s health is: " + this.health);
+    }
+};
+player.showHealth();
