@@ -96,3 +96,17 @@ function show() {
 }
 
 show();
+
+
+//this in Arrow Function
+let team = {
+    name: "Warriors",   
+    players: ["Alice", "Bob", "Charlie"],
+    showTeam: function() {
+        this.players.forEach(player => {
+            console.log(this.name + " player: " + player);
+        });
+    }
+};
+team.showTeam();
+
