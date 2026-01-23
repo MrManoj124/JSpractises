@@ -41,4 +41,15 @@ console.log("Sum of Numbers: "+ sum);
 
 
 //Core Game Engine (Callback-Based)
- 
+ function startMission(onSuccess, onFailure){
+    alert("Mission Started...!");
+
+    let success = Math.random() >= 0.5;
+
+    if(success){
+        onSuccess("Mission Accomplished Successfully!");
+    }
+    else{
+        onFailure("Mission Failed. Try Again!");
+    }
+}
