@@ -516,5 +516,14 @@ console.log("Odd Numbers: "+ oddNumbers);
 
 
 //Callback with Reduce
+let sum = numbers.reduce(function(total, num){
+    return total + num;
+}, 0);
+
+console.log("Sum: "+ sum);
+let product = numbers.reduce((total, num) => total * num, 1);
+console.log("Product: "+ product);
+
+
 
 
