@@ -31,3 +31,4 @@ let evenNumbers = numbers.filter(function(num){
 console.log("Even Numbers: "+ evenNumbers);
 
 
+//Using Arrow Function with Filter
