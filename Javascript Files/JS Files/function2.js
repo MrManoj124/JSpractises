@@ -17,3 +17,8 @@ let numbers2 = [1,2,3,4,5];
 let doubled2 = numbers2.map(num => num * 2);
 console.log("Doubled Numbers (Arrow Function): ", doubled2);
 
+
+//Using Arrow Function - Concise Body
+let numbers3 = [1,2,3,4,5];
+let tripled = numbers3.map(num => num * 3);
+console.log("Tripled: "+ tripled);
