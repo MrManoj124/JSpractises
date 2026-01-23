@@ -525,5 +525,15 @@ let product = numbers.reduce((total, num) => total * num, 1);
 console.log("Product: "+ product);
 
 
+//Callback with Promises
+// function fetchDataPromiseCallback(callback){
+//     setTimeout(function(){
+//         let data = "Data from server (Callback)";
+//         callback(data);
+//     }, 2000);
+// }
 
+// fetchDataPromiseCallback(function(data){
+//     console.log(data);
+// });
 
