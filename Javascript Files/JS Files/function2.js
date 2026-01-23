@@ -74,3 +74,18 @@ let player = {
     }
 };
 player.showHealth();
+
+
+//this Outside an Object
+let showPlayerHealth = function(){
+    console.log(this.name + "'s health is: " + this.health);
+}
+let player2 = {
+    name: "Arun",
+    health: 80
+};
+showPlayerHealth.call(player2);
+showPlayerHealth.apply(player2);
+let boundShowHealth = showPlayerHealth.bind(player2);
+boundShowHealth();  
+
