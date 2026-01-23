@@ -504,4 +504,7 @@ console.log("Doubled: "+ doubled);
 let tripled = numbers.map(num => num * 3);
 console.log("Tripled: "+ tripled);
 
+//Callback with Filter
+
+
 
