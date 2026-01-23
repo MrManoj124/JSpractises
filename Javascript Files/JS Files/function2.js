@@ -89,3 +89,10 @@ showPlayerHealth.apply(player2);
 let boundShowHealth = showPlayerHealth.bind(player2);
 boundShowHealth();  
 
+
+//this Outside an Object step 2
+function show() {
+  console.log(this);
+}
+
+show();
