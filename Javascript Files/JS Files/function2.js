@@ -1,5 +1,5 @@
 function toPropercase(myname){
-    return myname.charAt(1).toUppercase() ;
+    return myname.charAt(0).toUpperCase() + myname.slice(1);
 }
 
 console.log(toPropercase("Mr.Manorooban"));
