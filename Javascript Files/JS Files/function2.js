@@ -22,3 +22,9 @@ console.log("Doubled Numbers (Arrow Function): ", doubled2);
 let numbers3 = [1,2,3,4,5];
 let tripled = numbers3.map(num => num * 3);
 console.log("Tripled: "+ tripled);
+
+//Callback with Filter
+let evenNumbers = numbers.filter(function(num){
+    return num % 2 === 0;
+});
+
