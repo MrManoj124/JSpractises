@@ -47,9 +47,14 @@ console.log("Sum of Numbers: "+ sum);
     let success = Math.random() >= 0.5;
 
     if(success){
-        onSuccess("Mission Accomplished Successfully!");
+        onSuccess();
     }
     else{
-        onFailure("Mission Failed. Try Again!");
+        onFailure();
     }
 }
+
+function missionSuccess(){
+    alert("Mission was Successful!  you earned 100 points");
+}
+
