@@ -61,3 +61,5 @@ function missionSuccess(){
 function missionFailed(){
     alert("Mission Failed. Try Again!");
 }
+
+startMission(missionSuccess, missionFailed);
