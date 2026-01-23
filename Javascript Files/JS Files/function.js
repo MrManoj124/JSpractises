@@ -547,6 +547,7 @@ function fetchDataPromiseArrowCallback(callback){
 }
 fetchDataPromiseArrowCallback((data) => {
     console.log(data);
+    console.log(data.toupperCase());
 }); 
 
 
