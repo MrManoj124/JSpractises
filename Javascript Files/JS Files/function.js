@@ -570,7 +570,8 @@ let cars = [
 cars.sort(function(a, b){
     return a.year - b.year;
 });
-console.log("Sorted Cars by Year (Callback): ", cars);  
+console.log("Sorted Cars by Year: ", cars);
 
+cars.sort((a, b) => a.year - b.year);
 
-
+console.log("Sorted Cars by Year (Callback): ", cars);
