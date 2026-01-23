@@ -537,3 +537,6 @@ fetchDataPromiseCallback(function(data){
     console.log(data);
 });
 
+
+//Callback with Promises and Arrow Function
+
