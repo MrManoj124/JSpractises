@@ -551,3 +551,12 @@ fetchDataPromiseArrowCallback((data) => {
 
 
 //Callback with Event Listeners
+let btn = document.getElementById("myButton");
+btn.addEventListener("click",function(){
+    alert("Button Clicked (Callback)!");
+});
+btn.addEventListener("click", () => {
+    alert("Button Clicked (Arrow Function Callback)!");
+});
+
+
