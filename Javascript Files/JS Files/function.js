@@ -505,6 +505,16 @@ let tripled = numbers.map(num => num * 3);
 console.log("Tripled: "+ tripled);
 
 //Callback with Filter
+let evenNumbers = numbers.filter(function(num){
+    return num % 2 === 0;
+});
+
+console.log("Even Numbers: "+ evenNumbers);
+
+let oddNumbers = numbers.filter(num => num % 2 !== 0);
+console.log("Odd Numbers: "+ oddNumbers);
+
+
 
 
 
