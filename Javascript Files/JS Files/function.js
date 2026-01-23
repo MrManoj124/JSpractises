@@ -562,5 +562,15 @@ btn.addEventListener("click", () => {
 
 
 //Callback with Array Sorting
+let cars = [
+    {brand: "Toyota", year: 2010},
+    {brand: "Honda", year: 2015},
+    {brand: "Ford", year: 2005}
+];
+cars.sort(function(a, b){
+    return a.year - b.year;
+});
+console.log("Sorted Cars by Year (Callback): ", cars);  
+
 
 
