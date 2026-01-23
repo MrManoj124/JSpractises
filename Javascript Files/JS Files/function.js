@@ -539,4 +539,14 @@ fetchDataPromiseCallback(function(data){
 
 
 //Callback with Promises and Arrow Function
+function fetchDataPromiseArrowCallback(callback){
+    setTimeout(() => {
+        let data = "Data from server (Arrow Function Callback)";
+        callback(data);
+    }, 2000);
+}
+fetchDataPromiseArrowCallback((data) => {
+    console.log(data);
+}); 
+
 
