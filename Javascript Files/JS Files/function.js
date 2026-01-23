@@ -515,6 +515,6 @@ let oddNumbers = numbers.filter(num => num % 2 !== 0);
 console.log("Odd Numbers: "+ oddNumbers);
 
 
-
+//Callback with Reduce
 
 
