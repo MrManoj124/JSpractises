@@ -58,3 +58,6 @@ function missionSuccess(){
     alert("Mission was Successful!  you earned 100 points");
 }
 
+function missionFailed(){
+    alert("Mission Failed. Try Again!");
+}
