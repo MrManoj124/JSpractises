@@ -32,3 +32,9 @@ console.log("Even Numbers: "+ evenNumbers);
 
 
 //Using Arrow Function with Filter
+let oddNumbers = numbers.filter(num => num % 2 !== 0);
+console.log("Odd Numbers: "+ oddNumbers);
+
+//Using Arrow Function with Reduce
+let sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+console.log("Sum of Numbers: "+ sum);
