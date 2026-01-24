@@ -124,4 +124,14 @@ let counter = {
 counter.increment();
 
 
+//default Parameters
+function greet(name = "Guest") {
+    console.log("Hello, " + name + "!");
+}
+
+greet(); 
+greet("Manorooban");    
+
+
+
 
