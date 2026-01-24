@@ -159,4 +159,10 @@ let [red, green, blue] = rgb;
 console.log("Red: " + red + ", Green: " + green + ", Blue: " + blue);
 
 
+//Destructuring Assignment - Object
+let person = {name: "John", age: 30, city: "New York"};
+let {name, age, city} = person;
+console.log("Name: " + name + ", Age: " + age + ", City: " + city); 
+
+
 
