@@ -165,4 +165,12 @@ let {name, age, city} = person;
 console.log("Name: " + name + ", Age: " + age + ", City: " + city); 
 
 
+//Destructuring Assignment - Function Parameters
+function displayUser({name, age, city}) {
+    console.log("Name: " + name + ", Age: " + age + ", City: " + city);
+}
+let user = {name: "Alice", age: 25, city: "Los Angeles"};
+displayUser(user);
+
+
 
