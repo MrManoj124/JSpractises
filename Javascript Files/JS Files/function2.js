@@ -251,7 +251,7 @@ function loadlevel(callback){
 
 
 //Promise Version
-function loadlevel1(){
+function loadlevel(){
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             resolve("Level Loaded");
