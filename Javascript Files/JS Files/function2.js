@@ -239,3 +239,7 @@ setTimeout(() => {
         }, 1000);
     }, 1000)
 }, 900) ;
+
+
+//converting Callback into promise
+// Callback
