@@ -110,3 +110,18 @@ let team = {
 };
 team.showTeam();
 
+//this in Arrow Function - Example 2
+let counter = {
+    count: 0,
+    increment: function() {
+        setInterval(() => {
+            this.count++;
+            console.log("Count: " + this.count);
+        }
+        , 1000);
+    }
+};
+counter.increment();
+
+
+
