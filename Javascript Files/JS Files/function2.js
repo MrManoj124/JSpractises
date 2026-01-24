@@ -189,4 +189,11 @@ console.log(multiLineString);
 
 
 //Tagged Template Literals
+function highlight(strings, ...values){
+    return strings.reduce((result, str, i) => {
+        return result + str + (values[i] ? `<strong>${values[i]}</strong>` : '');
+    }, '');
+}
+
+
 
