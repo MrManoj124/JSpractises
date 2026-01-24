@@ -248,3 +248,13 @@ function loadlevel(callback){
         callback("Level Loaded");
     }, 1000);
 }
+
+
+//Promise Version
+function loadlevel1(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() =>{
+            resolve("Level Loaded");
+        }, 1000);
+    });
+}
