@@ -212,3 +212,16 @@ let game = {
 
 
 game.start(); //undefined because this inside setTimeout refers to global object
+
+
+//Arrow function
+let game2 = {
+    name : "Battle",
+    start : function(){
+        setTimeout(() => {
+            alert(this.name);
+    },1000);
+    }
+};
+
+game2.start(); // "Battle" because arrow function inherits this from start method
