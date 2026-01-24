@@ -153,4 +153,5 @@ let mergedObj = {...obj1, ...obj2};
 console.log("Merged Object: ", mergedObj);
 
 
+//Destructuring Assignment - Array
 
