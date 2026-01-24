@@ -110,18 +110,18 @@ let team = {
 };
 team.showTeam();
 
-//this in Arrow Function - Example 2
-let counter = {
-    count: 0,
-    increment: function() {
-        setInterval(() => {
-            this.count++;
-            console.log("Count: " + this.count);
-        }
-        , 1000);
-    }
-};
-counter.increment();
+// //this in Arrow Function - Example 2
+// let counter = {
+//     count: 0,
+//     increment: function() {
+//         setInterval(() => {
+//             this.count++;
+//             console.log("Count: " + this.count);
+//         }
+//         , 1000);
+//     }
+// };
+// counter.increment();
 
 
 //default Parameters
@@ -169,8 +169,9 @@ console.log("Name: " + name + ", Age: " + age + ", City: " + city);
 function displayUser({name, age, city}) {
     console.log("Name: " + name + ", Age: " + age + ", City: " + city);
 }
-let user = {name: "Alice", age: 25, city: "Los Angeles"};
-displayUser(user);
+
+let user = {name: "Abinaya", age: 23, city: "Los Angeles"};
+ displayUser(user);
 
 
 
