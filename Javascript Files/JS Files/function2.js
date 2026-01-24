@@ -182,5 +182,10 @@ console.log(greeting);
 
 
 //Multiline String with Template Literals
+let multiLineString = `Hi Friends.
+This is Manoj.
+Welcome to the JavaScript World!`;
+console.log(multiLineString);
+
 
 
