@@ -267,3 +267,16 @@ loadlevel().then(message => {
     console.error(error);
 });
 
+
+//Async/Await Version
+async function startGame(){
+    try{    
+        let message = await loadlevel();
+        console.log(message);
+    }   
+    catch(error){
+        console.error(error);
+    }   
+}
+
+startGame();
