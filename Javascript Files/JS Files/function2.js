@@ -154,4 +154,9 @@ console.log("Merged Object: ", mergedObj);
 
 
 //Destructuring Assignment - Array
+let rgb = [255, 200, 100];
+let [red, green, blue] = rgb;
+console.log("Red: " + red + ", Green: " + green + ", Blue: " + blue);
+
+
 
