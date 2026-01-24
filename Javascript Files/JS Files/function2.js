@@ -258,3 +258,12 @@ function loadlevel(){
         }, 1000);
     });
 }
+
+
+//Use the Promise
+loadlevel().then(message => {
+    console.log(message);
+}).catch(error => {
+    console.error(error);
+});
+
