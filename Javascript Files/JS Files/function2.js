@@ -225,3 +225,17 @@ let game2 = {
 };
 
 game2.start(); // "Battle" because arrow function inherits this from start method
+
+
+//Problem with Async callbacks (Callback hell)
+setTimeout(() => {
+    alert("Level 01");
+
+    setTimeout(() =>{
+        alert("Level 02");
+
+        setTimeout(() =>{
+            alert("Level 03");
+        }, 1000);
+    }, 1000)
+}, 900) ;
