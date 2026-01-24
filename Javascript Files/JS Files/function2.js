@@ -200,3 +200,15 @@ let message = highlight`My name is ${nameTag} and I am ${ageTag} years old.`;
 console.log(message);
 
 
+//Again this problem with callbacks 
+let game = {
+    name : "Battle",
+    start : function(){
+        setTimeout(function(){
+            alert(this.name);
+    },1000);
+    }
+};
+
+
+game.start(); //undefined because this inside setTimeout refers to global object
