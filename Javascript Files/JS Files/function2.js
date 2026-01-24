@@ -194,6 +194,9 @@ function highlight(strings, ...values){
         return result + str + (values[i] ? `<strong>${values[i]}</strong>` : '');
     }, '');
 }
-
+let nameTag = "Manorooban";
+let ageTag = 25;
+let message = highlight`My name is ${nameTag} and I am ${ageTag} years old.`;
+console.log(message);
 
 
