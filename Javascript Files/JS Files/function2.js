@@ -134,4 +134,11 @@ greet("Manorooban");
 
 
 //Rest Parameters
+function sumAll(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log("Sum All: " + sumAll(1, 2, 3, 4, 5));
+console.log("Sum All: " + sumAll(10, 20, 30));
+
+
 
