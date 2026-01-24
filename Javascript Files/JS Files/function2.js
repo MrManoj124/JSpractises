@@ -242,4 +242,9 @@ setTimeout(() => {
 
 
 //converting Callback into promise
-// Callback
+// Callback Version
+function loadlevel(callback){
+    setTimeout(() =>{
+        callback("Level Loaded");
+    }, 1000);
+}
