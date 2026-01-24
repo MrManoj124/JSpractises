@@ -174,4 +174,12 @@ let user = {name: "Abinaya", age: 23, city: "Los Angeles"};
  displayUser(user);
 
 
+//Template Literals
+let userName = "Manorooban";
+let userAge = 25;
+let greeting = `Hello, my name is ${userName} and I am ${userAge} years old.`;
+console.log(greeting);
+
+
+
 
