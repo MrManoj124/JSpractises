@@ -21,5 +21,17 @@ const constantConst = "I am a constant variable";
 console.log(constantConst); // Output: I am a constant variable
 
 
+// Demonstrating block scope with let and const
+if (true) {
+    let blockScopedLet = "I am block scoped";   
+    const blockScopedConst = "I am also block scoped";
+    console.log(blockScopedLet); // Output: I am block scoped
+    console.log(blockScopedConst); // Output: I am also block scoped
+}
+// console.log(blockScopedLet); // This will throw an error
+// console.log(blockScopedConst); // This will throw an error
+
+
+
 
 
