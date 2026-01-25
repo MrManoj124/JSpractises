@@ -40,6 +40,7 @@ function functionScope() {
 functionScope();
 // console.log(functionScopedVar); // This will throw an error
 
+
 // Summary
 // var is function-scoped and can be redeclared and reassigned.
 // let is block-scoped and can be reassigned but not redeclared.
