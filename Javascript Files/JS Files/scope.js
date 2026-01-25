@@ -33,6 +33,19 @@ if (true) {
 
 
 // Demonstrating function scope with var
+function functionScope() {
+    var functionScopedVar = "I am function scoped";
+    console.log(functionScopedVar); // Output: I am function scoped
+}
+functionScope();
+// console.log(functionScopedVar); // This will throw an error
+
+// Summary
+// var is function-scoped and can be redeclared and reassigned.
+// let is block-scoped and can be reassigned but not redeclared.
+// const is block-scoped and cannot be redeclared or reassigned.
+
+
 
 
 
