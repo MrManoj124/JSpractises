@@ -283,4 +283,12 @@ startGame();
 
 
 //Game Using Promises
+function playlevel(level){
+    return new Promise(resolve =>{
+        setTimeout(() =>{
+            console.log("Completed level "+ level);
+            resolve();
+        }, 1000);   
+    });
+}
 
