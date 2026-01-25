@@ -6,3 +6,5 @@ var globalVar = "I can be redeclared";
 console.log(globalVar); // Output: I can be redeclared
 
 
+
+
