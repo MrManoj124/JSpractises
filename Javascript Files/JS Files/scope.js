@@ -13,5 +13,6 @@ blockLet = "I can be reassigned";
 console.log(blockLet); // Output: I can be reassigned
 
 
+// let's declare a variable using const
 
 
