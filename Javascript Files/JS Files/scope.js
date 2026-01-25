@@ -14,5 +14,12 @@ console.log(blockLet); // Output: I can be reassigned
 
 
 // let's declare a variable using const
+const constantConst = "I am a constant variable";
+// const constantConst = "I cannot be
+//redeclared"; // This will throw an error
+// constantConst = "I cannot be reassigned"; // This will also throw an error
+console.log(constantConst); // Output: I am a constant variable
+
+
 
 
