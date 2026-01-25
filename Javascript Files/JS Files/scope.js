@@ -32,6 +32,7 @@ if (true) {
 // console.log(blockScopedConst); // This will throw an error
 
 
+// Demonstrating function scope with var
 
 
 
