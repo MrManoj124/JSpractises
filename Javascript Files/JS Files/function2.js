@@ -280,3 +280,7 @@ async function startGame(){
 }
 
 startGame();
+
+
+//Game Using Promises
+
