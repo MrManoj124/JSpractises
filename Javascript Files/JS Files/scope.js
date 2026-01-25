@@ -14,3 +14,4 @@ console.log(blockLet); // Output: I can be reassigned
 
 
 
+
