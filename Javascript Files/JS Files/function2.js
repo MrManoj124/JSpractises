@@ -292,3 +292,10 @@ function playlevel(level){
     });
 }
 
+
+playlevel(1)
+.then(() => playlevel(2))
+.then(() => playlevel(3))
+.then(() => {
+    console.log("All levels completed!");
+});
