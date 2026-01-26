@@ -4,9 +4,9 @@
 function outer() {  
     let count = 0;
 
-//     function innerFunction() {
-//         count++;
-//         console.log("Count:", count);
-//     }
-//     return innerFunction;
-// }
+    function inner() {
+        count++;
+        console.log("Count:", count);
+    }
+    return inner;
+}
