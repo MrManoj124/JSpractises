@@ -18,3 +18,13 @@ counter();  // Count: 3
 counter();  // Count: 4
 
 //Closure Data Hiding concept
+function createCounter() {
+    let password = "secret"; // private variable
+
+    return {
+        checkpassword: function(input) {
+            return input === password;
+        }
+    };
+}
+
