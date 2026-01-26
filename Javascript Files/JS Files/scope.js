@@ -173,3 +173,6 @@ shadowDemo();
 console.log(v); // 100
 
 
+//Hoisting
+console.log(hoistVar); // undefined
+var hoistVar = 50;
