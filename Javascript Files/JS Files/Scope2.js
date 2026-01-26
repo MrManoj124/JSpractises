@@ -32,3 +32,6 @@ let user = createCounter();
 
 console.log(user.checkpassword("guess")); // false
 console.log(user.checkpassword("secret")); // true
+
+
+//this Vs Scope
