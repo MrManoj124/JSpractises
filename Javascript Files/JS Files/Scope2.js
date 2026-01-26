@@ -89,3 +89,9 @@ function secretHolder(secret) {
     };
 }
   
+let mySecret = secretHolder("mySecret");
+console.log(mySecret.getSecret()); // Output: mySecret
+mySecret.setSecret("newSecret");
+console.log(mySecret.getSecret()); // Output: newSecret 
+
+
