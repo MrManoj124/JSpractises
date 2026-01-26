@@ -55,7 +55,7 @@ let y = 10;
 if (true) {
   let b = 5;
 }
-console.log(b); // ❌ Error (out of scope)
+//console.log(b); // ❌ Error (out of scope)
 
 
 //use const
@@ -128,7 +128,7 @@ function demo() {
 }
 
 demo();
-console.log(x); // ❌ Error
+//console.log(x); // ❌ Error
 
 
 //Block Scope (let & const)
@@ -136,6 +136,6 @@ if(true){
     let m= 5;
     const t= 10;
 }
-console.log(m); // ❌ Error
-console.log(t); // ❌ Error
+// console.log(m); // ❌ Error
+// console.log(t); // ❌ Error
 
