@@ -139,3 +139,9 @@ if(true){
 // console.log(m); // ❌ Error
 // console.log(t); // ❌ Error
 
+
+//var Has NO Block Scope
+if(true){
+    var n= 15;
+}   
+console.log(n); // 15
