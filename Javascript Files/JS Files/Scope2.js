@@ -48,3 +48,6 @@ let obj = {
 obj.show();
 //In the above example, this.name refers to the name property of the obj object,
 //while name refers to the global variable. 
+
+
+//Arrow Functions Rules for this
