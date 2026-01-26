@@ -110,3 +110,9 @@ function test() {
 
 test();
 console.log(globalVare);
+
+//Local Scope
+function localTest() {
+  let localVar = "I am local";
+  console.log(localVar);
+}
