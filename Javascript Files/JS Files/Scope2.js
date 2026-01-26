@@ -128,3 +128,22 @@ function setupButton(buttonId) {
         console.log(`Button clicked ${clickCount} times`);
     });
 }
+
+setupButton("myButton"); // Assuming there's a button with id "myButton" in the HTML
+
+// //In summary, closures are powerful tools in JavaScript that enable data privacy,
+// //function factories, state maintenance in asynchronous code, and event handling, among other use cases.
+// // Let's declare a variable using const
+// const constantConst = "I am a constant variable";   
+// // const constantConst = "I cannot be
+// //redeclared"; // This will throw an error
+// // constantConst = "I cannot be reassigned"; // This will also throw an error
+// console.log(constantConst); // Output: I am a constant variable
+// // Demonstrating block scope with let and const
+// if (true) {
+//     let blockScopedLet = "I am block scoped";   
+//     const blockScopedConst = "I am also block scoped";
+//     ScopedConst = "I am also block scoped";
+//     console.log(blockScopedLet); // Output: I am block scoped
+//     console.log(blockScopedConst); // Output: I am also block scoped
+// }
