@@ -115,3 +115,8 @@ function fetchData(url) {
         // Simulate fetching data
     };
 }
+
+let fetchFromAPI = fetchData("https://api.example.com/data");
+fetchFromAPI(); // Fetching data from https://api.example.com/data, Attempt: 1
+fetchFromAPI(); // Fetching data from https://api.example.com/data, Attempt: 2
+
