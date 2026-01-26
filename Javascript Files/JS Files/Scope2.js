@@ -78,3 +78,14 @@ personCorrected.show();
 
 //Use Cases of Closures
 //1. Data Privacy
+function secretHolder(secret) {
+    return {
+        getSecret: function() {
+            return secret;
+        },
+        setSecret: function(newSecret) {
+            secret = newSecret;
+        }
+    };
+}
+  
