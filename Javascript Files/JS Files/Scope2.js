@@ -14,4 +14,7 @@ function outer() {
 let counter = outer();
 
 counter(); // Count: 1
-counter();
+counter();  // Count: 3
+counter();  // Count: 4
+
+//Closure Data Hiding concept
