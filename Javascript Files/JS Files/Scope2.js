@@ -62,4 +62,16 @@ person.show();
 //In arrow functions, this does not refer to the object itself but inherits from the surrounding scope. 
 //Hence, this.name does not point to person.name.
 //To access the object's properties, use regular function syntax instead of an arrow function.
+
 //Corrected version:
+let personCorrected = {
+    name: "Mayback",
+    show : function() {
+        console.log(this.name); // "Mayback"
+    }
+};  
+personCorrected.show();
+//In this corrected version, show is defined using regular function syntax,
+//so this correctly refers to the personCorrected object.   
+//Arrow functions do not have their own this; they inherit it from the surrounding lexical scope.
+//Therefore, they are not suitable for defining methods in objects when you need to access the object's properties using this.
