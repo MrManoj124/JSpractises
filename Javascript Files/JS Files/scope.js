@@ -71,4 +71,12 @@ if (true) {
   const c = 15;
 }   
 
+//Variable values (Primitive vs Reference)
+let a = 10;
+let b = a;
+
+b = 20;
+
+console.log(a); // 10
+console.log(b); // 20
 
