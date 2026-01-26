@@ -176,3 +176,8 @@ console.log(v); // 100
 //Hoisting
 console.log(hoistVar); // undefined
 var hoistVar = 50;
+
+//hoisting with let/const 
+console.log(k); // ❌ Error
+let k = 10;
+
