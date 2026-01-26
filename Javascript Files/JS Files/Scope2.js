@@ -35,3 +35,16 @@ console.log(user.checkpassword("secret")); // true
 
 
 //this Vs Scope
+let name = "Global";
+
+let obj = {
+    name: "Marooban",
+    show : function() {
+        console.log(this.name); // "Marooban"
+        console.log(name);   // "Global"
+    }
+};
+
+obj.show();
+//In the above example, this.name refers to the name property of the obj object,
+//while name refers to the global variable. 
