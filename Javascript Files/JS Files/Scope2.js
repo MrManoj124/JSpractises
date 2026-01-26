@@ -95,3 +95,8 @@ mySecret.setSecret("newSecret");
 console.log(mySecret.getSecret()); // Output: newSecret 
 
 //2. Function Factories
+function makeMultiplier(factor) {
+    return function(number) {
+        return number * factor;
+    };  
+}
