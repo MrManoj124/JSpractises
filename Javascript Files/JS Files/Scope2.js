@@ -51,3 +51,15 @@ obj.show();
 
 
 //Arrow Functions Rules for this
+let person = {
+    name: "Mayback",
+    show : () => {
+        console.log(this.name); // undefined (or global name if exists)
+    }
+};
+
+person.show();
+//In arrow functions, this does not refer to the object itself but inherits from the surrounding scope. 
+//Hence, this.name does not point to person.name.
+//To access the object's properties, use regular function syntax instead of an arrow function.
+//Corrected version:
