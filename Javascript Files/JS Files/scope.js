@@ -99,3 +99,14 @@ p2 = 40;
 
 console.log(p1); // 30
 console.log(p2); // 40
+
+
+//Global Scope
+let globalVar = "I am global";
+
+function test() {
+  console.log(globalVar);
+}
+
+test();
+console.log(globalVar);
