@@ -80,3 +80,13 @@ b = 20;
 console.log(a); // 10
 console.log(b); // 20
 
+
+//Reference Type
+let obj1 = { name: "Manoj" };
+let obj2 = obj1;
+
+obj2.name = "Kumar";
+
+console.log(obj1.name); // Kumar
+console.log(obj2.name); // Kumar
+
