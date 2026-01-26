@@ -121,3 +121,10 @@ fetchFromAPI(); // Fetching data from https://api.example.com/data, Attempt: 1
 fetchFromAPI(); // Fetching data from https://api.example.com/data, Attempt: 2
 
 //4. Event Handlers
+function setupButton(buttonId) {
+    let clickCount = 0; 
+    document.getElementById(buttonId).addEventListener('click', function() {
+        clickCount++;
+        console.log(`Button clicked ${clickCount} times`);
+    });
+}
