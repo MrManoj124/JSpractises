@@ -94,4 +94,4 @@ console.log(mySecret.getSecret()); // Output: mySecret
 mySecret.setSecret("newSecret");
 console.log(mySecret.getSecret()); // Output: newSecret 
 
-
+//2. Function Factories
