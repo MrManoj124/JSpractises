@@ -75,3 +75,6 @@ personCorrected.show();
 //so this correctly refers to the personCorrected object.   
 //Arrow functions do not have their own this; they inherit it from the surrounding lexical scope.
 //Therefore, they are not suitable for defining methods in objects when you need to access the object's properties using this.
+
+//Use Cases of Closures
+//1. Data Privacy
