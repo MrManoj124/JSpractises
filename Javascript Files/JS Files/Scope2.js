@@ -107,3 +107,11 @@ console.log(double(5)); // Output: 10
 console.log(triple(5)); // Output: 15   
 
 //3. Maintaining State in Asynchronous Code
+function fetchData(url) {
+    let attempt = 0;
+    return function() {
+        attempt++;
+        console.log(`Fetching data from ${url}, Attempt: ${attempt}`);
+        // Simulate fetching data
+    };
+}
