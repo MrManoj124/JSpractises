@@ -162,3 +162,14 @@ function outer() {
 
 outer();
 
+
+//Shadowing
+let v = 100;
+function shadowDemo() {
+  let v = 200;
+    console.log(v); // 200
+}
+shadowDemo();
+console.log(v); // 100
+
+
