@@ -116,3 +116,7 @@ function localTest() {
   let localVar = "I am local";
   console.log(localVar);
 }
+
+localTest();
+// console.log(localVar); // ❌ Error (out of scope)
+
