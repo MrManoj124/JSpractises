@@ -129,3 +129,6 @@ function demo() {
 
 demo();
 console.log(x); // ❌ Error
+
+
+//Block Scope (let & const)
