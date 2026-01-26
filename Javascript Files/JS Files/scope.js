@@ -58,6 +58,17 @@ if (true) {
 console.log(b); // ❌ Error (out of scope)
 
 
+//use const
+const z = 10;
+// z = 20; ❌ Error
 
+
+const PI = 3.14;
+// PI = 3.14159; ❌ Error
+
+//Example   
+if (true) {
+  const c = 15;
+}   
 
 
