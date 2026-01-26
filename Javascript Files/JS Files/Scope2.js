@@ -10,3 +10,5 @@ function outer() {
     }
     return inner;
 }
+
+let counter = outer();
