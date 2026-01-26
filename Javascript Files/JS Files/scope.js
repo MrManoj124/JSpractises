@@ -90,3 +90,12 @@ obj2.name = "Kumar";
 console.log(obj1.name); // Kumar
 console.log(obj2.name); // Kumar
 
+
+//Primitive Type
+let p1 = 30;
+let p2 = p1;    
+
+p2 = 40;
+
+console.log(p1); // 30
+console.log(p2); // 40
