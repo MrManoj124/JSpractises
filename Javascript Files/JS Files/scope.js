@@ -102,11 +102,11 @@ console.log(p2); // 40
 
 
 //Global Scope
-let globalVar = "I am global";
+let globalVare = "I am global";
 
 function test() {
-  console.log(globalVar);
+  console.log(globalVare);
 }
 
 test();
-console.log(globalVar);
+console.log(globalVare);
