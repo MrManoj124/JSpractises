@@ -120,3 +120,12 @@ function localTest() {
 localTest();
 // console.log(localVar); // ❌ Error (out of scope)
 
+
+//Example 02 for Function Scope
+function demo() {
+  let x = 10;
+  console.log(x);
+}
+
+demo();
+console.log(x); // ❌ Error
