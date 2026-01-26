@@ -47,6 +47,17 @@ functionScope();
 // const is block-scoped and cannot be redeclared or reassigned.
 
 
+//use let
+let y = 10;
+// let y = 20; ❌ Error
+
+//Example
+if (true) {
+  let b = 5;
+}
+console.log(b); // ❌ Error (out of scope)
+
+
 
 
 
