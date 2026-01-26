@@ -148,4 +148,17 @@ console.log(n); // 15
 
 
 //Scope Chain (How JS Searches Variables)
+let x = 10;
+
+function outer() {
+  let y = 20;
+
+  function inner() {
+    console.log(x + y);
+  }
+
+  inner();
+}
+
+outer();
 
