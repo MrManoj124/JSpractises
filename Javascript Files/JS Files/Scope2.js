@@ -12,3 +12,6 @@ function outer() {
 }
 
 let counter = outer();
+
+counter(); // Count: 1
+counter();
