@@ -145,3 +145,7 @@ if(true){
     var n= 15;
 }   
 console.log(n); // 15
+
+
+//Scope Chain (How JS Searches Variables)
+
