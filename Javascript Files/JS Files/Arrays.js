@@ -183,7 +183,16 @@ console.log(arr); // [1, 4]
 
 
 //reduce(Accumulate)
-let nums = [1, 2, 3, 4];
-let sum = nums.reduce((total, n) => total + n, 0);
-console.log(sum);
+let number = [1, 2, 3, 4];
+let total = number.reduce((total, n) => total + n, 0);
+console.log(total);
 
+
+//Arrays with Objects
+let students = [
+  { name: "Manorooban", marks: 85 },
+  { name: "Arun", marks: 72 }
+];
+
+let toppers = students.filter(s => s.marks > 80);
+console.log(toppers);
