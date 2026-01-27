@@ -74,3 +74,9 @@ console.log(longNamedAnimals); // [ 'Lion', 'Tiger', 'Bear' ]
 let numbers = [1, 2, 3, 4];
 let sum = numbers.reduce((total, num) => total + num, 0);
 console.log(sum); // 10
+
+
+//find method
+let foundAnimal = animals.find((animal) => animal.startsWith("T"));
+console.log(foundAnimal); // Tiger
+
