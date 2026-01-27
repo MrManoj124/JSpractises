@@ -161,3 +161,8 @@ let index = scores.indexOf(90);
 console.log(index); // 1
 
 
+//includes method
+let hasScore = scores.includes(100);
+console.log(hasScore); // false
+//End of Search methods
+
