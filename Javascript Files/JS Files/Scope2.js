@@ -170,3 +170,10 @@ for (let j=1; j<=3; j++){
 
 
 //older method to solve the fix
+for (var m = 1; m <= 3; m++) {
+  (function (t) {
+    setTimeout(() => {
+      console.log(t);
+    }, 1000);
+  })(m);
+}
