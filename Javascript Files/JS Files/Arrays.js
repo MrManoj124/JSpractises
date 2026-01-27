@@ -31,6 +31,10 @@ let animals = ["Dog", "Cat"];
 animals.push("Elephant");
 console.log(animals); // [ 'Dog', 'Cat', 'Elephant' ]
 
+//pop method
 animals.pop();
 console.log(animals); // [ 'Dog', 'Cat' ]
 
+//shift method
+animals.shift();
+console.log(animals); // [ 'Cat' ]
