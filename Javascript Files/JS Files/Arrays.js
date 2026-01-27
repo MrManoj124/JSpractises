@@ -80,3 +80,6 @@ console.log(sum); // 10
 let foundAnimal = animals.find((animal) => animal.startsWith("T"));
 console.log(foundAnimal); // Tiger
 
+//findIndex method
+let foundIndex = animals.findIndex((animal) => animal === "Bear");
+console.log(foundIndex); // 2
