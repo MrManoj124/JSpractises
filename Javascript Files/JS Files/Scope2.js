@@ -180,4 +180,8 @@ for (var m = 1; m <= 3; m++) {
 
 
 //Secure Quiz game
+function createQuiz(){
+    let score = 0;
 
+    
+}
