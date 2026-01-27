@@ -83,3 +83,7 @@ console.log(foundAnimal); // Tiger
 //findIndex method
 let foundIndex = animals.findIndex((animal) => animal === "Bear");
 console.log(foundIndex); // 2
+
+//sort method   
+animals.sort();
+console.log(animals); // [ 'Bear', 'Cat', 'Lion', 'Tiger' ]
