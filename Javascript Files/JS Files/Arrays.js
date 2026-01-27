@@ -60,3 +60,8 @@ animals.forEach((animal) => {
 // Tiger
 // Bear
 // Cat
+
+//map method
+let upperAnimals = animals.map((animal) => animal.toUpperCase());
+console.log(upperAnimals); // [ 'LION', 'TIGER', 'BEAR', 'CAT' ]
+
