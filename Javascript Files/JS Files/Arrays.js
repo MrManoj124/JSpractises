@@ -91,3 +91,8 @@ console.log(animals); // [ 'Bear', 'Cat', 'Lion', 'Tiger' ]
 //reverse method
 animals.reverse();
 console.log(animals); // [ 'Tiger', 'Lion', 'Cat', 'Bear' ]
+
+//concat method
+let moreAnimals = ["Wolf", "Fox"];
+let allAnimals = animals.concat(moreAnimals);
+console.log(allAnimals); // [ 'Tiger', 'Lion', 'Cat', 'Bear', 'Wolf', 'Fox' ]
