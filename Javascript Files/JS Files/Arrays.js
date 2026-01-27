@@ -118,3 +118,16 @@ for (let i = 0; i < veggies.length; i++) {
 for (let score of scores) {
   console.log(score);
 }
+// Output:
+// 85
+// 90
+// 78
+// 92
+// 88
+
+
+//for...in loop
+let person = {name: "Alice", age: 25, city: "New York"};
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
