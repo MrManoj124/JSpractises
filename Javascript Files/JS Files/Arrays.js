@@ -51,3 +51,12 @@ console.log(animals); // [ 'Lion', 'Tiger', 'Bear', 'Cat' ]
 let newAnimals = animals.slice(1, 3);
 console.log(newAnimals); // [ 'Tiger', 'Bear' ] 
 
+//forEach method
+animals.forEach((animal) => {
+    console.log(animal);
+});
+// Output:
+// Lion
+// Tiger
+// Bear
+// Cat
