@@ -46,3 +46,8 @@ console.log(animals); // [ 'Lion', 'Cat' ]
 //splice method
 animals.splice(1, 0, "Tiger", "Bear");
 console.log(animals); // [ 'Lion', 'Tiger', 'Bear', 'Cat' ]
+
+//slice method
+let newAnimals = animals.slice(1, 3);
+console.log(newAnimals); // [ 'Tiger', 'Bear' ] 
+
