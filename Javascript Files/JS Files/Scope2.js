@@ -183,5 +183,17 @@ for (var m = 1; m <= 3; m++) {
 function createQuiz(){
     let score = 0;
 
+    function ask(question, correct){
+        let answer = prompt(question);
+        if(answer === correct){
+            score++;
+            console.log("Correct!");
+        }
+        else{
+            console.log("Wrong!")
+        }
+    }
+    
     
 }
+
