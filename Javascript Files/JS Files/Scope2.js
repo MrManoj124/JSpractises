@@ -160,3 +160,10 @@ for (var i=1; i<=3; i++){
     }, 1000);
 }
 
+
+//Fix the bug Use let
+for (let j=1; j<=3; j++){
+    setTimeout(() =>{
+        console.log(j);
+    },1000)
+} 
