@@ -167,3 +167,6 @@ for (let j=1; j<=3; j++){
         console.log(j);
     },1000)
 } 
+
+
+//older method to solve the fix
