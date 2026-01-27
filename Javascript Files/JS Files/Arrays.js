@@ -96,3 +96,8 @@ console.log(animals); // [ 'Tiger', 'Lion', 'Cat', 'Bear' ]
 let moreAnimals = ["Wolf", "Fox"];
 let allAnimals = animals.concat(moreAnimals);
 console.log(allAnimals); // [ 'Tiger', 'Lion', 'Cat', 'Bear', 'Wolf', 'Fox' ]
+
+//join method
+let animalString = allAnimals.join(", ");
+console.log(animalString); // Tiger, Lion, Cat, Bear, Wolf, Fox
+
