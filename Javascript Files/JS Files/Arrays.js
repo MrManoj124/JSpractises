@@ -65,3 +65,6 @@ animals.forEach((animal) => {
 let upperAnimals = animals.map((animal) => animal.toUpperCase());
 console.log(upperAnimals); // [ 'LION', 'TIGER', 'BEAR', 'CAT' ]
 
+//filter method
+let longNamedAnimals = animals.filter((animal) => animal.length > 3);
+console.log(longNamedAnimals); // [ 'Lion', 'Tiger', 'Bear' ]
