@@ -198,8 +198,5 @@ function createQuiz(){
         console.log("Final Scoer : "+score);
     }
     return {ask, showScore};
-    }
-
-    
 }
 
