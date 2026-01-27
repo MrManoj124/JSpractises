@@ -160,3 +160,4 @@ let scores = [85, 90, 78, 92, 88];
 let index = scores.indexOf(90);
 console.log(index); // 1
 
+
