@@ -112,3 +112,9 @@ for (let i = 0; i < veggies.length; i++) {
 // Carrot
 // Broccoli
 // Spinach
+
+
+//for...of loop
+for (let score of scores) {
+  console.log(score);
+}
