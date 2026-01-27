@@ -151,3 +151,12 @@ if (true) {
     console.log(blockScopedLet); // Output: I am block scoped
     console.log(blockScopedConst); // Output: I am also block scoped
 }
+
+
+//Loop scoping Bugs
+for (var i=1; i<=3; i++){
+    setTimeout(() => {
+        console.log(i);
+    }, 1000);
+}
+
