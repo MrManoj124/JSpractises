@@ -68,3 +68,9 @@ console.log(upperAnimals); // [ 'LION', 'TIGER', 'BEAR', 'CAT' ]
 //filter method
 let longNamedAnimals = animals.filter((animal) => animal.length > 3);
 console.log(longNamedAnimals); // [ 'Lion', 'Tiger', 'Bear' ]
+
+
+//reduce method
+let numbers = [1, 2, 3, 4];
+let sum = numbers.reduce((total, num) => total + num, 0);
+console.log(sum); // 10
