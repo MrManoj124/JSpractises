@@ -87,3 +87,7 @@ console.log(foundIndex); // 2
 //sort method   
 animals.sort();
 console.log(animals); // [ 'Bear', 'Cat', 'Lion', 'Tiger' ]
+
+//reverse method
+animals.reverse();
+console.log(animals); // [ 'Tiger', 'Lion', 'Cat', 'Bear' ]
