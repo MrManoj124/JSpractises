@@ -166,3 +166,10 @@ let hasScore = scores.includes(100);
 console.log(hasScore); // false
 //End of Search methods
 
+
+//slice (Non-destructive)
+let arr = [1, 2, 3, 4];
+let part = arr.slice(1, 3);
+
+console.log(part); // [2, 3]
+console.log(arr);  // unchanged
