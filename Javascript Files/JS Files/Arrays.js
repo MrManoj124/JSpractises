@@ -30,3 +30,7 @@ console.log(arr); // [1, 2]
 let animals = ["Dog", "Cat"];
 animals.push("Elephant");
 console.log(animals); // [ 'Dog', 'Cat', 'Elephant' ]
+
+animals.pop();
+console.log(animals); // [ 'Dog', 'Cat' ]
+
