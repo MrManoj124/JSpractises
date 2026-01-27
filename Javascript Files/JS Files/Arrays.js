@@ -24,3 +24,9 @@ console.log(arr.length); // 4
 //length is mutable
 arr.length = 2;
 console.log(arr); // [1, 2]
+
+
+//Array Methods
+let animals = ["Dog", "Cat"];
+animals.push("Elephant");
+console.log(animals); // [ 'Dog', 'Cat', 'Elephant' ]
