@@ -177,3 +177,7 @@ for (var m = 1; m <= 3; m++) {
     }, 1000);
   })(m);
 }
+
+
+//Secure Quiz game
+
