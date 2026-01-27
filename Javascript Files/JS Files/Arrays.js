@@ -127,7 +127,23 @@ for (let score of scores) {
 
 
 //for...in loop
-let person = {name: "Alice", age: 25, city: "New York"};
+let person = {name: "Abinaya", age: 25, city: "New York"};
 for (let key in person) {
     console.log(key + ": " + person[key]);
 }
+
+// Output:
+// name: Abinaya
+// age: 25
+// city: New York
+
+//End of For loops with arrays
+
+
+//forEach loop
+scores.forEach(function (score) {
+  console.log(score);
+});
+// Output:
+// 85
+// 90
