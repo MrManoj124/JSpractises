@@ -179,3 +179,11 @@ console.log(arr);  // unchanged
 let arr = [1, 2, 3, 4];
 arr.splice(1, 2);
 console.log(arr); // [1, 4]
+//End of slice and splice
+
+
+//reduce(Accumulate)
+let nums = [1, 2, 3, 4];
+let sum = nums.reduce((total, n) => total + n, 0);
+console.log(sum);
+
