@@ -194,6 +194,12 @@ function createQuiz(){
         }
     }
     
+    function showScore(){
+        console.log("Final Scoer : "+score);
+    }
+    return {ask, showScore};
+    }
+
     
 }
 
