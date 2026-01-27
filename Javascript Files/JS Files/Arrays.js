@@ -38,3 +38,7 @@ console.log(animals); // [ 'Dog', 'Cat' ]
 //shift method
 animals.shift();
 console.log(animals); // [ 'Cat' ]
+
+//unshift method
+animals.unshift("Lion");
+console.log(animals); // [ 'Lion', 'Cat' ]
