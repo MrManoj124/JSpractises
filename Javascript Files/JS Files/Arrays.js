@@ -42,3 +42,7 @@ console.log(animals); // [ 'Cat' ]
 //unshift method
 animals.unshift("Lion");
 console.log(animals); // [ 'Lion', 'Cat' ]
+
+//splice method
+animals.splice(1, 0, "Tiger", "Bear");
+console.log(animals); // [ 'Lion', 'Tiger', 'Bear', 'Cat' ]
