@@ -100,4 +100,7 @@ console.log(allAnimals); // [ 'Tiger', 'Lion', 'Cat', 'Bear', 'Wolf', 'Fox' ]
 //join method
 let animalString = allAnimals.join(", ");
 console.log(animalString); // Tiger, Lion, Cat, Bear, Wolf, Fox
+//End of Arrays
 
+
+//For loop with arrays
