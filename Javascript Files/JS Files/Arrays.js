@@ -104,3 +104,11 @@ console.log(animalString); // Tiger, Lion, Cat, Bear, Wolf, Fox
 
 
 //For loop with arrays
+let veggies = ["Carrot", "Broccoli", "Spinach"];
+for (let i = 0; i < veggies.length; i++) {
+    console.log(veggies[i]);
+}
+// Output:
+// Carrot
+// Broccoli
+// Spinach
