@@ -17,3 +17,6 @@ colors[1] = "Yellow";
 console.log(colors); // ["Red", "Yellow", "Blue"]
 
 
+//Array length
+let arr = [1, 2, 3, 4];
+console.log(arr.length); // 4
