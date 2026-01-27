@@ -173,3 +173,9 @@ let part = arr.slice(1, 3);
 
 console.log(part); // [2, 3]
 console.log(arr);  // unchanged
+
+
+//splice (Destructive)
+let arr = [1, 2, 3, 4];
+arr.splice(1, 2);
+console.log(arr); // [1, 4]
