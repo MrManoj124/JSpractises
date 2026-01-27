@@ -147,3 +147,16 @@ scores.forEach(function (score) {
 // Output:
 // 85
 // 90
+// 78
+// 92
+// 88   
+//End of forEach loop
+
+
+//Search methods
+let scores = [85, 90, 78, 92, 88];
+
+//indexOf method
+let index = scores.indexOf(90);
+console.log(index); // 1
+
