@@ -200,3 +200,10 @@ function createQuiz(){
     return {ask, showScore};
 }
 
+let quiz = createQuiz();
+
+
+quiz.ask(" 2 + 2 ? ", "4");
+quiz.ask("Capital of Sri Lanka?", "Colombo");
+quiz.showScore();
+
