@@ -191,7 +191,7 @@ console.log(total);
 //Arrays with Objects
 let students = [
   { name: "Manorooban", marks: 85 },
-  { name: "Arun", marks: 72 }
+  { name: "Abinaya", marks: 72 }
 ];
 
 let toppers = students.filter(s => s.marks > 80);
