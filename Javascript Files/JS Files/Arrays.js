@@ -263,3 +263,8 @@ console.log(no); // [ 1, 2, 3 ]
 //Mini challange
 //Create an array of numbers from 1 to 10
 let numbersArray = Array.from({length: 10}, (_, i) => i + 1);
+console.log(numbersArray); // [1,2,3,4,5,6,7,8,9,10]
+
+//Filter out even numbers
+let oddNumbers = numbersArray.filter(num => num % 2 !== 0);
+console.log(oddNumbers); // [1,3,5,7,9]
