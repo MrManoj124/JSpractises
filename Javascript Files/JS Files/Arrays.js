@@ -220,3 +220,10 @@ for (let i = 0; i < matrix.length; i++) {
 // 3
 // 4
 //End of Multidimensional Arrays
+
+//Array Destructuring
+let rgb = [255, 0, 0];
+let [red, green, blue] = rgb;
+console.log(red);   // 255
+console.log(green); // 0
+console.log(blue);  // 0
