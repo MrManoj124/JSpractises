@@ -279,6 +279,5 @@ let fives = [5, 10, 15, 20];
 let greaterThanTen = fives.filter(num => num > 10);
 console.log(greaterThanTen); // [15, 20]
 
-
 // 2. Double them
 // 3. Find total
