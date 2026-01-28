@@ -227,3 +227,8 @@ let [red, green, blue] = rgb;
 console.log(red);   // 255
 console.log(green); // 0
 console.log(blue);  // 0
+
+//Skipping elements
+let [first, , third] = rgb;
+console.log(first);
+console.log(third); // 0
