@@ -254,3 +254,9 @@ console.log(copy); // [1, 2, 3]
 let str = "Hello";
 let charArray = Array.from(str);
 console.log(charArray); // [ 'H', 'e', 'l', 'l', 'o' ]
+
+//Array.of() method
+let no = Array.of(1, 2, 3);
+console.log(no); // [ 1, 2, 3 ]
+//End of Array.from() and Array.of() methods
+
