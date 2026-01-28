@@ -237,3 +237,5 @@ console.log(third); // 0
 let [r = 0, g = 0, b = 0, a = 1] = [255, 0, 0];
 console.log(a); // 1
 //End of Array Destructuring
+
+//Spread Operator with Arrays
