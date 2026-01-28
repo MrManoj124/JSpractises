@@ -201,3 +201,11 @@ console.log(toppers);
 //End of Arrays with Objects
 
 //Multidimensional Arrays
+let matrix = [
+  [1, 2],
+  [3, 4]
+];
+
+console.log(matrix[1][0]); // 3
+
+//Iterating Multidimensional Arrays
