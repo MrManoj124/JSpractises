@@ -260,3 +260,6 @@ let no = Array.of(1, 2, 3);
 console.log(no); // [ 1, 2, 3 ]
 //End of Array.from() and Array.of() methods
 
+//Mini challange
+//Create an array of numbers from 1 to 10
+let numbersArray = Array.from({length: 10}, (_, i) => i + 1);
