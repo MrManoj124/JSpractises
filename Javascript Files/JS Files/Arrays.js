@@ -248,3 +248,9 @@ console.log(combined); // [1, 2, 3, 4, 5, 6]
 let copy = [...arr1];
 console.log(copy); // [1, 2, 3]
 //End of Spread Operator with Arrays
+
+
+//Array.from() method
+let str = "Hello";
+let charArray = Array.from(str);
+console.log(charArray); // [ 'H', 'e', 'l', 'l', 'o' ]
