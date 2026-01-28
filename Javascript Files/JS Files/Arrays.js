@@ -285,3 +285,6 @@ console.log(doubled); // [30, 40]
 
 
 // 3. Find total
+let totals = doubled.reduce((sum, num) => sum + num, 0);
+console.log(total); // 70
+//End of Mini challange
