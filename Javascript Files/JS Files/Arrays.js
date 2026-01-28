@@ -280,4 +280,8 @@ let greaterThanTen = fives.filter(num => num > 10);
 console.log(greaterThanTen); // [15, 20]
 
 // 2. Double them
+let doubled = greaterThanTen.map(num => num * 2);
+console.log(doubled); // [30, 40]
+
+
 // 3. Find total
