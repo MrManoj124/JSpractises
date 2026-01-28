@@ -232,3 +232,8 @@ console.log(blue);  // 0
 let [first, , third] = rgb;
 console.log(first);
 console.log(third); // 0
+
+//Default values
+let [r = 0, g = 0, b = 0, a = 1] = [255, 0, 0];
+console.log(a); // 1
+//End of Array Destructuring
