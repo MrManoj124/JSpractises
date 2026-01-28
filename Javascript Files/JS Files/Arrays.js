@@ -272,3 +272,13 @@ console.log(oddNumbers); // [1,3,5,7,9]
 //Calculate the sum of odd numbers
 let sumOfOdd = oddNumbers.reduce((sum, num) => sum + num, 0);
 console.log(sumOfOdd); // 25
+
+
+let fives = [5, 10, 15, 20];
+// 1. Get only numbers > 10
+let greaterThanTen = fives.filter(num => num > 10);
+console.log(greaterThanTen); // [15, 20]
+
+
+// 2. Double them
+// 3. Find total
