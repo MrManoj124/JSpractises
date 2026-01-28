@@ -196,3 +196,8 @@ let students = [
 
 let toppers = students.filter(s => s.marks > 80);
 console.log(toppers);
+
+// Output: [ { name: 'Manorooban', marks: 85 } ]
+//End of Arrays with Objects
+
+//Multidimensional Arrays
