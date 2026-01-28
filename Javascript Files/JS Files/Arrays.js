@@ -243,3 +243,8 @@ let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6]; 
 let combined = [...arr1, ...arr2];
 console.log(combined); // [1, 2, 3, 4, 5, 6]
+
+//Copying an array
+let copy = [...arr1];
+console.log(copy); // [1, 2, 3]
+//End of Spread Operator with Arrays
