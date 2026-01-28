@@ -268,3 +268,7 @@ console.log(numbersArray); // [1,2,3,4,5,6,7,8,9,10]
 //Filter out even numbers
 let oddNumbers = numbersArray.filter(num => num % 2 !== 0);
 console.log(oddNumbers); // [1,3,5,7,9]
+
+//Calculate the sum of odd numbers
+let sumOfOdd = oddNumbers.reduce((sum, num) => sum + num, 0);
+console.log(sumOfOdd); // 25
