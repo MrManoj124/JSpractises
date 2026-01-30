@@ -81,3 +81,7 @@ console.log(bubbleSort([5, 3, 1, 4]));
 
 
 //Immutable Practice
+//Add Item
+let newArr = [...arr, 5];
+
+
