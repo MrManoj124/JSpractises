@@ -118,4 +118,5 @@ function playQuiz(questions) {
   return score;
 }
 
-
+let finalScore = playQuiz(questions);
+alert("Final Score: " + finalScore);
