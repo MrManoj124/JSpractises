@@ -43,3 +43,11 @@ function findMax(arr) {
   }
   return max;
 }
+
+function findMin(arr) {
+  let min = arr[0];
+  for (let n of arr) {
+    if (n < min) min = n;
+  }
+  return min;
+}
