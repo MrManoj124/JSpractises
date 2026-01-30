@@ -85,3 +85,18 @@ console.log(bubbleSort([5, 3, 1, 4]));
 let newArr = [...arr, 5];
 
 
+//Remove Item
+let newArr1 = arr.filter(n => n !== 3);
+
+//Update Item
+let newArr2 = arr.map(n => n === 2 ? 20 : n);
+
+
+//Console Quiz Game
+const questions = [
+  { q: "2 + 2 ?", a: "4" },
+  { q: "Capital of Sri Lanka?", a: "Colombo" },
+  { q: "JS keyword for constant?", a: "const" }
+];
+
+
