@@ -54,3 +54,4 @@ function findMin(arr) {
 
 let number  = [4, 9, 2, 7];
 console.log(findMax(number)); // 9
+console.log(findMin(number)); // 2
