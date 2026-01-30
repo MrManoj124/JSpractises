@@ -10,3 +10,6 @@ function linearSearch(arr, target) {
 
 let nums = [10, 20, 30, 40];
 console.log(linearSearch(nums, 30)); // 2
+
+
+//Binary Search (Sorted Arrays Only)
