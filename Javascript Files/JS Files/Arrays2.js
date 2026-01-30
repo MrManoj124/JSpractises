@@ -101,6 +101,21 @@ const questions = [
 
 
 //Quiz Logic
+function playQuiz(questions) {
+  let score = 0;
 
+  for (let i = 0; i < questions.length; i++) {
+    let userAnswer = prompt(questions[i].q);
+
+    if (userAnswer === questions[i].a) {
+      alert("Correct!");
+      score++;
+    } else {
+      alert("Wrong!");
+    }
+  }
+
+  return score;
+}
 
 
