@@ -8,5 +8,5 @@ function linearSearch(arr, target) {
   return -1;
 }
 
-// let nums = [10, 20, 30, 40];
-// console.log(linearSearch(nums, 30)); // 2
+let nums = [10, 20, 30, 40];
+console.log(linearSearch(nums, 30)); // 2
