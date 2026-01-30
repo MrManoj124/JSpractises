@@ -55,3 +55,9 @@ function findMin(arr) {
 let number  = [4, 9, 2, 7];
 console.log(findMax(number)); // 9
 console.log(findMin(number)); // 2
+
+
+//Built-in Sort 
+let no = [10, 5, 20, 3];
+no.sort((a, b) => a - b);
+console.log(no);
