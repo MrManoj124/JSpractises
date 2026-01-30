@@ -61,3 +61,6 @@ console.log(findMin(number)); // 2
 let no = [10, 5, 20, 3];
 no.sort((a, b) => a - b);
 console.log(no);
+
+
+//Bubble Sort
