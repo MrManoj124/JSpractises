@@ -36,3 +36,10 @@ console.log(binarySearch(sorted, 40)); // 3
 
 
 //Finding Max / Min (Algorithmic Way)
+function findMax(arr) {
+  let max = arr[0];
+  for (let n of arr) {
+    if (n > max) max = n;
+  }
+  return max;
+}
