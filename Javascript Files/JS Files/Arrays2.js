@@ -231,3 +231,9 @@ try {
 catch (err) {
   alert(err);
 }
+
+
+
+//Data Structures (STACK & QUEUE)
+//Stack (LIFO - Last In First Out)
+
