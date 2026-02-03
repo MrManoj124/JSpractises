@@ -207,3 +207,6 @@ button.addEventListener("click", function() {
 //Error Handling
 console.log(a);  // X crash
 console.log("After");  //never runs
+
+
+//Using try / catch function
