@@ -154,3 +154,5 @@ async function playAsyncQuiz(questions) {
   }
   console.log("Async Quiz Finished. Score: " + score);
 }
+
+playAsyncQuiz(questions);
