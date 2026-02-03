@@ -221,3 +221,10 @@ console.log("Program  Continues...!");
 
 
 //Real Example (User Input)
+try {
+  let age = Number(prompt("Enter age"));
+  if (isNaN(age)) {
+    throw "Invalid number";
+  }
+  console.log("Your Age is : " + age);
+}
