@@ -169,3 +169,15 @@ function second(){
 
 first();
 second();
+
+//First , Second
+
+
+//Web APIs (Browser Handles Async)
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+console.log("End");
