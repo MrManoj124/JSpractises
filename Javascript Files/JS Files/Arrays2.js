@@ -196,3 +196,4 @@ heading.textContent = "Hello";
 heading.innerHTML = "<strong>Hello</strong>";
 
 
+//Handling Events
