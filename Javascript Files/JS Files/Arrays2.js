@@ -141,5 +141,15 @@ function askAsync(question){
 
 //create Async Quiz Engine
 async function playAsyncQuiz(questions) {
+  let score = 0;
 
+  for (let q of questions) {
+    let correct = await askAsync(q);
+    if (correct) {
+      alert("Correct!");
+      score++;
+    } else {
+      alert("Wrong!");
+    }
+  }
 }
