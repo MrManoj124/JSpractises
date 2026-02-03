@@ -130,6 +130,11 @@ questions.forEach(q => {
 
 //create an Async Quiz
 function askAsync(question){
-  
+  return new Promise(resolve => {
+    setTimeout(() => {
+      let answer = prompt(question.q);
+      resolve(answer === question.a);
+    }, 1000);
+  });
 }
 
