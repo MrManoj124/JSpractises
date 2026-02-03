@@ -182,4 +182,9 @@ setTimeout(() => {
 
 console.log("End");
 
-//DOM MANIPULATION
+//DOM MANIPULATION (REAL UI APPS)
+
+//Selecting Elements
+document.getElementById("Title");
+document.querySelector(".btn");
+document.querySelectorAll("li")
