@@ -128,4 +128,8 @@ questions.forEach(q => {
 });
 
 
+//create an Async Quiz
+function askAsync(question){
+  
+}
 
