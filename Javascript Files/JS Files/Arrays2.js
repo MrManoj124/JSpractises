@@ -237,3 +237,8 @@ catch (err) {
 //Data Structures (STACK & QUEUE)
 //Stack (LIFO - Last In First Out)
 
+class Stack {
+  constructor(){
+    this.items = [];
+  }
+}
