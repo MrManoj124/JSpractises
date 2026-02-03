@@ -218,3 +218,6 @@ catch(error){
 }
 
 console.log("Program  Continues...!");
+
+
+//Real Example (User Input)
