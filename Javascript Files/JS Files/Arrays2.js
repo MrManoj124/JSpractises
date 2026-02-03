@@ -146,10 +146,11 @@ async function playAsyncQuiz(questions) {
   for (let q of questions) {
     let correct = await askAsync(q);
     if (correct) {
-      alert("Correct!");
+       console.log("Correct!");
       score++;
     } else {
-      alert("Wrong!");
+       console.log("Wrong!");
     }
   }
+  console.log("Async Quiz Finished. Score: " + score);
 }
