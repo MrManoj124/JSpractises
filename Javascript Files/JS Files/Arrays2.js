@@ -210,3 +210,11 @@ console.log("After");  //never runs
 
 
 //Using try / catch function
+try{
+  console.log(b);
+}
+catch(error){
+  console.log("Something went wrong...!")
+}
+
+console.log("Program  Continues...!");
