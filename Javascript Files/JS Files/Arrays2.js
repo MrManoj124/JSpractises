@@ -190,3 +190,9 @@ document.querySelector(".btn");
 document.querySelectorAll("li")
 
 //Changing Content
+let heading = document.getElementById("title");
+
+heading.textContent = "Hello";
+heading.innerHTML = "<strong>Hello</strong>";
+
+
