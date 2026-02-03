@@ -159,3 +159,6 @@ playAsyncQuiz(questions);
 
 
 //create call stack 
+function first(){
+  console.log("First");
+}
