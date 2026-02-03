@@ -140,3 +140,6 @@ function askAsync(question){
 
 
 //create Async Quiz Engine
+async function playAsyncQuiz(questions) {
+
+}
