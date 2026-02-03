@@ -181,3 +181,5 @@ setTimeout(() => {
 }, 0);
 
 console.log("End");
+
+//DOM MANIPULATION
