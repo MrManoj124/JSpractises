@@ -166,3 +166,6 @@ function first(){
 function second(){
   console.log("Second");
 }
+
+first();
+second();
