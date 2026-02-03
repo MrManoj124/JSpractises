@@ -123,4 +123,9 @@ alert("Final Score: " + finalScore);
 
 
 //Array with Callback
+questions.forEach(q => {
+  console.log(q.q);
+});
+
+
 
