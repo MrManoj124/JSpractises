@@ -202,3 +202,8 @@ let button = document.getElementById("btn");
 button.addEventListener("click", function() {
   console.log("Clicked...!");
 });
+
+
+//Error Handling
+console.log(a);  // X crash
+console.log("After");  //never runs
