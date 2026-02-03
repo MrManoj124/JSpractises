@@ -228,3 +228,6 @@ try {
   }
   console.log("Your Age is : " + age);
 }
+catch (err) {
+  alert(err);
+}
