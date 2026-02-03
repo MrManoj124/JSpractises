@@ -120,3 +120,7 @@ function playQuiz(questions) {
 
 let finalScore = playQuiz(questions);
 alert("Final Score: " + finalScore);
+
+
+//Array with Callback
+
