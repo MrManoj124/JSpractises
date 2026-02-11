@@ -376,3 +376,8 @@ doucument.getElementById("btn").addEventListener("click", () =>   {
     } else {
       document.getElementById("status").textContent = "Try Again!";
     }
+  }
+  catch(err){
+    alert(err);
+  } 
+});
