@@ -267,5 +267,11 @@ class Queue {
     this.items.push(item);
   }
 
-  
-}
+  dequeue() {
+    return this.items.shift();
+  }
+
+// let queue = new Queue();
+// queue.enqueue(1);
+// queue.enqueue(2);
+// console.log(queue.dequeue()); // 1
