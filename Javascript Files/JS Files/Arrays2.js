@@ -363,3 +363,11 @@ console.log(tree.root.right.value); // 15
 const secret = Math.floor(Math.random() * 5) + 1;
 let attempts = 0;
 
+doucument.getElementById("btn").addEventListener("click", () =>   {
+  try{
+    let value = Number(document.getElementById("guess").value);
+    if(!value)
+      throw "Please enter a number between 1 and 5";
+
+    attempts++;
+  }
