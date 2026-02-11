@@ -370,4 +370,6 @@ doucument.getElementById("btn").addEventListener("click", () =>   {
       throw "Please enter a number between 1 and 5";
 
     attempts++;
+
+    
   }
