@@ -308,3 +308,6 @@ list.append(10);
 list.append(20);
 console.log(list.head.value); // 10
 console.log(list.head.next.value); // 20
+
+
+//Binary Tree (Hierarchical Data Structure)
