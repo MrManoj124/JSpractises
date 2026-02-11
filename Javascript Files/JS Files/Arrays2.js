@@ -278,3 +278,8 @@ console.log(queue.dequeue()); // 1
 
 
 //Linked List (Dynamic Data Structure)
+class Node {
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
