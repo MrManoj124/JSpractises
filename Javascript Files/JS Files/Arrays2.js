@@ -371,5 +371,8 @@ doucument.getElementById("btn").addEventListener("click", () =>   {
 
     attempts++;
 
-    
-  }
+    if(value === secret) {
+      document.getElementById("status").textContent = "You Win! Attempts: " + attempts;
+    } else {
+      document.getElementById("status").textContent = "Try Again!";
+    }
