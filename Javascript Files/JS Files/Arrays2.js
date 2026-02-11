@@ -292,3 +292,8 @@ class LinkedList {
   append(value){
     let newNode = new Node(value);
     if (!this.head) {
+      this.head = newNode;
+      return;
+    }
+    let current = this.head;
+    
