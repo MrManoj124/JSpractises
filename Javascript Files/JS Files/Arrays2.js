@@ -348,3 +348,8 @@ class BinaryTree {
   }
 }
 
+let tree = new BinaryTree();
+tree.insert(10);
+tree.insert(5);
+tree.insert(15);
+
