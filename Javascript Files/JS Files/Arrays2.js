@@ -275,3 +275,6 @@ let queue = new Queue();
 queue.enqueue(1);
 queue.enqueue(2);
 console.log(queue.dequeue()); // 1
+
+
+//Linked List (Dynamic Data Structure)
