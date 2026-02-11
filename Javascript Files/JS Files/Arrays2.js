@@ -311,3 +311,10 @@ console.log(list.head.next.value); // 20
 
 
 //Binary Tree (Hierarchical Data Structure)
+class TreeNode {
+  constructor(value){
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
