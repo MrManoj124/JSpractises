@@ -289,3 +289,6 @@ class LinkedList {
   constructor(){
     this.head = null;
   }
+  append(value){
+    let newNode = new Node(value);
+    if (!this.head) {
