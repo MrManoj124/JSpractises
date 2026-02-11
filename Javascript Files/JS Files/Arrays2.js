@@ -352,4 +352,7 @@ let tree = new BinaryTree();
 tree.insert(10);
 tree.insert(5);
 tree.insert(15);
+console.log(tree.root.value); // 10
+console.log(tree.root.left.value); // 5
+console.log(tree.root.right.value); // 15
 
