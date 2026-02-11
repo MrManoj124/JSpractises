@@ -258,3 +258,8 @@ console.log(stack.pop()); // 2
 
 
 //Queue (FIFO – First In First Out)
+class Queue {
+  constructor(){
+     this.items = [];
+  }
+}
