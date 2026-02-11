@@ -360,3 +360,6 @@ console.log(tree.root.right.value); // 15
 
 //FULL BROWSER GAME WITH UI
 //Number Guessing Game
+const secret = Math.floor(Math.random() * 5) + 1;
+let attempts = 0;
+
