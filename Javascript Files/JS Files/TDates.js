@@ -41,3 +41,4 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 const dates = new Date("2021-03-25");
 let dey = days[dates.getDay()];
+
