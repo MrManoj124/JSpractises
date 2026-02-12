@@ -83,3 +83,4 @@ console.log(`Difference in years: ${diffDays / 365}`);
 const { Temporal } = require('@js-temporal/polyfill');
 const temporalDate = Temporal.PlainDate.from('2024-01-01');
 console.log(`Temporal date: ${temporalDate.toString()}`);
+console.log(`Year: ${temporalDate.year}, Month: ${temporalDate.month}, Day: ${temporalDate.day}`);
