@@ -54,3 +54,4 @@ date3.setMinutes(30);
 date3.setSeconds(0);
 console.log(`Updated date: ${date3.toString()}`);
 console.log(`Updated date in ISO format: ${date3.toISOString()}`);
+console.log(`Updated date in locale format: ${date3.toLocaleString()}`);
