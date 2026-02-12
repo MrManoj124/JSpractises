@@ -25,3 +25,6 @@ console.log(now.getFullYear()); // e.g. 2024
 console.log(now.getMonth() + 1);
 console.log(now.getDate());
 console.log(now.getHours());
+console.log(now.getMinutes());
+console.log(now.getSeconds());
+console.log(now.getMilliseconds());
