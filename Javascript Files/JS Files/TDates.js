@@ -48,4 +48,3 @@ console.log(`The day of the week for ${dates.toDateString()} is: ${dey}`);
 const date3 = new Date();
 date3.setFullYear(2025);
 date3.setMonth(11);
-//
