@@ -77,3 +77,6 @@ const diffTime = Math.abs(dateB - dateA);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 console.log(`Difference between ${dateA.toDateString()} and ${dateB.toDateString()} is ${diffDays} days.`);
 console.log(`Difference in years: ${diffDays / 365}`);
+
+
+//Temporal date (New in JavaScript)
