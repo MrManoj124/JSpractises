@@ -14,3 +14,4 @@ console.log(`Number of days between ${date1.toDateString()} and ${date2.toDateSt
 const date = new Date();
 console.log(date.toDateString()); // e.g. "Mon Jan 01 2024"
 console.log(date.toISOString()); // e.g. "2024-01-01T00:00:00.000Z"
+console.log(date.toLocaleDateString()); // e.g. "1/1/2024" (depends on locale)
