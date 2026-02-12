@@ -67,3 +67,4 @@ if (someday > today) {
 } else {
   text = "Today is after January 14, 2100.";
 }
+console.log(text);
