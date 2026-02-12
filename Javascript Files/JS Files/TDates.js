@@ -18,3 +18,6 @@ console.log(date.toLocaleDateString()); // e.g. "1/1/2024" (depends on locale)
 console.log(date.toLocaleString()); // e.g. "1/1/2024, 12:00:00 AM" (depends on locale)
 console.log(date.toLocaleTimeString()); // e.g. "12:00:00 AM" (depends on locale)
 console.log(date.toTimeString()); // e.g. "00:00:00 GMT+0000 (Coordinated Universal Time)"
+
+//Date get Methods
+const now = new Date();
