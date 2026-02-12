@@ -71,3 +71,8 @@ console.log(text);
 
 
 //Date Difference in Days
+const dateA = new Date("2024-01-01");
+const dateB = new Date("2024-12-31");
+const diffTime = Math.abs(dateB - dateA);
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+//console.log(`Difference between ${dateA.toDateString()} and ${dateB.toDateString()} is ${diffDays} days.`);
