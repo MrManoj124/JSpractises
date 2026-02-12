@@ -35,3 +35,9 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const dat = new Date();
 let mont = months[dat.getMonth()];
 console.log(`Current month is: ${mont}`);
+
+//get days in a month
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const dates = new Date("2021-03-25");
+let dey = days[dates.getDay()];
