@@ -16,3 +16,4 @@ console.log(date.toDateString()); // e.g. "Mon Jan 01 2024"
 console.log(date.toISOString()); // e.g. "2024-01-01T00:00:00.000Z"
 console.log(date.toLocaleDateString()); // e.g. "1/1/2024" (depends on locale)
 console.log(date.toLocaleString()); // e.g. "1/1/2024, 12:00:00 AM" (depends on locale)
+console.log(date.toLocaleTimeString()); // e.g. "12:00:00 AM" (depends on locale)
