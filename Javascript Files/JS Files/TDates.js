@@ -28,3 +28,10 @@ console.log(now.getHours());
 console.log(now.getMinutes());
 console.log(now.getSeconds());
 console.log(now.getMilliseconds());
+
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const dat = new Date();
+let mont = months[dat.getMonth()];
+//console.log(`Current month is: ${mont}`);
