@@ -43,3 +43,5 @@ const dates = new Date("2021-03-25");
 let dey = days[dates.getDay()];
 console.log(`The day of the week for ${dates.toDateString()} is: ${dey}`);
 
+
+//Date set Methods
