@@ -34,4 +34,4 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 const dat = new Date();
 let mont = months[dat.getMonth()];
-//console.log(`Current month is: ${mont}`);
+console.log(`Current month is: ${mont}`);
