@@ -68,3 +68,6 @@ if (someday > today) {
   text = "Today is after January 14, 2100.";
 }
 console.log(text);
+
+
+//Date Difference in Days
