@@ -55,3 +55,15 @@ date3.setSeconds(0);
 console.log(`Updated date: ${date3.toString()}`);
 console.log(`Updated date in ISO format: ${date3.toISOString()}`);
 console.log(`Updated date in locale format: ${date3.toLocaleString()}`);
+
+//create a date in the future and compare it with today's date
+let text = "";
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+// if (someday > today) {
+//   text = "Today is before January 14, 2100.";
+// } else {
+//   text = "Today is after January 14, 2100.";
+// }
