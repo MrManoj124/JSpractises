@@ -21,3 +21,5 @@ console.log(date.toTimeString()); // e.g. "00:00:00 GMT+0000 (Coordinated Univer
 
 //Date get Methods
 const now = new Date();
+console.log(now.getFullYear()); // e.g. 2024
+console.log(now.getMonth() + 1);
