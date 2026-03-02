@@ -82,3 +82,9 @@ const ins = Temporal.Ins.fromEpochMilliseconds(1760721600000);
 
 //Replace Date.now()
 let timestamp = Date.now();
+
+
+//<--Convert Instant to Date and Time-->
+const inst = Temporal.Now.instant();
+
+const zone = inst.toZonedDateTimeISO("Europe/Oslo");
