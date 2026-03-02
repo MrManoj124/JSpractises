@@ -38,3 +38,9 @@ de.toISOString();
 let dev = new Date();
 console.log(dev.toString());
 console.log(dev.toUTCString());
+
+
+//Temporal Example with Time and Date zone
+let zdt = Temporal.Now.zonedDateTimeISO();
+
+console.log(zdt);
