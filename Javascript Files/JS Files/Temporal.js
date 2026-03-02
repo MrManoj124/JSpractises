@@ -94,3 +94,9 @@ const zone = inst.toZonedDateTimeISO("Europe/Oslo");
 //<--Add and Subtract Days-->
 let dated = Temporal.PlainDate.from("2026-05-17");
 let nextWeeks = dated.add({ days: 7 });
+
+
+
+//<--Example with subtract and Addition-->
+let dates = Temporal.PlainDate.from("2026-05-17");
+let previousWeek = dates.subtract({ days: 7 });
