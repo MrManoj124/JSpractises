@@ -61,3 +61,8 @@ let start = new Date("2026-05-17");
 start.setDate(start.getDate() + 30);
 
 
+
+//Temporal Example with PlainDate function to set Date
+let started = Temporal.PlainDate.from("2026-05-17");
+
+let result = started.add({ days: 30 });
