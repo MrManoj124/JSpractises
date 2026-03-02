@@ -41,4 +41,10 @@ console.log(duration1);
 
 //<--JavaScript Temporal until()-->
 //Syntax
-temporal.until(temporal, options) 
+//temporal.until(temporal, options)
+
+
+//Example for Temporal until function
+const wedding1 = Temporal.PlainDate.from('2026-05-17');
+const today1 = Temporal.Now.plainDateISO();
+const duration2 = today.until(wedding1);
