@@ -27,3 +27,8 @@ let next = thi.add({ days : 7});
 
 
 //<--Date and Time Zone-->
+// Months are 0-based (4 = May)
+const de = new Date(2026, 4, 1);
+
+// Might be 2026-04-30T22:00:00.000Z in some time zones:
+de.toISOString();
