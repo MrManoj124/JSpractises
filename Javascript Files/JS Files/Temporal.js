@@ -66,3 +66,7 @@ start.setDate(start.getDate() + 30);
 let started = Temporal.PlainDate.from("2026-05-17");
 
 let result = started.add({ days: 30 });
+
+
+//<--Get the Current Date and Time with Time Zone-->
+let zoned = Temporal.Now.zonedDateTimeISO();
