@@ -32,3 +32,9 @@ const de = new Date(2026, 4, 1);
 
 // Might be 2026-04-30T22:00:00.000Z in some time zones:
 de.toISOString();
+
+
+//<--Handling Time Zones-->
+let dev = new Date();
+console.log(dev.toString());
+console.log(dev.toUTCString());
