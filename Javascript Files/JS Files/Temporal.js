@@ -70,3 +70,8 @@ let result = started.add({ days: 30 });
 
 //<--Get the Current Date and Time with Time Zone-->
 let zoned = Temporal.Now.zonedDateTimeISO();
+
+
+
+//Create an Instant from a String
+const instant = Temporal.Instant.from("2026-05-01T12:00:00Z");
