@@ -13,4 +13,14 @@ let date = new Date(2012, 5, 2);
 //Add 7 days
 date.setDate(date.getDate() + 7);
 
-//
+//// Here original date is gone
+
+
+//Temporal Example
+//Create a Date 
+let thi = Temporal.PlainDate.from("2026-05-01");
+
+//Add 6 days
+let next = thi.add({ days : 7});
+
+//Here original date is kept
