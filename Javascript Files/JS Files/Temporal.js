@@ -10,4 +10,7 @@ let nextWeek = today.add({ days: 7 });
 //Create a Date 
 let date = new Date(2012, 5, 2);
 
-//Add 
+//Add 7 days
+date.setDate(date.getDate() + 7);
+
+//
