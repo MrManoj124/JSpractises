@@ -75,3 +75,10 @@ let zoned = Temporal.Now.zonedDateTimeISO();
 
 //Create an Instant from a String
 const instant = Temporal.Instant.from("2026-05-01T12:00:00Z");
+
+//Create an Instant from Epoch Milliseconds
+const ins = Temporal.Ins.fromEpochMilliseconds(1760721600000);
+
+
+//Replace Date.now()
+let timestamp = Date.now();
