@@ -36,3 +36,4 @@ console.log(results);
 const wedding = Temporal.PlainDate.from('2026-05-17');
 const today = Temporal.Now.plainDateISO();
 const duration1 = today.since(wedding);
+console.log(duration1);
