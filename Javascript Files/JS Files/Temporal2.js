@@ -11,3 +11,7 @@ const dateTimes = Temporal.PlainDateTime.from("2026-05-17T10:00:00");
 
 const earlier = dateTimes.subtract({ minutes: 30 });
 const later = dateTimes.add({ hours: 2 });
+
+//<--Convert from Instant-->
+const instant = Temporal.Now.instant();
+const zoned = instant.toZonedDateTimeISO("Europe/Oslo");
