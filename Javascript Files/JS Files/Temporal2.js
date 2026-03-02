@@ -15,3 +15,9 @@ const later = dateTimes.add({ hours: 2 });
 //<--Convert from Instant-->
 const instant = Temporal.Now.instant();
 const zoned = instant.toZonedDateTimeISO("Europe/Oslo");
+
+//<--Add a Time Duration-->
+const date = Temporal.PlainDate.from("2026-02-17");
+const duration = Temporal.Duration.from({ days: 7 });
+
+const result = date.add(duration);
