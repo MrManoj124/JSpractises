@@ -53,3 +53,11 @@ new Date(2026, 4, 1)
 
 // May 1:
 new Temporal.PlainDate(2026, 5, 1)
+
+
+//<--Date Math-->
+let start = new Date("2026-05-17");
+
+start.setDate(start.getDate() + 30);
+
+
