@@ -88,3 +88,9 @@ let timestamp = Date.now();
 const inst = Temporal.Now.instant();
 
 const zone = inst.toZonedDateTimeISO("Europe/Oslo");
+
+
+
+//<--Add and Subtract Days-->
+let dated = Temporal.PlainDate.from("2026-05-17");
+let nextWeeks = dated.add({ days: 7 });
