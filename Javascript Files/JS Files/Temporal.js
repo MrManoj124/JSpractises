@@ -100,3 +100,8 @@ let nextWeeks = dated.add({ days: 7 });
 //<--Example with subtract and Addition-->
 let dates = Temporal.PlainDate.from("2026-05-17");
 let previousWeek = dates.subtract({ days: 7 });
+
+
+//<--Add Months or Years-->
+const thig = Temporal.PlainDate.from("2026-05-17");
+const nextMonth = thig.add({ months: 1 });
