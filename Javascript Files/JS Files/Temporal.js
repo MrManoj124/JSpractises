@@ -7,3 +7,7 @@ let nextWeek = today.add({ days: 7 });
 
 
 //JavaScript Temporal Vs Date
+//Create a Date 
+let date = new Date(2012, 5, 2);
+
+//Add 
