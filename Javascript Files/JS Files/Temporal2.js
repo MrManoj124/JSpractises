@@ -21,3 +21,11 @@ const date = Temporal.PlainDate.from("2026-02-17");
 const duration = Temporal.Duration.from({ days: 7 });
 
 const result = date.add(duration);
+
+
+//<--Subtract a Time Duration-->
+const dates = Temporal.PlainDate.from("2026-02-17");
+const durations = Temporal.Duration.from({ days: 7 });
+
+const results = dates.subtract(durations);
+console.log(results);
