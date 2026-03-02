@@ -29,3 +29,10 @@ const durations = Temporal.Duration.from({ days: 7 });
 
 const results = dates.subtract(durations);
 console.log(results);
+
+
+
+//<--Calculate the Difference Between Two Dates-->
+const wedding = Temporal.PlainDate.from('2026-05-17');
+const today = Temporal.Now.plainDateISO();
+const duration1 = today.since(wedding);
