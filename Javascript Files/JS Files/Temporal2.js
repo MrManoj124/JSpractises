@@ -68,3 +68,13 @@ const timestamp = Date.now();
 //Temporal Example2
 const nows = Temporal.Now.instant();
 const timestamps = instant.epochMilliseconds);
+
+//Replace getFullYear(), getMonth(), getDate()
+
+Date uses getter methods.
+Date Example
+const d = new Date();
+
+let year = d.getFullYear();
+let month = d.getMonth();
+let day = d.getDate();
