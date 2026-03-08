@@ -77,4 +77,11 @@ const d = new Date();
 
 let year = d.getFullYear();
 let month = d.getMonth();
-let day = d.getDate();
+let day1 = d.getDate();
+
+//Temporal Example
+const date1 = Temporal.Now.plainDateISO();
+
+let year1 = date.year;
+let month2 = date.month;
+let day3 = date.day;
