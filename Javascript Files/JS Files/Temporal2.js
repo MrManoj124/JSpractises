@@ -59,4 +59,8 @@ const day= new Date();
 //Temporal Example
 const instanted = Temporal.Now.instant();
 
+//Temporal Date only
+const todays = Temporal.Now.plainDateISO();
 
+//Replace Date.now()
+const timestamp = Date.now();
