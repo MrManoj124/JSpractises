@@ -64,3 +64,7 @@ const todays = Temporal.Now.plainDateISO();
 
 //Replace Date.now()
 const timestamp = Date.now();
+
+//Temporal Example2
+const nows = Temporal.Now.instant();
+const timestamps = instant.epochMilliseconds);
