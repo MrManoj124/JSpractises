@@ -71,8 +71,8 @@ const timestamps = instant.epochMilliseconds);
 
 //Replace getFullYear(), getMonth(), getDate()
 
-Date uses getter methods.
-Date Example
+
+//Date Example
 const d = new Date();
 
 let year = d.getFullYear();
