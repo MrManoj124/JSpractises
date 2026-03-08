@@ -52,3 +52,10 @@ const duration2 = today.until(wedding1);
 
 //<===Migrate from Date to Temporal===>
 // Replace new Date()
+//Date Example 
+const day= new Date();
+
+
+//Temporal Example
+const instanted = Temporal.Now.instant();
+
