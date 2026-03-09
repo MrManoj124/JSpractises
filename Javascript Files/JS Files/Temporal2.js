@@ -95,3 +95,11 @@ datu.setDate(datu.getDate() +5);
 //Temporal Example
 const date5 = Temporal.PlainDate.from("2026-02-17");
 const nextWeek = date5.add({ days: 7 });
+
+
+//Replace Date Arithmetic
+//Date Example
+const start = new Date("2026-05-01");
+const end = new Date("2026-05-17");
+
+const duration = end - start;
