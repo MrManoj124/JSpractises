@@ -88,4 +88,10 @@ let day3 = date.day;
 
 
 //Replace setDate() and Other Mutating Methods
-//
+//Date Example
+const datu= new Date("2026-03-09");
+datu.setDate(datu.getDate() +5);
+
+//Temporal Example
+const date5 = Temporal.PlainDate.from("2026-02-17");
+const nextWeek = date5.add({ days: 7 });
