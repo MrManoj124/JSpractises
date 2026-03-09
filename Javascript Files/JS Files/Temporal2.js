@@ -99,9 +99,14 @@ const nextWeek = date5.add({ days: 7 });
 
 //Replace Date Arithmetic
 //Date Example
-const start = new Date("2026-05-01");
-const end = new Date("2026-05-17");
+const starts = new Date("2026-05-01");
+const ends = new Date("2026-05-17");
 
-const duration = end - start;
+const duration01 = end - start;
 
 
+//Temporal Example
+const start = Temporal.PlainDate.from("2026-05-01");
+const end = Temporal.PlainDate.from("2026-05-17");
+
+const duration02 = start.until(end);
