@@ -20,9 +20,8 @@ Temporal.PlainMonthDay()	Month and day only (06-12)*/
 
 
 //Temporal.Now
-
 // The Temporal.Now object has methods for getting the current time in various formats.
-
 // Use the Temporal.Now.zonedDateTimeISO() method for current system time:
+
 // Example
 const now = Temporal.Now.zonedDateTimeISO();
