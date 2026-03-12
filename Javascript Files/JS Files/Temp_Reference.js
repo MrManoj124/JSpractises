@@ -7,3 +7,12 @@
 // Temporal.Now	The current time
 // Temporal.ZonedDateTime	Date and time in a specific time zone
 // // Temporal.Instant	A fixed point in time, independent of time zone
+
+
+
+//Plain Dates and Times
+/*Temporal.PlainDate()	Calendar date only (2026-08-14)
+Temporal.PlainTime()	Time of day only (14:30:00)
+Temporal.PlainDateTime()	Full date and time (2026-11-14 14:30:00)
+Temporal.PlainYearMonth()	Year and month only (2026-05)
+Temporal.PlainMonthDay()	Month and day only (06-12)*/
