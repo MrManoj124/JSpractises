@@ -122,3 +122,8 @@ let time2 = dattu.toUTCString();
 
 //Temporal Example
 const zoneds = Temporal.Now.toZonedDateTimeISO();
+
+
+//Convert Date to Temporal
+const datess = new Date();
+const instants = Temporal.Instant.fromEpochMilliseconds(d.getTime());
