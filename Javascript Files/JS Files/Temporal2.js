@@ -47,7 +47,7 @@ console.log(duration1);
 //Example for Temporal until function
 const wedding1 = Temporal.PlainDate.from('2026-05-17');
 const today1 = Temporal.Now.plainDateISO();
-const duration2 = today.until(wedding1);
+const duration2 = today1.until(wedding1);
 
 
 //<===Migrate from Date to Temporal===>
@@ -67,7 +67,7 @@ const timestamp = Date.now();
 
 //Temporal Example2
 const nows = Temporal.Now.instant();
-const timestamps = instant.epochMilliseconds);
+const timestamps = instant.epochMilliseconds;
 
 //Replace getFullYear(), getMonth(), getDate()
 
