@@ -32,7 +32,7 @@ const now = Temporal.Now.zonedDateTimeISO();
 // A Temporal.ZonedDateTime is a timezone and calendar-aware date/time object that represents a real time event from the perspective of a particular region on Earth.
 // Example: August 15th, 1984 at 3:24 AM in US Pacific time (in Gregorian calendar).
 
-Example
+//Example
 const zonedDate = Temporal.ZonedDateTime.from({
   timeZone: 'America/Los_Angeles',
   year: 1995,
