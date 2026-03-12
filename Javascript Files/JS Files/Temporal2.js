@@ -114,4 +114,11 @@ const duration02 = start.until(end);
 
 
 //<===Replace Time Zone Handling===>
-    
+//Date Example
+let dattu = new Date();
+let time1 = dattu.toString();
+let time2 = dattu.toUTCString();
+
+
+//Temporal Example
+const zoneds = Temporal.Now.toZonedDateTimeISO();
