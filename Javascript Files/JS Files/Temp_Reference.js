@@ -16,3 +16,13 @@ Temporal.PlainTime()	Time of day only (14:30:00)
 Temporal.PlainDateTime()	Full date and time (2026-11-14 14:30:00)
 Temporal.PlainYearMonth()	Year and month only (2026-05)
 Temporal.PlainMonthDay()	Month and day only (06-12)*/
+
+
+
+//Temporal.Now
+
+// The Temporal.Now object has methods for getting the current time in various formats.
+
+// Use the Temporal.Now.zonedDateTimeISO() method for current system time:
+// Example
+const now = Temporal.Now.zonedDateTimeISO();
