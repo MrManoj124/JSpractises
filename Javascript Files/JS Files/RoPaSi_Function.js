@@ -8,5 +8,11 @@ const InitialGame = () =>{
 const playGame = () =>{
     while (true){
         let playerChoice = getPlayerChoice();
+        playerChoice = formatPlayerChoice(playerChoice);
+        if (playerChoice === ""){
+            invalidChoice();
+            continue;
+        }
+        if(!playerChoice)
     }
 }
