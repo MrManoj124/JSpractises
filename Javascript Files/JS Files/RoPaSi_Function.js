@@ -22,5 +22,8 @@ const playGame = () =>{
             invalidChoice();
             continue;
         }
+        const computerChoice = getComputerChoice();
+        const result = determindWinner(playerChoice, computerChoice);
+        
     }
 }
