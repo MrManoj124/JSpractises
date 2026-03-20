@@ -30,6 +30,11 @@ const playGame = () =>{
         }
         else{
             thanksForPlaying();
+            break;
         }
     }
-}
+};
+
+const getPlayerChoice = () =>{
+    return prompt ("please enter rock, paper or scissor.");
+};
