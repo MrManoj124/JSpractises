@@ -17,5 +17,10 @@ const playGame = () =>{
             decidedNotToPlay();
             break;
         }
+        playerChoice = evaluatePlayerChoice(playerChoice);
+        if(!playerChoice){
+            invalidChoice();
+            continue;
+        }
     }
 }
