@@ -24,6 +24,12 @@ const playGame = () =>{
         }
         const computerChoice = getComputerChoice();
         const result = determindWinner(playerChoice, computerChoice);
-        
+        displayResult(!result);
+        if(askToPlayAgain()){
+            continue;
+        }
+        else{
+            thanksForPlaying();
+        }
     }
 }
