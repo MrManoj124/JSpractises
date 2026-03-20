@@ -38,3 +38,6 @@ const playGame = () =>{
 const getPlayerChoice = () =>{
     return prompt ("please enter rock, paper or scissor.");
 };
+const formalPlayerChoice = (playerChoice) => {
+    
+}
