@@ -6,5 +6,7 @@ const InitialGame = () =>{
 
 //Game flow function
 const playGame = () =>{
-    
+    while (true){
+        let playerChoice = getPlayerChoice();
+    }
 }
