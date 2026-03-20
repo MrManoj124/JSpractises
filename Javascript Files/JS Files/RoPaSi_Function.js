@@ -13,6 +13,9 @@ const playGame = () =>{
             invalidChoice();
             continue;
         }
-        if(!playerChoice)
+        if(!playerChoice){
+            decidedNotToPlay();
+            break;
+        }
     }
 }
