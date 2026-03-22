@@ -92,3 +92,7 @@ const determineWinner = (player, computer) => {
 const displayResult = (result) => {
     alert(result);
 }
+
+const askToPlayAgain = () => {
+    return confirm("Play Again?");
+}
