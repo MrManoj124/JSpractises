@@ -76,5 +76,12 @@ const getComputerChoice = () => {
 }
 
 const determineWinner = (player, computer) => {
-    
+    const winner = player === computer ? "Tie game !"
+    : player === "rock" && computer === "paper"
+    ? `playerOne : ${player}\n Computer : ${computer}\n Computer wins!`
+    : player === "paper" && computer === "scissors"
+    ? `playerOne : ${player}\n Computer : ${computer}\n Computer wins!`
+    : player === "scissors" && computer === "rock"
+    ? `playerOne : ${player}\n Computer : ${computer}\n Computer wins!`
+    :`playerOne : ${player} \n Computer : ${computer} \n playerOne wins!.`
 }
