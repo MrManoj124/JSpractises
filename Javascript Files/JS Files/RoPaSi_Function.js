@@ -96,3 +96,7 @@ const displayResult = (result) => {
 const askToPlayAgain = () => {
     return confirm("Play Again?");
 }
+
+const thanksForPlaying = () => {
+    alert("Ok, thanks for playing.")
+};
