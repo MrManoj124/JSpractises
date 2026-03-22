@@ -74,3 +74,7 @@ const getComputerChoice = () => {
     const rpsArray = ["Rock", "Paper", "Scissors"];
     return rpsArray[randomNumber];
 }
+
+const determineWinner = (player, computer) => {
+    
+}
