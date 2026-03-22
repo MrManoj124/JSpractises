@@ -64,3 +64,7 @@ const evaluatePlayerChoice = (playerChoice) => {
         return false;
     }
 };
+
+const invalidChoice = ()=>{
+    alert("You didn't enter rock, paper, or scissors.")
+};
