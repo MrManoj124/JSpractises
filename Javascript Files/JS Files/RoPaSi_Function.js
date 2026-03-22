@@ -45,4 +45,8 @@ const formalPlayerChoice = (playerChoice) => {
     else{
         return false;
     }
-}
+};
+
+const decideNotToPlay = () => {
+    alert("I guess you changed your mind. Maybe next time.");
+};
