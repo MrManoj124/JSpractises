@@ -38,7 +38,7 @@ const playGame = () =>{
 const getPlayerChoice = () =>{
     return prompt ("please enter rock, paper or scissor.");
 };
-const formalPlayerChoice = (playerChoice) => {
+const formatPlayerChoice = (playerChoice) => {
     if(playerChoice || playerChoice === ""){
         return playerChoice.trim().toLowerCase();
     }
