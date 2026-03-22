@@ -68,3 +68,7 @@ const evaluatePlayerChoice = (playerChoice) => {
 const invalidChoice = ()=>{
     alert("You didn't enter rock, paper, or scissors.")
 };
+
+const getComputerChoice = () => {
+    
+}
