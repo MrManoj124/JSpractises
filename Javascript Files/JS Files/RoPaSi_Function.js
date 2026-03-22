@@ -52,5 +52,15 @@ const decideNotToPlay = () => {
 };
 
 const evaluatePlayerChoice = (playerChoice) => {
-    
+    if(
+        playerChoice === "rock" || 
+        playerChoice === "paper" ||
+        playerChoice === "scissors" 
+    )
+    {
+        return playerChoice;
+    }
+    else{
+        return false;
+    }
 };
