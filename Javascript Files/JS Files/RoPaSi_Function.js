@@ -88,3 +88,7 @@ const determineWinner = (player, computer) => {
     
     return winner;
 }
+
+const displayResult = (result) => {
+    alert(result);
+}
