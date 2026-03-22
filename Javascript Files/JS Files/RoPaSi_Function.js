@@ -50,3 +50,7 @@ const formalPlayerChoice = (playerChoice) => {
 const decideNotToPlay = () => {
     alert("I guess you changed your mind. Maybe next time.");
 };
+
+const evaluatePlayerChoice = (playerChoice) => {
+    
+};
