@@ -8,10 +8,13 @@ function myFunction(value, index, array) {
 }
 
 //Example 02 for Array ForEach method
-const numbers = [45, 4, 9, 16, 25];
-let txt = "";
-numbers.forEach(myFunction);
+// const numbers = [45, 4, 9, 16, 25];
+// let txt = "";
+// numbers.forEach(myFunction);
 
-function myFunction(value) {
-  txt += value + "<br>";
-}
+// function myFunction(value) {
+//   txt += value + "<br>";
+// }
+
+
+//JavaScript Array map()
