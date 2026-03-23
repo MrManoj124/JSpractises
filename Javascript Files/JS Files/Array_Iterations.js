@@ -20,3 +20,7 @@ function myFunction(value, index, array) {
 //JavaScript Array map()
 const numbers1 = [45, 4, 9, 16, 25];
 const numbers2 = numbers1.map(myFunction);
+
+function myFunction01(value, index, array) {
+  return value * 2;
+}
