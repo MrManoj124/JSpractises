@@ -100,3 +100,8 @@ function myFunction(total, value) {
 
 //Javascript Array reduceRight()
 const num8 = [14,11,25,65,84,20];
+const num9 = num8.reduceRight(myFunction);
+
+function myFunction03(total, value, index, array){
+  return total + value;
+}
