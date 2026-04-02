@@ -47,3 +47,12 @@ const num2 = num1.map(myFunction01);
 function myFunc(value, index, array){
   return value * 2;
 }
+
+
+//Example 02 for Array map() method
+const num3 = [45,35,95,55,12,60];
+const num4 = num3.map(myFunc);
+
+function myFunc(value){
+  return value * 2;
+}
