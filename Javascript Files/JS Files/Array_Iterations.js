@@ -84,3 +84,8 @@ function myFunction(value, index, array){
 
 //JavaScript Array reduce()
 const num6 = [40,20,30,25,15,36,34];
+const num7 = num6.reduce(myFunction);
+
+function myFunction03( value, index, array){
+  return total + value;
+}
