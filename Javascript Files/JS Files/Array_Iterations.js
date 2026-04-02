@@ -111,5 +111,5 @@ const num04 = [84,65,87,34,95,51];
 const num05 = num04.reduceRight(myFunction06, 100);
 
 function myFunction06(total, value){
-  return total + value
+  return total + value;
 }
