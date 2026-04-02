@@ -77,4 +77,6 @@ function myFunc(value){
 const num = [21,22,32,20,22,25,30];
 const num5 = num.filter(myFunction);
 
-function myFunction(value, index, array)
+function myFunction(value, index, array){
+  return value > 25;
+}
