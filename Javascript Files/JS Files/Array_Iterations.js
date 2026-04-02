@@ -89,3 +89,11 @@ const num7 = num6.reduce(myFunction);
 function myFunction03( value, index, array){
   return total + value;
 }
+
+//Example 02 for Array reduce() method
+const number02 = [45, 4, 9, 16, 25];
+let sum = number02.reduce(myFunction, 100);
+
+function myFunction(total, value) {
+  return total + value;
+}
