@@ -72,3 +72,9 @@ const Arr04 = Arr03.flatMap((x) => x * 2);
 function myFunc(value){
   return value * 2;
 }
+
+//Javascrpt Array filter()
+const num = [21,22,32,20,22,25,30];
+const num5 = num.filter(myFunction);
+
+function myFunction(value, index, array)
