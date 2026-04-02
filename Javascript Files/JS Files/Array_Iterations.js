@@ -56,3 +56,11 @@ const num4 = num3.map(myFunc);
 function myFunc(value){
   return value * 2;
 }
+
+//Javascript Array flatMap()
+const Arr = [10,20,30,35,45,55,60];
+const Arr2 = Arr.flatMap((x) => x * 2);;
+
+function myFunc(value){
+  return value * 2 ;
+}
