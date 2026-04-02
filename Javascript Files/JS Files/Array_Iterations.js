@@ -64,3 +64,11 @@ const Arr2 = Arr.flatMap((x) => x * 2);;
 function myFunc(value){
   return value * 2 ;
 }
+
+//Example 02 for Array flatMap() method
+const Arr03 = [20,15,24,36,84,25,16];
+const Arr04 = Arr03.flatMap((x) => x * 2);
+
+function myFunc(value){
+  return value * 2;
+}
