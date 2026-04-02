@@ -37,3 +37,8 @@ function myFunction(value, index, array){
 function onlyOne(value){
   text += value + "<br>"
 }
+
+
+
+//Array map() method returns a new array, containing the results of calling a function on every element in the calling array.
+
