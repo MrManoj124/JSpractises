@@ -41,4 +41,6 @@ function onlyOne(value){
 
 
 //Array map() method returns a new array, containing the results of calling a function on every element in the calling array.
+const num1 = [15,36,84,15,64,23];
+const num2 = num1.map(myFunction01);
 
