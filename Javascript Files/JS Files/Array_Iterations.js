@@ -97,3 +97,6 @@ let sum = number02.reduce(myFunction, 100);
 function myFunction(total, value) {
   return total + value;
 }
+
+//Javascript Array reduceRight()
+const num8 = [14,11,25,65,84,20];
