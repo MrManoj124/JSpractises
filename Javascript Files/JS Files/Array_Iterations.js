@@ -34,3 +34,6 @@ function myFunction(value, index, array){
   text += value * 2 + "<br>";
 }
 
+function onlyOne(value){
+  text += value + "<br>"
+}
