@@ -30,3 +30,7 @@ const numberss = [45,14,25,63,87,95];
 let text = "";
 numberss.forEach(myFunction);
 
+function myFunction(value, index, array){
+  text += value * 2 + "<br>";
+}
+
