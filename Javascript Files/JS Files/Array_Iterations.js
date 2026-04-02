@@ -44,3 +44,6 @@ function onlyOne(value){
 const num1 = [15,36,84,15,64,23];
 const num2 = num1.map(myFunction01);
 
+function myFunc(value, index, array){
+  return value * 2;
+}
