@@ -105,3 +105,7 @@ const num9 = num8.reduceRight(myFunction);
 function myFunction03(total, value, index, array){
   return total + value;
 }
+
+//Example 02 for Array reduceRight() method
+const num04 = [84,65,87,34,95,51];
+
