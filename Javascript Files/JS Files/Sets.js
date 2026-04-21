@@ -30,3 +30,4 @@ console.log(mySet2); //Set(5) {1, 2, 3, 4, 5}
 const mySet3 = new Set();
 mySet3.add("Hello");
 mySet3.add("World");
+mySet3.add("Hello"); //Duplicate value, will not be added
