@@ -34,3 +34,4 @@ mySet3.add("Hello"); //Duplicate value, will not be added
 console.log(mySet3); //Set(2) {"Hello", "World"}
 
 //Example 03 for Set
+const mySet4 = new Set();
