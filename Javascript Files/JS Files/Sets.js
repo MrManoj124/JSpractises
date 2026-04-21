@@ -35,3 +35,4 @@ console.log(mySet3); //Set(2) {"Hello", "World"}
 
 //Example 03 for Set
 const mySet4 = new Set();
+mySet4.add({ name : "Alice"});
