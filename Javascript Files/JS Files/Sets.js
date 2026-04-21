@@ -25,3 +25,8 @@ mySet.forEach((value) => {
 const mySet2 = new Set([1, 2, 3, 4, 5]);
 console.log(mySet2); //Set(5) {1, 2, 3, 4, 5}
 
+
+//Example 02 for Set
+const mySet3 = new Set();
+mySet3.add("Hello");
+mySet3.add("World");
