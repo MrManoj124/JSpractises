@@ -11,3 +11,6 @@ console.log(mySet.has(10)); //True
 
 //Delete a value from the set
 mySet.delete(1);
+
+//Check the size of the set
+console.log(mySet.size); //2
