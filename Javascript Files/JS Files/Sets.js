@@ -19,3 +19,9 @@ console.log(mySet.size); //2
 mySet.forEach((value) => {
   console.log(value);
 });
+
+
+//create a new set with an array
+const mySet2 = new Set([1, 2, 3, 4, 5]);
+
+
