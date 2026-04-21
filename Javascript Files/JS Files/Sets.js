@@ -17,4 +17,5 @@ console.log(mySet.size); //2
 
 //Iterate over the set
 mySet.forEach((value) => {
-
+  console.log(value);
+});
