@@ -14,3 +14,7 @@ mySet.delete(1);
 
 //Check the size of the set
 console.log(mySet.size); //2
+
+//Iterate over the set
+mySet.forEach((value) => {
+
