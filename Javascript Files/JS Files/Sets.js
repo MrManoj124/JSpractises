@@ -32,3 +32,5 @@ mySet3.add("Hello");
 mySet3.add("World");
 mySet3.add("Hello"); //Duplicate value, will not be added
 console.log(mySet3); //Set(2) {"Hello", "World"}
+
+//Example 03 for Set
