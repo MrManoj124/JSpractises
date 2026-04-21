@@ -23,5 +23,5 @@ mySet.forEach((value) => {
 
 //create a new set with an array
 const mySet2 = new Set([1, 2, 3, 4, 5]);
-
+console.log(mySet2); //Set(5) {1, 2, 3, 4, 5}
 
