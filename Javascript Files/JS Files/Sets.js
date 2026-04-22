@@ -62,5 +62,8 @@ Mobile.add("Charging_Speed-40W_FastCharging");
 Mobile.add("Ai Voice assistant Support");
 
 
+//Listing the elements
+//Create a set
+const Cars = new Set(["Ford","Mustang","Ferrari","Mazda"]);
 
 
