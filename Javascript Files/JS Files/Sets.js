@@ -56,3 +56,11 @@ Mobile.add(Display);
 console.log(Mobile);
 
 
+//Use add() method
+Mobile.add("Camera Quality-80MP");
+Mobile.add("Charging_Speed-40W_FastCharging");
+Mobile.add("Ai Voice assistant Support");
+
+
+
+
