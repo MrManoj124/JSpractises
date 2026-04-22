@@ -42,7 +42,14 @@ console.log(mySet4.has({name : "Alice"})); //False, because objects are referenc
 const Mobile = new Set();
 
 //Create variable for Mobile set
-const battery = "6000MaH";
+const Battery = "6000MaH";
 const ChargerType = "Type-C";
 const Display = "6.4 Inch ameled";
+
+
+//Add variable to the Mobile Set
+Mobile.add(Battery);
+Mobile.add(ChargerType);
+Mobile.add(Display);
+
 
