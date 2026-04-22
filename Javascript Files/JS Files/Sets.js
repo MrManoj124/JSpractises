@@ -80,3 +80,8 @@ console.log(typeof(Mobile));
 
 //Use instanceof method
 console.log(Mobile instanceof Set); //True
+
+//Use delete method
+Mobile.delete("Camera Quality-80MP");
+console.log(Mobile);
+
