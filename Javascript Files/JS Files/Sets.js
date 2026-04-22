@@ -39,3 +39,10 @@ mySet4.add({ name : "Alice"});
 console.log(mySet4.has({name : "Alice"})); //False, because objects are reference types
 
 //Example 04 for set
+const Mobile = new Set();
+
+//Create variable for Mobile set
+const battery = "6000MaH";
+const ChargerType = "Type-C";
+const Display = "6.4 Inch ameled";
+
