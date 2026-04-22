@@ -77,3 +77,6 @@ for(const n of Cars){
 //Use typeof Method
 typeof Mobile;
 console.log(typeof(Mobile));
+
+//Use instanceof method
+Mobile instanceof Set;
