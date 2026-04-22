@@ -66,4 +66,8 @@ Mobile.add("Ai Voice assistant Support");
 //Create a set
 const Cars = new Set(["Ford","Mustang","Ferrari","Mazda"]);
 
-
+//Listing All elements
+let Brand = "";
+for(const n of Cars){
+  Brand+=n;
+}
