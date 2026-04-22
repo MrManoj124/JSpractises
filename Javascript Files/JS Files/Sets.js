@@ -79,4 +79,4 @@ typeof Mobile;
 console.log(typeof(Mobile));
 
 //Use instanceof method
-Mobile instanceof Set;
+console.log(Mobile instanceof Set); //True
