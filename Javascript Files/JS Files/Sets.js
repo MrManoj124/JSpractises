@@ -71,3 +71,9 @@ let Brand = "";
 for(const n of Cars){
   Brand+=n;
 }
+
+
+//Sets are object
+//Use typeof Method
+typeof Mobile;
+console.log(typeof(Mobile));
