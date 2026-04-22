@@ -52,4 +52,7 @@ Mobile.add(Battery);
 Mobile.add(ChargerType);
 Mobile.add(Display);
 
+//Print the Mobile set
+console.log(Mobile);
+
 
