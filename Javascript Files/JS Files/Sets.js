@@ -90,3 +90,7 @@ console.log(Mobile);
 // create new Set()
 const MilkProducts = new Set(["Yougurt","Cheese","Curd"]);
 
+
+//create add() method
+
+
