@@ -100,3 +100,6 @@ MilkProducts.clear("Curd");
 
 // create delete() method
 MilkProducts.delete("Cheese");
+
+//The Size property
+MilkProducts.size;
