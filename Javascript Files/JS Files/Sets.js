@@ -99,3 +99,4 @@ MilkProducts.add("FreshMilk");
 MilkProducts.clear("Curd");
 
 // create delete() method
+MilkProducts.delete("Cheese");
