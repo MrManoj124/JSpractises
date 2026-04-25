@@ -103,3 +103,9 @@ MilkProducts.delete("Cheese");
 
 //The Size property
 MilkProducts.size;
+
+
+// Listing set elements
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
