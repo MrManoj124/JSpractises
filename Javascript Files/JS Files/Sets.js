@@ -88,4 +88,5 @@ console.log(Mobile);
 
 //Set and Properties
 // create new Set()
+const MilkProducts = new Set(["Yougurt","Cheese","Curd"]);
 
