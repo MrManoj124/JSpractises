@@ -117,3 +117,8 @@ let text = "";
 for (const x of letters) {
   text += x;
 }
+
+
+// Add has() method
+answer = letters.has("Curd");
+console.log(letters);
