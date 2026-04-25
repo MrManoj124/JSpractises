@@ -97,3 +97,5 @@ MilkProducts.add("FreshMilk");
 
 // Clear ()method
 MilkProducts.clear("Curd");
+
+// create delete() method
