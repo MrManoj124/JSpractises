@@ -92,5 +92,5 @@ const MilkProducts = new Set(["Yougurt","Cheese","Curd"]);
 
 
 //create add() method
-
+MilkProducts.add("FreshMilk");
 
