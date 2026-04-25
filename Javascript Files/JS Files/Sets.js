@@ -85,3 +85,7 @@ console.log(Mobile instanceof Set); //True
 Mobile.delete("Camera Quality-80MP");
 console.log(Mobile);
 
+
+//Set and Properties
+// create new Set()
+
