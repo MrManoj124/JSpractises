@@ -109,3 +109,11 @@ MilkProducts.size;
 // Create a Set
 const letters = new Set(["a","b","c"]);
 
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// List all Elements
+let text = "";
+for (const x of letters) {
+  text += x;
+}
