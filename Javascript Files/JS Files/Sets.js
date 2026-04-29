@@ -191,3 +191,6 @@ for (const entry of letters.values()) {
 // Use the keys() method
 // create a new set called Pendrive_Storage
 const Pendrive_Storage = new Set(["2GB","4GB","8GB","16GB","32GB","64GB","128GB","256GB","512GB"])
+
+// Create an Iterator
+const myPenStorage = Pendrive_Storage.keys();
