@@ -137,3 +137,7 @@ const myProp = new Set(["pen","pencil","EX_Book"]);
 
 // The number of elements are
 myProp.size;
+
+
+// Listing Set Elements
+const cosmetics = new Set(["Facewash","FacePowder", "Shampoo","SunsCream"]);
