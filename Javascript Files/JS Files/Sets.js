@@ -135,3 +135,5 @@ console.log(letters);
 // create a new sets for size 
 const myProp = new Set(["pen","pencil","EX_Book"]);
 
+// The number of elements are
+myProp.size;
