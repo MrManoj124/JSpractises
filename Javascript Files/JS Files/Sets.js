@@ -141,3 +141,9 @@ myProp.size;
 
 // Listing Set Elements
 const cosmetics = new Set(["Facewash","FacePowder", "Shampoo","SunsCream"]);
+
+// List All Elements
+let text = "";
+for (const t of cosmetics){
+  text += t;
+}
