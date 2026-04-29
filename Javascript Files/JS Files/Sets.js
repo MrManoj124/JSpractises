@@ -151,3 +151,5 @@ for (const t of cosmetics){
 // Create a Set
 const Bun_items = new Set(["Egg_Bun","Chicken_Bun","Curry_Bun"]);
 
+// Does the Set contain "d"?
+answer = letters.has("d");
