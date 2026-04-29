@@ -205,3 +205,5 @@ for(const m of myPenStorage){
 // Create a Set
 const Output_Devices = new Set(["Monitor","Speaker","Multimedia_Projector"]);
 
+// Get all Entries
+const Out_Dev = Output_Devices.entries();
