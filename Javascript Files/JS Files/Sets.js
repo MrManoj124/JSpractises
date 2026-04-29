@@ -152,9 +152,16 @@ for (const t of cosmetics){
 const Bun_items = new Set(["Egg_Bun","Chicken_Bun","Curry_Bun"]);
 
 // Does the Set contain "d"?
-answer = letters.has("d");
+answer = Bun_items.has("d");
 
 
 // // Create a Set
 const letters_In_Pineapple = new Set(["p","i","n","e","a","p","p","l","e"]);
+
+
+// List all entries
+let text = "";
+letters.forEach (function(value) {
+  text += value;
+})
 
