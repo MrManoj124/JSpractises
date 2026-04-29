@@ -171,4 +171,8 @@ const Scooty_Brands = new Set(["Yamaha","Hero","TVS","Bajaj"]);
 // Get all Values
 const myIterator = Scooty_Brands.values();
 
-
+// List all Values
+let text = "";
+for (const entry of myIterator) {
+  text += entry;
+}
