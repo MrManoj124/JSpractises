@@ -126,3 +126,9 @@ console.log(letters);
 // Add keys() method
 answer = letters.keys("Curd");
 console.log(letters);
+
+// Add values() method
+answer = letters.values("Milk Packet");
+console.log(letters);
+
+
