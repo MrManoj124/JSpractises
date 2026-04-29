@@ -207,3 +207,9 @@ const Output_Devices = new Set(["Monitor","Speaker","Multimedia_Projector"]);
 
 // Get all Entries
 const Out_Dev = Output_Devices.entries();
+
+// List all Entries
+let text = "";
+for (const entry of Out_Dev) {
+  text += entry;
+}
