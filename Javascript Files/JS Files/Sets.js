@@ -176,3 +176,14 @@ let text = "";
 for (const entry of myIterator) {
   text += entry;
 }
+
+
+// Example 02
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// List all Values
+let text = "";
+for (const entry of letters.values()) {
+  text += entry;
+}
