@@ -200,3 +200,8 @@ let text = "";
 for(const m of myPenStorage){
   text += m;
 }
+
+// Create a entries() method
+// Create a Set
+const Output_Devices = new Set(["Monitor","Speaker","Multimedia_Projector"]);
+
