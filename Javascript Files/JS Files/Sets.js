@@ -158,10 +158,9 @@ answer = Bun_items.has("d");
 // // Create a Set
 const letters_In_Pineapple = new Set(["p","i","n","e","a","p","p","l","e"]);
 
-
 // List all entries
 let text = "";
-letters.forEach (function(value) {
+letters_In_Pineapple.forEach (function(value) {
   text += value;
 })
 
