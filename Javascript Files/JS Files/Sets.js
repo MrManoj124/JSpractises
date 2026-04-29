@@ -164,3 +164,8 @@ letters_In_Pineapple.forEach (function(value) {
   text += value;
 })
 
+
+// Create a Set
+const Scooty_Brands = new Set(["Yamaha","Hero","TVS","Bajaj"]);
+
+
