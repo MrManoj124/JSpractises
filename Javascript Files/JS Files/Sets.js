@@ -194,3 +194,9 @@ const Pendrive_Storage = new Set(["2GB","4GB","8GB","16GB","32GB","64GB","128GB"
 
 // Create an Iterator
 const myPenStorage = Pendrive_Storage.keys();
+
+// List All Items
+let text = "";
+for(const m of myPenStorage){
+  text += m;
+}
