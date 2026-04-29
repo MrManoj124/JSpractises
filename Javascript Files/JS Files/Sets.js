@@ -168,4 +168,7 @@ letters_In_Pineapple.forEach (function(value) {
 // Create a Set
 const Scooty_Brands = new Set(["Yamaha","Hero","TVS","Bajaj"]);
 
+// Get all Values
+const myIterator = Scooty_Brands.values();
+
 
