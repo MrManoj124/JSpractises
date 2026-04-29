@@ -147,3 +147,7 @@ let text = "";
 for (const t of cosmetics){
   text += t;
 }
+
+// Create a Set
+const Bun_items = new Set(["Egg_Bun","Chicken_Bun","Curry_Bun"]);
+
