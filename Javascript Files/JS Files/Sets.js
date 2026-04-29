@@ -122,3 +122,7 @@ for (const x of letters) {
 // Add has() method
 answer = letters.has("Curd");
 console.log(letters);
+
+// Add keys() method
+answer = letters.keys("Curd");
+console.log(letters);
