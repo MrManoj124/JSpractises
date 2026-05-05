@@ -229,4 +229,5 @@ let Obj = {fname : "Mano", Lname:"Rooban"};
 // Add the Object
 mySet.add(Obj);
 
-
+// Do I have Obj in the mySet?
+let answer = mySet.has(Obj);
