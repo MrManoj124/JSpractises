@@ -217,3 +217,9 @@ for (const entry of Out_Dev) {
 
 // create a new set
 const binary_numbers = new Set([0,1]);
+
+
+// ==== JavaScript WeakSet ====
+// Create a WeakSet
+let mySet = new WeakSet();
+
