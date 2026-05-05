@@ -244,3 +244,6 @@ newSet.add(myObj);
 
 // Delete the Object
 newSet.delete(myObj);
+
+// Do I have myObj in the newSet?
+let answer = newSet.has(myObj);
