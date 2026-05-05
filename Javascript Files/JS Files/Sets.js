@@ -213,3 +213,7 @@ let text = "";
 for (const entry of Out_Dev) {
   text += entry;
 }
+
+
+// create a new set
+const binary_numbers = new Set([0,1]);
