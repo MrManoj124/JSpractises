@@ -226,4 +226,7 @@ let mySet = new WeakSet();
 // Create an Object 
 let Obj = {fname : "Mano", Lname:"Rooban"};
 
-// 
+// Add the Object
+mySet.add(Obj);
+
+
