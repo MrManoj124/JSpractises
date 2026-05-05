@@ -241,3 +241,6 @@ let myObj = {fname : "John" , Lname : "Franklin"};
 
 // Add the object
 newSet.add(myObj);
+
+// Delete the Object
+newSet.delete(myObj);
