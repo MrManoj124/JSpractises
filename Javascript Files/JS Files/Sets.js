@@ -236,4 +236,7 @@ let answer = mySet.has(Obj);
 // Create another WeakSet 
 let newSet = new WeakSet();
 
-// Create 
+// Create an Object 
+let myObj = {fname : "John" , Lname : "Franklin"};
+
+
