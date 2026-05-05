@@ -223,4 +223,7 @@ const binary_numbers = new Set([0,1]);
 // Create a WeakSet
 let mySet = new WeakSet();
 
+// Create an Object 
+let Obj = {fname : "Mano", Lname:"Rooban"};
+
 // 
