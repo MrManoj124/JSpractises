@@ -231,3 +231,9 @@ mySet.add(Obj);
 
 // Do I have Obj in the mySet?
 let answer = mySet.has(Obj);
+
+// Example two for WeakSet
+// Create another WeakSet 
+let newSet = new WeakSet();
+
+// Create 
