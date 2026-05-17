@@ -153,7 +153,56 @@ for (let size of sizes){
 
 
 
+// Get the Bar Chart for the time taken for each algorithms 
+// create a bar chart using Chart.js library
+// The x-axis will represent the size of the array and the y-axis will represent the time taken in milliseconds. Each algorithm will be represented by a different color bar.
+function createBarChart(data){
+    const chart = document.getElementById(`myChart`).getContext('2d');
+    new chart(chart, {
+        type : 'bar',
+        data : {
+            labels : sizes,
+            datasets : [
+                {
+                    label : 'Bubble Sort',
+                    data : data.bubbleSort,
+                    backgroundColor : 'rgba(255, 99, 132, 0.2)',
+                    borderColor : 'rgba(255, 99, 132, 1)',
+                    borderWidth : 1
+                },
+                {
+                    label : 'Selection Sort',
+                    data : data.selectionSort,
+                    backgroundColor : 'rgba(54, 162, 235, 0.2)',
+                    borderColor : 'rgba(54, 162, 235, 1)',
+                    borderWidth : 1
+                },
+                {
+                    label : 'Quick Sort',
+                    data : data.quickSort,
+                    backgroundColor : 'rgba(255, 206, 86, 0.2)',
+                    borderColor : 'rgba(255, 206, 86, 1)',
+                    borderWidth : 1
+                },
+                {
+                    label : 'Merge Sort',
+                    data : data.mergeSort,
+                    backgroundColor : 'rgba(75, 192, 192, 0.2)',    
+                    borderColor : 'rgba(75, 192, 192, 1)',
+                    borderWidth : 1
+                },
+                {
+                    label : 'Radix Sort',
+                    data : data.radixSort,
+                    backgroundColor : 'rgba(153, 102, 255, 0.2)',
+                    borderColor : 'rgba(153, 102, 255, 1)',
+                    borderWidth : 1
+                }
+            ]
+        } 
+    })
 
+}
 
 
 // The data object will contain the time taken for each algorithm for different sizes of arrays. The createBarChart function will be called with this data object to render the bar chart on the webpage.
