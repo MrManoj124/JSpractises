@@ -123,6 +123,13 @@ function radixSort(arr){
 
 
 
+// Check the time taken for each algorithm
+function measureTime(sortFuntion, arr){
+    let start = performance.now();
+    sortFuntion(arr);
+    let end = performance.now();
+    return end - start;
+}
 
 
 
