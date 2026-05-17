@@ -126,6 +126,12 @@ function radixSort(arr){
 
 
 
+// The data object will contain the time taken for each algorithm for different sizes of arrays. The createBarChart function will be called with this data object to render the bar chart on the webpage.
+
+
+
+
+
 
 
 
