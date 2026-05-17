@@ -59,6 +59,11 @@ function quickSort(arr){
 }
 
 
+// 04. Merge Sort
+function mergeSort(arr){
+    if(arr.length <= 1)
+}
+
 
 
 
