@@ -87,6 +87,12 @@ function mergeSort(arr){
     }
 
 }
+
+// 05. Radix Sort 
+// This sort is used to sort numbers by processing individual digits. It works by grouping numbers based on their digits and sorting them
+// from the least significant digit to the most significant digit. It is efficient for sorting large numbers of integers and has a time complexity of 0(n * k), where n is the number of elements in the array
+// and k is the number of digits in the largest number.
+
   
 
 
