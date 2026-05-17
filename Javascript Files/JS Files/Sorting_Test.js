@@ -92,8 +92,37 @@ function mergeSort(arr){
 // This sort is used to sort numbers by processing individual digits. It works by grouping numbers based on their digits and sorting them
 // from the least significant digit to the most significant digit. It is efficient for sorting large numbers of integers and has a time complexity of 0(n * k), where n is the number of elements in the array
 // and k is the number of digits in the largest number.
+function radixSort(arr){
+    let max = Math.max(...arr);
+    let exp = 1;
+    while(max / exp > 1){
+        countingSort(arr, exp);
+        exp *= 10;
+    }
+    return arr;
 
-  
+    function countingSort(arr, exp){
+        let output = new Array(arr.length).fill(0);
+        let count = new Array(10).fill(0);
+
+        for(let i=0; i<arr.length; i++){
+            count[Math.floor(arr[i] / exp) % 10] ++;
+        }
+        for(let i=1; i<10; i++){
+            count[i] += count[i-1];
+        }
+        for(let i=arr.length - 1; i>=0; i--){
+            output[count[Math.floor(arr[i] / exp) % 10] - 1] = arr[i];
+            count[Math.floor(arr[i] / exp) % 10]--;
+        }
+        for(let i=0; i<arr.length; i++){
+            arr[i] = output[i];
+        }
+    }
+}
+
+
+
 
 
 
