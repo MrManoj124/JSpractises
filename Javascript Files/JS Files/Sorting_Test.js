@@ -142,7 +142,14 @@ function generateRandomNumbers(n){
 
 // Test the sorting algorithms with different sizes of arrays
 let sizes = [10, 100, 1000, 10000, 100000, 1000000];
-
+for (let size of sizes){
+    let arr = generateRandomNumbers(size);
+    console.log(`Time taken for Bubble Sort with ${size} elements : ${measureTime(bubbleSort, [...arr])} ms`);
+    console.log(`Time taken for Selection Sort with ${size} elements : ${measureTime(selectionSort, [...arr])} ms`);
+    console.log(`Time taken for Quick Sort with ${size} elements : ${measureTime(quickSort, [...arr])} ms`);
+    console.log(`Time taken for Merge Sort with ${size} elements : ${measureTime(mergeSort, [...arr])} ms`);
+    console.log(`Time taken for Radix Sort with ${size} elements : ${measureTime(radixSort, [...arr])} ms`);
+}
 
 
 
