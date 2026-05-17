@@ -146,13 +146,44 @@ function generateRandomNumbers(n){
 // Test the sorting algorithms with different sizes of arrays
 // Note: very large sizes (>=100000) may take a long time for O(n^2) sorts.
 let sizes = [10, 100, 1000, 10000];
+
+const results = {
+    bubbleSort: [],
+    selectionSort: [],
+    quickSort: [],
+    mergeSort: [],
+    radixSort: []
+};
+
 for (let size of sizes){
     let arr = generateRandomNumbers(size);
-    console.log(`Time taken for Bubble Sort with ${size} elements : ${measureTime(bubbleSort, [...arr])} ms`);
-    console.log(`Time taken for Selection Sort with ${size} elements : ${measureTime(selectionSort, [...arr])} ms`);
-    console.log(`Time taken for Quick Sort with ${size} elements : ${measureTime(quickSort, [...arr])} ms`);
-    console.log(`Time taken for Merge Sort with ${size} elements : ${measureTime(mergeSort, [...arr])} ms`);
-    console.log(`Time taken for Radix Sort with ${size} elements : ${measureTime(radixSort, [...arr])} ms`);
+    const t1 = measureTime(bubbleSort, [...arr]);
+    const t2 = measureTime(selectionSort, [...arr]);
+    const t3 = measureTime(quickSort, [...arr]);
+    const t4 = measureTime(mergeSort, [...arr]);
+    const t5 = measureTime(radixSort, [...arr]);
+
+    results.bubbleSort.push(t1);
+    results.selectionSort.push(t2);
+    results.quickSort.push(t3);
+    results.mergeSort.push(t4);
+    results.radixSort.push(t5);
+
+    console.log(`Time taken for Bubble Sort with ${size} elements : ${t1} ms`);
+    console.log(`Time taken for Selection Sort with ${size} elements : ${t2} ms`);
+    console.log(`Time taken for Quick Sort with ${size} elements : ${t3} ms`);
+    console.log(`Time taken for Merge Sort with ${size} elements : ${t4} ms`);
+    console.log(`Time taken for Radix Sort with ${size} elements : ${t5} ms`);
+}
+
+if (typeof document !== 'undefined' && document.getElementById && document.getElementById('myChart')){
+    try{
+        createBarChart(results);
+    }catch(e){
+        console.error('Error creating chart:', e);
+    }
+} else {
+    console.log('Benchmark results object:', results);
 }
 
 
@@ -161,8 +192,8 @@ for (let size of sizes){
 // create a bar chart using Chart.js library
 // The x-axis will represent the size of the array and the y-axis will represent the time taken in milliseconds. Each algorithm will be represented by a different color bar.
 function createBarChart(data){
-    const chart = document.getElementById(`myChart`).getContext('2d');
-    new chart(chart, {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
         type : 'bar',
         data : {
             labels : sizes,
@@ -204,7 +235,7 @@ function createBarChart(data){
                 }
             ]
         } 
-    })
+    });
 
 }
 
