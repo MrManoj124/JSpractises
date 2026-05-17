@@ -31,9 +31,11 @@ function selectionSort(arr){
             }
         }
         // Swap arr[i] and arr[minIndex]
-        let temp = arr[j];
-        arr[j] = arr[j+1];
-        arr[j+1] =temp;
+        if (minIndex !== i) {
+            let temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
     }
     return arr;
 }
@@ -125,9 +127,10 @@ function radixSort(arr){
 
 // Check the time taken for each algorithm
 function measureTime(sortFuntion, arr){
-    let start = performance.now();
+    const now = (typeof performance !== 'undefined' && performance.now) ? () => performance.now() : () => Date.now();
+    let start = now();
     sortFuntion(arr);
-    let end = performance.now();
+    let end = now();
     return end - start;
 }
 
@@ -141,7 +144,8 @@ function generateRandomNumbers(n){
 }
 
 // Test the sorting algorithms with different sizes of arrays
-let sizes = [10, 100, 1000, 10000, 100000, 1000000];
+// Note: very large sizes (>=100000) may take a long time for O(n^2) sorts.
+let sizes = [10, 100, 1000, 10000];
 for (let size of sizes){
     let arr = generateRandomNumbers(size);
     console.log(`Time taken for Bubble Sort with ${size} elements : ${measureTime(bubbleSort, [...arr])} ms`);
