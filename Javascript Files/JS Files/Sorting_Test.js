@@ -38,6 +38,32 @@ function selectionSort(arr){
     return arr;
 }
 
+// 03. Quick Sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 // 03. Insertion Sort
 function insertionSort(arr){
     let n = arr.length;
@@ -52,3 +78,5 @@ function insertionSort(arr){
     }
     return arr;
 }
+
+*/
