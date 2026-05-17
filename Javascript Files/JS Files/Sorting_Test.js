@@ -186,8 +186,6 @@ if (typeof document !== 'undefined' && document.getElementById && document.getEl
     console.log('Benchmark results object:', results);
 }
 
-
-
 // Get the Bar Chart for the time taken for each algorithms 
 // create a bar chart using Chart.js library
 // The x-axis will represent the size of the array and the y-axis will represent the time taken in milliseconds. Each algorithm will be represented by a different color bar.
