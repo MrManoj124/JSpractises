@@ -20,3 +20,20 @@ function bubbleSort(arr){
 
 
 
+// 02. Selection Sort
+function selectionSort(arr){
+    let n = arr.length;
+    for (let i=0; i<n-1; i++){
+        let minIndex = i;
+        for (let j=i+1; j<n; j++){
+            if(arr[j] < arr[minIndex]){
+                minIndex = j;
+            }
+        }
+        // Swap arr[i] and arr[minIndex]
+        let temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] =temp;
+    }
+    return arr;
+}
