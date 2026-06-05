@@ -21,5 +21,43 @@ code
             <button class="tab" onclick="switchTab('recommendations')">🏆 Recommendations</button>
         </div>
 
-        
+        //Add Analysis Tab Content
+        <!-- Analysis Tab -->
+        <div id="analysis" class="tab-content active">
+            <div class="controls">
+                <button id="runBtn" onclick="runAnalysis()">Run Analysis</button>
+                <button onclick="exportResults()">Export Results (CSV)</button>
+                <select id="chartType" onchange="updateChart()">
+                    <option value="bar">Bar Chart</option>
+                    <option value="line">Line Chart</option>
+                    <option value="log">Logarithmic Scale</option>
+                </select>
+            </div>
+            
+            <div id="status"></div>
+            
+            <div class="chart-container">
+                <canvas id="performanceChart"></canvas>
+            </div>
+            
+            <div class="results-table">
+                <h2 style="color: #333; margin-bottom: 15px;">Performance Results (milliseconds)</h2>
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Algorithm</th>
+                            <th>10</th>
+                            <th>100</th>
+                            <th>1,000</th>
+                            <th>10,000</th>
+                            <th>100,000</th>
+                            <th>1,000,000</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+            
+            
     </div>
