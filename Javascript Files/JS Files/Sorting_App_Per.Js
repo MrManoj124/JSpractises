@@ -175,3 +175,27 @@
             statusDiv.textContent = '✓ Analysis complete!';
             runBtn.disabled = false;
         }
+
+        // Update table
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            for (let algo in results) {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td><strong>${algo}</strong></td>`;
+                
+                results[algo].forEach(time => {
+                    const td = document.createElement('td');
+                    if (time === null) {
+                        td.textContent = 'N/A';
+                        td.style.color = '#999';
+                    } else {
+                        td.textContent = time.toFixed(2);
+                    }
+                    row.appendChild(td);
+                });
+                
+                tbody.appendChild(row);
+            }
+        }
