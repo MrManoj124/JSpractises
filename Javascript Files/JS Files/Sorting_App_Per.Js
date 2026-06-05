@@ -49,3 +49,22 @@
             return [...result, ...left.slice(i), ...right.slice(j)];
         }
 
+        function selectionSort(arr) {
+            const n = arr.length;
+            const sorted = [...arr];
+            
+            for (let i = 0; i < n - 1; i++) {
+                let minIdx = i;
+                for (let j = i + 1; j < n; j++) {
+                    if (sorted[j] < sorted[minIdx]) {
+                        minIdx = j;
+                    }
+                }
+                [sorted[i], sorted[minIdx]] = [sorted[minIdx], sorted[i]];
+            }
+            
+            return sorted;
+        }
+
+        
+
