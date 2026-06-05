@@ -109,3 +109,11 @@
             return Array.from({ length: size }, () => Math.floor(Math.random() * 1000000));
         }
 
+        // Measure execution time
+        function measureTime(sortFunc, arr) {
+            const start = performance.now();
+            sortFunc([...arr]);
+            const end = performance.now();
+            return end - start;
+        }
+
