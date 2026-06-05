@@ -130,3 +130,48 @@
             'Radix Sort': radixSort
         };
 
+
+        // Run analysis
+        async function runAnalysis() {
+            const runBtn = document.getElementById('runBtn');
+            runBtn.disabled = true;
+            
+            const statusDiv = document.getElementById('status');
+            statusDiv.className = 'status running';
+            statusDiv.textContent = 'Running analysis... Please wait...';
+            
+            results = {};
+            
+            for (let algo in algorithms) {
+                results[algo] = [];
+                
+                for (let size of sizes) {
+                    // Skip slow algorithms for large datasets
+                    if ((algo === 'Selection Sort' || algo === 'Bubble Sort') && size > 10000) {
+                        results[algo].push(null);
+                        continue;
+                    }
+                    
+                    const testArray = generateRandomArray(size);
+                    
+                    // Run multiple times and take average
+                    let totalTime = 0;
+                    const runs = size <= 1000 ? 5 : (size <= 10000 ? 3 : 1);
+                    
+                    for (let i = 0; i < runs; i++) {
+                        totalTime += measureTime(algorithms[algo], testArray);
+                        await new Promise(resolve => setTimeout(resolve, 0)); // Allow UI update
+                    }
+                    
+                    const avgTime = totalTime / runs;
+                    results[algo].push(avgTime);
+                }
+            }
+            
+            updateTable();
+            updateChart();
+            
+            statusDiv.className = 'status complete';
+            statusDiv.textContent = '✓ Analysis complete!';
+            runBtn.disabled = false;
+        }
