@@ -66,5 +66,23 @@
             return sorted;
         }
 
-        
+        function bubbleSort(arr) {
+            const n = arr.length;
+            const sorted = [...arr];
+            
+            for (let i = 0; i < n - 1; i++) {
+                let swapped = false;
+                for (let j = 0; j < n - i - 1; j++) {
+                    if (sorted[j] > sorted[j + 1]) {
+                        [sorted[j], sorted[j + 1]] = [sorted[j + 1], sorted[j]];
+                        swapped = true;
+                    }
+                }
+                if (!swapped) break;
+            }
+            
+            return sorted;
+        }
+
+
 
