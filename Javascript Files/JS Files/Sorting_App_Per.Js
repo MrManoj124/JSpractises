@@ -199,3 +199,86 @@
                 tbody.appendChild(row);
             }
         }
+
+
+        // Update chart
+        function updateChart() {
+            const chartType = document.getElementById('chartType').value;
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            
+            if (chart) {
+                chart.destroy();
+            }
+            
+            const colors = {
+                'Quick Sort': 'rgba(255, 99, 132, 0.8)',
+                'Merge Sort': 'rgba(54, 162, 235, 0.8)',
+                'Selection Sort': 'rgba(255, 206, 86, 0.8)',
+                'Bubble Sort': 'rgba(75, 192, 192, 0.8)',
+                'Radix Sort': 'rgba(153, 102, 255, 0.8)'
+            };
+            
+            const datasets = Object.keys(results).map(algo => ({
+                label: algo,
+                data: results[algo],
+                backgroundColor: colors[algo],
+                borderColor: colors[algo].replace('0.8', '1'),
+                borderWidth: 2,
+                fill: chartType === 'line' ? false : true
+            }));
+            
+            const config = {
+                type: chartType === 'log' ? 'line' : chartType,
+                data: {
+                    labels: sizes.map(s => s.toLocaleString()),
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Sorting Algorithm Performance Comparison',
+                            font: { size: 18 }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.y !== null) {
+                                        label += context.parsed.y.toFixed(2) + ' ms';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            type: chartType === 'log' ? 'logarithmic' : 'linear',
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Time (milliseconds)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Array Size'
+                            }
+                        }
+                    }
+                }
+            };
+            
+            chart = new Chart(ctx, config);
+        }
