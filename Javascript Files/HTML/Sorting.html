@@ -106,5 +106,178 @@ code
             </div>
         </div>
 
+        //Add Documentation Tab Content
+        <!-- Documentation Tab -->
+        <div id="documentation" class="tab-content documentation">
+            <h2>📚 Complete Documentation</h2>
+            
+            <h3>1. Quick Sort</h3>
+            <p>Quick Sort is a highly efficient sorting algorithm that uses a divide-and-conquer approach. It works by selecting a 'pivot' element and partitioning the array around it.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Advantages</h4>
+                    <ul>
+                        <li>Very fast in practice (O(n log n) average)</li>
+                        <li>In-place sorting (low memory usage)</li>
+                        <li>Cache-efficient</li>
+                        <li>Works well with virtual memory</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Disadvantages</h4>
+                    <ul>
+                        <li>Worst case is O(n²) for sorted arrays</li>
+                        <li>Not stable (changes order of equal elements)</li>
+                        <li>Requires good pivot selection</li>
+                        <li>Recursive (stack overflow risk)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case">
+                <strong>📌 Best Use Cases:</strong> General-purpose sorting, large datasets, when average performance matters more than worst-case
+            </div>
+
+            <h3>2. Merge Sort <span class="winner-badge">🏆 MOST RELIABLE</span></h3>
+            <p>Merge Sort is a stable, divide-and-conquer algorithm that guarantees O(n log n) performance in all cases.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Advantages</h4>
+                    <ul>
+                        <li>Guaranteed O(n log n) performance</li>
+                        <li>Stable sorting (preserves order)</li>
+                        <li>Predictable performance</li>
+                        <li>Excellent for linked lists</li>
+                        <li>Parallelizable</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Disadvantages</h4>
+                    <ul>
+                        <li>Requires O(n) extra space</li>
+                        <li>Slower for small arrays</li>
+                        <li>Not in-place</li>
+                        <li>More memory intensive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case">
+                <strong>📌 Best Use Cases:</strong> When stability is required, external sorting, linked lists, when worst-case performance matters
+            </div>
+
+            <h3>3. Selection Sort</h3>
+            <p>Selection Sort is a simple comparison-based algorithm that divides the input into sorted and unsorted regions.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Advantages</h4>
+                    <ul>
+                        <li>Simple to implement</li>
+                        <li>Minimal memory usage O(1)</li>
+                        <li>Minimal number of swaps</li>
+                        <li>Good for small datasets</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Disadvantages</h4>
+                    <ul>
+                        <li>Always O(n²) - very slow</li>
+                        <li>Not stable</li>
+                        <li>Not adaptive (same time even if sorted)</li>
+                        <li>Poor performance on large data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case">
+                <strong>📌 Best Use Cases:</strong> Very small datasets (< 50 elements), educational purposes, when memory is extremely limited
+            </div>
+
+            <h3>4. Bubble Sort</h3>
+            <p>Bubble Sort is the simplest sorting algorithm that repeatedly swaps adjacent elements if they're in wrong order.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Advantages</h4>
+                    <ul>
+                        <li>Extremely simple to understand</li>
+                        <li>Stable sorting</li>
+                        <li>O(n) best case for sorted data</li>
+                        <li>In-place sorting</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Disadvantages</h4>
+                    <ul>
+                        <li>O(n²) average and worst case</li>
+                        <li>Very slow for large datasets</li>
+                        <li>Many unnecessary comparisons</li>
+                        <li>Rarely used in practice</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case">
+                <strong>📌 Best Use Cases:</strong> Educational purposes, nearly sorted data, very small datasets
+            </div>
+
+            <h3>5. Radix Sort <span class="winner-badge">🏆 FASTEST FOR INTEGERS</span></h3>
+            <p>Radix Sort is a non-comparative sorting algorithm that sorts integers by processing individual digits.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Advantages</h4>
+                    <ul>
+                        <li>Linear time O(nk) for fixed digit count</li>
+                        <li>Stable sorting</li>
+                        <li>Very fast for integers</li>
+                        <li>Predictable performance</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Disadvantages</h4>
+                    <ul>
+                        <li>Only works with integers/strings</li>
+                        <li>Requires extra space O(n+k)</li>
+                        <li>Performance depends on digit count</li>
+                        <li>Less flexible than comparison sorts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case">
+                <strong>📌 Best Use Cases:</strong> Sorting integers, fixed-length strings, when data range is known, large datasets of numbers
+            </div>
+
+            <h2>Implementation Details</h2>
+            
+            <h3>Quick Sort Implementation</h3>
+            <div class="code-block">
+function quickSort(arr) {
+    if (arr.length <= 1) return arr;
+    const pivot = arr[Math.floor(arr.length / 2)];
+    const left = arr.filter(x => x < pivot);
+    const middle = arr.filter(x => x === pivot);
+    const right = arr.filter(x => x > pivot);
+    return [...quickSort(left), ...middle, ...quickSort(right)];
+}
+            </div>
+
+            <h3>Merge Sort Implementation</h3>
+            <div class="code-block">
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
+    const right = mergeSort(arr.slice(mid));
+    return merge(left, right);
+}
+            </div>
+        </div>
+
         
+        </div>
     </div>
