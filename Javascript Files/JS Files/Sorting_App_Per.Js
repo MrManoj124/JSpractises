@@ -282,3 +282,27 @@
             
             chart = new Chart(ctx, config);
         }
+
+
+        // Export results to CSV
+        function exportResults() {
+            if (Object.keys(results).length === 0) {
+                alert('Please run the analysis first!');
+                return;
+            }
+            
+            let csv = 'Algorithm,' + sizes.join(',') + '\n';
+            
+            for (let algo in results) {
+                csv += algo + ',';
+                csv += results[algo].map(t => t === null ? 'N/A' : t.toFixed(2)).join(',');
+                csv += '\n';
+            }
+            
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'sorting_analysis_results.csv';
+            a.click();
+        }
