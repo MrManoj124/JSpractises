@@ -84,5 +84,24 @@
             return sorted;
         }
 
+        function radixSort(arr) {
+            const max = Math.max(...arr);
+            const maxDigits = max.toString().length;
+            
+            let sorted = [...arr];
+            
+            for (let k = 0; k < maxDigits; k++) {
+                const buckets = Array.from({ length: 10 }, () => []);
+                
+                for (let num of sorted) {
+                    const digit = Math.floor(num / Math.pow(10, k)) % 10;
+                    buckets[digit].push(num);
+                }
+                
+                sorted = buckets.flat();
+            }
+            
+            return sorted;
+        }
 
 
