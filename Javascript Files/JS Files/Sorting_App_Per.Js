@@ -104,4 +104,8 @@
             return sorted;
         }
 
+        // Generate random array
+        function generateRandomArray(size) {
+            return Array.from({ length: size }, () => Math.floor(Math.random() * 1000000));
+        }
 
