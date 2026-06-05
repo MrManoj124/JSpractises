@@ -328,6 +328,91 @@ function mergeSort(arr) {
                 <p><strong>Use when:</strong> Sorting integers, fixed-length strings, data range is known and limited</p>
             </div>
 
+            // Add Performance Comparison Matrix
+            <h2>Performance Comparison Matrix</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Quick Sort</th>
+                        <th>Merge Sort</th>
+                        <th>Selection Sort</th>
+                        <th>Bubble Sort</th>
+                        <th>Radix Sort</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Speed (Large Data)</strong></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐</td>
+                        <td>⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Memory Efficiency</strong></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stability</strong></td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Worst Case</strong></td>
+                        <td>⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐</td>
+                        <td>⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ease of Implementation</strong></td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adaptability</strong></td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Decision Tree: Choose Your Algorithm</h2>
+            <div class="code-block">
+START
+├─ Is data type integers/strings with limited range?
+│  └─ YES → Use RADIX SORT ✅
+│  └─ NO → Continue
+│
+├─ Do you need stable sorting (preserve order of equal elements)?
+│  └─ YES → Use MERGE SORT ✅
+│  └─ NO → Continue
+│
+├─ Is memory very limited?
+│  └─ YES → Use QUICK SORT ✅
+│  └─ NO → Use MERGE SORT ✅
+│
+├─ Is dataset very small (< 50 elements)?
+│  └─ YES → Any simple sort (even Selection/Bubble) ✅
+│  └─ NO → Use Quick Sort or Merge Sort ✅
+            </div>
+
             
         </div>
     </div>
