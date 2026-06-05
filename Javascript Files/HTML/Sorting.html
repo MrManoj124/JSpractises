@@ -278,6 +278,56 @@ function mergeSort(arr) {
             </div>
         </div>
 
-        
+        //Add Recommendations Tab Content
+        <!-- Recommendations Tab -->
+        <div id="recommendations" class="tab-content documentation">
+            <h2>🏆 Which Sorting Algorithm is Best?</h2>
+            
+            <div class="recommendation-box">
+                <h3>⚡ TL;DR - Quick Answer</h3>
+                <p><strong>For most real-world applications: Use Merge Sort or Quick Sort</strong></p>
+                <p><strong>For integer sorting: Use Radix Sort</strong></p>
+                <p><strong>For educational purposes: Understand all, but avoid Bubble/Selection in production</strong></p>
+            </div>
+
+            <h2>Detailed Recommendations by Scenario</h2>
+
+            <div class="best-choice">
+                <h4>🥇 Best Overall: Merge Sort</h4>
+                <p><strong>Why:</strong></p>
+                <ul>
+                    <li>Guaranteed O(n log n) performance in ALL cases</li>
+                    <li>Stable sorting (maintains relative order of equal elements)</li>
+                    <li>Predictable and reliable</li>
+                    <li>No worst-case scenarios to worry about</li>
+                </ul>
+                <p><strong>Use when:</strong> Stability matters, worst-case performance matters, external sorting, linked lists</p>
+            </div>
+
+            <div class="best-choice">
+                <h4>🥈 Best for Speed: Quick Sort</h4>
+                <p><strong>Why:</strong></p>
+                <ul>
+                    <li>Fastest average-case performance</li>
+                    <li>Excellent cache locality</li>
+                    <li>In-place sorting (low memory)</li>
+                    <li>Industry standard for general sorting</li>
+                </ul>
+                <p><strong>Use when:</strong> Average performance matters more than worst-case, memory is limited, working with arrays</p>
+            </div>
+
+            <div class="best-choice">
+                <h4>🥉 Best for Integers: Radix Sort</h4>
+                <p><strong>Why:</strong></p>
+                <ul>
+                    <li>Linear time complexity O(nk)</li>
+                    <li>Faster than comparison-based sorts for integers</li>
+                    <li>Stable and predictable</li>
+                    <li>No comparisons needed</li>
+                </ul>
+                <p><strong>Use when:</strong> Sorting integers, fixed-length strings, data range is known and limited</p>
+            </div>
+
+            
         </div>
     </div>
