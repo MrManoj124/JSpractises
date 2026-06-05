@@ -117,3 +117,16 @@
             return end - start;
         }
 
+        // Define Global variables 
+        // Global variables
+        let chart = null;
+        let results = {};
+        const sizes = [10, 100, 1000, 10000, 100000, 1000000];
+        const algorithms = {
+            'Quick Sort': quickSort,
+            'Merge Sort': mergeSort,
+            'Selection Sort': selectionSort,
+            'Bubble Sort': bubbleSort,
+            'Radix Sort': radixSort
+        };
+
