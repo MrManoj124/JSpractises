@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Accuracy Analyzer</title>
+    <link rel="stylesheet" href="Sorting.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Sorting Accuracy Analyzer</h1>
+        <p class="subtitle">Test sorting algorithms with your custom numbers and find the best method</p>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('analyzer')">📊 Analyzer</button>
+            <button class="tab" onclick="switchTab('results')">📈 Results</button>
+            <button class="tab" onclick="switchTab('recommendations')">🏆 Best Method</button>
+        </div>
+
+        <!-- Analyzer Tab -->
+        <div id="analyzer" class="tab-content active">
+            <div class="input-section">
+                <h2>Enter Your Numbers</h2>
+                
+                <div class="input-options">
+                    <div class="input-group">
+                        <label for="inputMethod">Input Method:</label>
+                        <select id="inputMethod" onchange="toggleInputMethod(this.value)">
+                            <option value="manual">Enter Manually (comma-separated)</option>
+                            <option value="random">Generate Random Numbers</option>
+                            <option value="predefined">Use Predefined Dataset</option>
+                        </select>
+                    </div>
+
+                    <!-- Manual Input -->
+                    <div id="manualInput" class="input-group active-input">
+                        <label for="numberInput">Numbers (comma-separated, e.g., 5,2,8,1,9):</label>
+                        <textarea id="numberInput" placeholder="Enter numbers separated by commas..." rows="4"></textarea>
+                        <small>💡 Tip: You can paste any numbers separated by commas or spaces</small>
+                    </div>
+
+                    <!-- Random Input -->
+                    <div id="randomInput" class="input-group">
+                        <label for="randomCount">Number Count:</label>
+                        <input type="number" id="randomCount" min="10" max="10000" value="100" placeholder="How many numbers?">
+                        <label for="randomMax">Maximum Value:</label>
+                        <input type="number" id="randomMax" min="10" max="1000000" value="1000" placeholder="Max value?">
+                        <button onclick="generateRandomNumbers()" style="margin-top: 10px;">Generate Random Numbers</button>
+                    </div>
+
+                    <!-- Predefined Input -->
+                    <div id="predefinedInput" class="input-group">
+                        <label for="predefinedDataset">Choose Dataset:</label>
+                        <select id="predefinedDataset" onchange="loadPredefinedDataset(this.value)">
+                            <option value="">Select a dataset...</option>
+                            <option value="small">Small Numbers (1-100, 50 items)</option>
+                            <option value="medium">Medium Numbers (1-1000, 100 items)</option>
+                            <option value="large">Large Numbers (1-100000, 200 items)</option>
+                            <option value="nearly-sorted">Nearly Sorted Data (200 items)</option>
+                            <option value="reverse">Reverse Sorted Data (200 items)</option>
+                            <option value="duplicates">Data with Duplicates (200 items)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="controls" style="margin-top: 20px;">
+                    <button id="analyzeBtn" onclick="analyzeNumbers()">🚀 Analyze My Numbers</button>
+                    <button onclick="clearInput()">Clear</button>
+                </div>
+
+                <div id="inputStatus" class="status-message"></div>
+                <div id="inputInfo" class="info-box"></div>
+            </div>
+        </div>
+
+        <!-- Results Tab -->
+        <div id="results" class="tab-content">
+            <div class="results-section">
+                <h2>Performance Results</h2>
+                
+                <div class="controls" style="margin-bottom: 20px;">
+                    <select id="resultChartType" onchange="updateResultChart()">
+                        <option value="bar">Bar Chart</option>
+                        <option value="line">Line Chart</option>
+                        <option value="radar">Radar Chart</option>
+                    </select>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="resultChart"></canvas>
+                </div>
+
+                <div class="results-table">
+                    <h3>Detailed Performance Metrics</h3>
+                    <table id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th>Algorithm</th>
+                                <th>Time (ms)</th>
+                                <th>Comparisons</th>
+                                <th>Swaps</th>
+                                <th>Efficiency Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="statistics-section">
+                    <h3>Dataset Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4>Array Size</h4>
+                            <p id="statSize" class="stat-value">-</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Min Value</h4>
+                            <p id="statMin" class="stat-value">-</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Max Value</h4>
+                            <p id="statMax" class="stat-value">-</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Average Value</h4>
+                            <p id="statAvg" class="stat-value">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Tab -->
+        <div id="recommendations" class="tab-content">
+            <div class="recommendations-section">
+                <h2>🏆 Best Sorting Method for Your Data</h2>
+
+                <div id="bestMethodBox" class="best-choice" style="margin-top: 20px; padding: 25px;">
+                    <h3 id="bestMethodName" style="color: #155724; margin: 0 0 10px 0; font-size: 1.8em;">-</h3>
+                    <p id="bestMethodReason" style="color: #155724; font-size: 1.1em; margin: 0;"></p>
+                </div>
+
+                <div class="performance-comparison" style="margin-top: 30px;">
+                    <h3>Performance Comparison</h3>
+                    <div class="comparison-bars">
+                        <div id="comparisonContainer"></div>
+                    </div>
+                </div>
+
+                <div class="ranking-section" style="margin-top: 30px;">
+                    <h3>Algorithm Rankings</h3>
+                    <div id="rankingContainer" class="ranking-list"></div>
+                </div>
+
+                <div class="recommendation-details" style="margin-top: 30px;">
+                    <div id="detailedRecommendation"></div>
+                </div>
+
+                <div class="controls" style="margin-top: 20px;">
+                    <button onclick="exportAnalysisReport()">📥 Export Report (CSV)</button>
+                    <button onclick="goBackToAnalyzer()">← Analyze Different Numbers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Accuracy-Analyzer.js"></script>
+</body>
+</html>
