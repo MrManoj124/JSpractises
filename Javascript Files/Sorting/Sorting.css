@@ -328,3 +328,363 @@ select {
     font-weight: bold;
     margin-left: 10px;
 }
+
+/* ===== Accuracy Analyzer Styles ===== */
+
+.input-section {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.input-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.input-options {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.input-group.active-input {
+    display: block;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.input-group input[type="number"],
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.input-group input[type="number"]:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: 'Courier New', monospace;
+}
+
+.input-group small {
+    display: block;
+    color: #666;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.status-message {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 15px 0;
+    display: none;
+    font-weight: 500;
+}
+
+.status-message.success {
+    display: block;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.info-box {
+    background: #e7f3ff;
+    border-left: 5px solid #2196F3;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.results-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.results-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.results-section h3 {
+    color: #667eea;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.statistics-section {
+    margin-top: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.stat-value {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.efficiency-bar {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.efficiency-fill {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.recommendations-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recommendations-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.performance-comparison {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.comparison-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comparison-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bar-label {
+    width: 150px;
+    font-weight: 600;
+    color: #333;
+}
+
+.bar-container {
+    flex: 1;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.bar-value {
+    width: 80px;
+    text-align: right;
+    font-weight: 600;
+    color: #333;
+}
+
+.ranking-section {
+    margin: 30px 0;
+}
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #667eea;
+    transition: transform 0.2s;
+}
+
+.ranking-item:hover {
+    transform: translateX(5px);
+}
+
+.rank-medal {
+    font-size: 2em;
+    margin-right: 15px;
+    width: 50px;
+    text-align: center;
+}
+
+.rank-info {
+    flex: 1;
+}
+
+.rank-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.rank-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recommendation-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recommendation-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recommendation-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.recommendation-box ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.recommendation-box li {
+    margin-bottom: 10px;
+}
+
+.recommendation-box strong {
+    color: #fff;
+}
+
+/* Error and Success States */
+.error-state {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.success-state {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .input-section {
+        padding: 20px;
+    }
+    
+    .comparison-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .bar-label {
+        width: 100%;
+    }
+    
+    .bar-container {
+        width: 100%;
+    }
+    
+    .bar-value {
+        width: 100%;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .pros-cons {
+        grid-template-columns: 1fr;
+    }
+}
