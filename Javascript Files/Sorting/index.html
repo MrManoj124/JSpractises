@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms - Complete Suite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .card-features {
+            text-align: left;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-features li {
+            color: #555;
+            margin: 8px 0;
+            font-size: 0.9em;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .card-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .card-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .card-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .features-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features-section h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        .feature-item h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .feature-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 30px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .comparison-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .comparison-table tr:hover {
+            background: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Sorting Algorithms Suite</h1>
+            <p>Complete Performance Analysis & Accuracy Testing</p>
+            <p class="subtitle">Learn, compare, and optimize sorting methods with interactive tools</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Card 1: Original Sorting Analysis -->
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h2>Standard Analysis</h2>
+                <p>Compare sorting algorithms on predefined dataset sizes (10 to 1M elements)</p>
+                <div class="card-features">
+                    <ul>
+                        <li>5 predefined sizes</li>
+                        <li>Performance comparison</li>
+                        <li>Multiple chart types</li>
+                        <li>Time complexity info</li>
+                        <li>Export to CSV</li>
+                    </ul>
+                </div>
+                <a href="Sorting.html" class="card-button">Open Analysis →</a>
+            </div>
+
+            <!-- Card 2: Accuracy Analyzer -->
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h2>Accuracy Analyzer</h2>
+                <p>Test sorting algorithms with your own custom numbers and find the best method</p>
+                <div class="card-features">
+                    <ul>
+                        <li>Custom number input</li>
+                        <li>Random generation</li>
+                        <li>6 predefined datasets</li>
+                        <li>Detailed metrics</li>
+                        <li>Smart recommendations</li>
+                    </ul>
+                </div>
+                <a href="Accuracy-Analyzer.html" class="card-button">Open Analyzer →</a>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h3>🎯 Key Features</h3>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4>5 Sorting Algorithms</h4>
+                    <p>Quick Sort, Merge Sort, Selection Sort, Bubble Sort, and Radix Sort</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Performance Metrics</h4>
+                    <p>Execution time, comparisons, swaps, and efficiency scores</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Visual Analytics</h4>
+                    <p>Bar charts, line charts, radar charts, and performance graphs</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Custom Testing</h4>
+                    <p>Test with your own data or use predefined datasets</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Smart Recommendations</h4>
+                    <p>Get AI-powered suggestions for the best algorithm</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Export Reports</h4>
+                    <p>Download your analysis results as CSV files</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Standard Analysis</th>
+                        <th>Accuracy Analyzer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Input Method</strong></td>
+                        <td>Fixed dataset sizes</td>
+                        <td>Custom numbers / Random / Predefined</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Range</strong></td>
+                        <td>10 to 1,000,000 elements</td>
+                        <td>Any size (up to 10,000)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Analysis Type</strong></td>
+                        <td>Scalability testing</td>
+                        <td>Accuracy & performance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Metrics</strong></td>
+                        <td>Execution time</td>
+                        <td>Time, comparisons, swaps, efficiency</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Use Case</strong></td>
+                        <td>Big-O analysis</td>
+                        <td>Algorithm selection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best For</strong></td>
+                        <td>Learning complexity</td>
+                        <td>Real-world testing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>🎓 Educational Tool for Sorting Algorithm Analysis</p>
+            <p>Version 1.0 | All algorithms implemented in pure JavaScript</p>
+            <p>© 2024 - Sorting Algorithms Suite</p>
+        </div>
+    </div>
+</body>
+</html>
